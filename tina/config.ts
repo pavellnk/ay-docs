@@ -10,17 +10,15 @@ const branch =
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === 'true';
 
 export default defineConfig({
-  // Local development: use local GraphQL server
-  // Production: use Tina Cloud
-  ...(isLocal
-    ? {
-        contentApiUrlOverride: 'http://localhost:4001/graphql',
-        authProvider: new LocalAuthProvider(),
-      }
-    : {
-        clientId: process.env.TINA_CLIENT_ID,
-        token: process.env.TINA_TOKEN,
-      }),
+  // Tina Cloud credentials (always set, used in production)
+  clientId: process.env.TINA_CLIENT_ID || '',
+  token: process.env.TINA_TOKEN || '',
+
+  // Local development only: override API URL
+  ...(isLocal && {
+    contentApiUrlOverride: 'http://localhost:4001/graphql',
+    authProvider: new LocalAuthProvider(),
+  }),
 
   branch,
 
