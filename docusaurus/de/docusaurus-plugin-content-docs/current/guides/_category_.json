@@ -1,0 +1,10 @@
+{
+  "label": "Anleitungen",
+  "position": 4,
+  "description": "Schritt-für-Schritt-Anleitungen für häufige Anwendungsfälle",
+  "link": {
+    "type": "generated-index",
+    "slug": "/guides"
+  }
+}
+

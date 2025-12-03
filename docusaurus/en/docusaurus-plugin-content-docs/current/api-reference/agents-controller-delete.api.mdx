@@ -1,0 +1,71 @@
+---
+id: agents-controller-delete
+title: "Delete an agent"
+description: "Delete an agent"
+sidebar_label: "Delete an agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFk0GL2zAQhf+KeKcWTJOW7UW3sMkh0EMpm9MSimKPY1FZ8kqjpcbov5ex0yXdBHqyPX6e780beUIYKBq2we8baGzO5Dk9Bs8xOEfxZ0OOmFBhMNH0xBQT9PMEb3qChm1QIdJLtpEaaI6ZKlgPjcFwhwoNpTraQQDQeOpIHQ77rQqt4o6UEZzioN4wqe6oN9AT2hB7w9DIeabwOAgxcbT+jFKOAk5D8ImS6L+sH+RyC1wgnUnqRORVynVNKbXZufHCbVAqPNz7fs5D+cCqDdnPuq/r9a1u75miN04liq8UFcUYIkqpwOYsiWF2kXB8H8l2dqCMX3yiQk/cBVnGVfbcQWO19FhNtikS1YyS5kfJvA1iiy07iWkzZm+TegyR1Ob7/u4m3mnUtaKC9F60nz+tUaEOnk3N0JOMNYTEvfGCvByF20H+IU5/F8j0m1eDM9ZLmjk6ebdM+JZSBW0byaoLiaU+TSeT6BBdKVJ+yRTHZfBXE605yczPExqb5L6Bbo1LdGNBZhBvGh9+XA7tR/X/Q3nX+aVo/ChhGZflCRV+0bj8GOVYrpa53X3bPe1Qyh+RnSno
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete an agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/agents/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete an agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the agent to delete","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The agent has been successfully deleted"},"404":{"description":"Agent not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

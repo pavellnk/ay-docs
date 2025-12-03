@@ -1,0 +1,71 @@
+---
+id: threads-controller-update-agent
+title: "Update thread agent"
+description: "Update thread agent"
+sidebar_label: "Update thread agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1v2zAM/SsCTxugLP1I0s23LB2w3IqiORVBwVh0rM6WXEluGxj+7wMlN03aAJsvcWSS7/HpkR3YhhwGbc1SQQZ3pSNUfmFNcLaqyD20jcJA8y2ZABIadFhTIOchu+/AYE2QgVYgwdFTqx0pyIJrSYI2kEGDoQQJinzudMMwEYTEarW8FrYQoSQRIqgIViQwkODzkmqErIPCuhoDZNC2ESbsGob0wWmzhb5fJ2Ty4adVO874SCS3JjD7rANsmkrnsd3xo2cy3QHUUNpuHimPzToWJ2jyMZclYJG6Dxz+1V5MPOruuKe+PxTvfg+0lhB0qBhpFTPT5cSruA4W+j5l+sYanzhenJ3xz2c+g8SJSolebIiM8G2ek/dFW1W7gZ2CXsLkVJmlecZKv9VQGDCFTk4hRjRjgyhsa2LN6emagZzBSnhyz+QEOWddFCTgli0GibhnMY5TkyRHjYGEmkJpVTJeXkbDhhIyGA91xp1W/fgtOqEyzloC++H23Um/XrFuWPyDm4fLAr9Pi9lkNL06vxpNprOL0eayyEcX+Y/ZZTGbYYEzblabwkajDPc337VGe7GwjsT8ZnnSMh9ixGGEBOaZYs+/nUEyNeZsalarsT7UGO08jORpeY5Q9z4O9BrGTYXaMPfWVfwtCfd+ARKyOH+p1FpCaX3ggK7boKeVq/qej59acruk6DM6jRsW4L4DpT2/K8gKrDx94rKfUvhyOwzDV/Efm+JkD8Mhmh1Lh1XL/0DCH9qlddWvewkloSIX2aUPi8RhdMfp74mftgYvnb3TbuZ3i98gYTOsn9oqTnL4wksRXxKyjY3GIY1nHVRoti1uOTYV5ecvXjbixQ==
+sidebar_class_name: "patch api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update thread agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/threads/{id}/agent"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update thread agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread to update","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"agentId":{"type":"string","description":"The UUID of the agent to update","format":"uuid"}},"required":["agentId"],"title":"UpdateThreadAgentDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The thread agent has been successfully updated"},"400":{"description":"Invalid agent data"},"404":{"description":"Thread not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

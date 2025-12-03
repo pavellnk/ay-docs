@@ -1,0 +1,71 @@
+---
+id: prompts-controller-update
+title: "Update a prompt"
+description: "Update a prompt"
+sidebar_label: "Update a prompt"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVt9v4kYQ/ldW89RKhhhCcq3f0lwfIvUBRclDG6Fq8A5479a7zu4aQpH/99OsDRhIc1GbSkVIYO/8+Gbmm5ndgq3IYVDW3EnIYOpsWQV/a01wVmtyf9aVxECQQIUOSwrkPGRPWzBYEmSgJCTg6LlWjiRkwdWUgDKQQYWhgAQk+dypij1ABg8FicfHu8/CLkQoSFTRnwhW7P34vKASIdvCwroSA2RQ19FN2FTs0genzBKaZtZ6Jh9+sXLDGqdAcmsCmcBHWFVa5THSiy+ewWx7rjrTdv6F8sDBOs5LUOTjqQqaemIdgteCi6LH0UEC9IJlxSbgMYYpxdRZdiWmGo1RZiluvFc+oGHxUpnfyCxDAdkogRJfdk/jq6vmKKrvA+qE34D0u60FOhJoBL1w1CwUwVU7cLgDN2TgKyXZblk5Ksh4tSKxrJVEk5NYWLdXL9HgkkoyIRHK5LqWbMsp/5UNkvd8JNBIEVRJWhkStgqqVH/FMg2hafrceurqcEjALNmVpstrS9/PwULTtMq+ssa3VRynKf+cp6gjYYFezImM8HWek/eLWutNx0sJH0YmJd9XuNqo55qEkmSCWihyb5RwNL6kydX1pwH99PN8MBrLywFOrq4Hk/H19Wgy+jRJ0xSSk4Zqko8k9huE/g8pKwrS1aLWB4aKUGCIr71Yq1CckXkopprQR7uRyZICKk1S+EDVYL4Z8O8xoyOTOajOmBe0WFAe1Ir0ZsgB1p7c3b+tLBsR68IKuzZehEL5jyx27oiZfPPOKjDt980p1gWZ/sReoxedwSNw43R8ORiNB+noYZRmKX+HaZr+0QfElgdsNSau7a+PQ6XRh17X/mNoJ7On3UAnA2hf9352+zH1JlQ7m+67iXSYUZPXxtKdWaFWcheXxIAQZSfnsq1hYWwQC1ubWOur140Gcga18ORW5AQ5Z10MNOCStzq07jzDPlZtx6vAAx9LCoXlK0NVxxnH2z6Di87CxVbJhpd59MS2ZwnwpLw/LOxfd5XZnkzx72zH/Sz5P28uvgQtbD+2m01tlBe31pG4md69yu4TGdGXSIAz2cqOhmmXCMy5cbiGlfWhxLiKurvZedGOPO7bLdBLuKg0KhMb0mk+awt6oEQCmZJMjML6wAfb7Rw9PTrdNPz6uSa3aeu8QqdwzkE/bUEqz/8lZAvUns4wHKr5w33Xbj+Kd1wTX8XevUSz4XShrvkJEvhKm/au2syaBApCSS6iaw9uWwyDB1Y/KJ5t+SbZadzkOcWM/r3srNcj08cHSGDe3VJLK1nF4ZrvzrhuMdqYknhFiO+2oNEsa1yybGuSP98ANoAFZg==
+sidebar_class_name: "put api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a prompt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/prompts/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a prompt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the prompt to update","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"title":{"type":"string","description":"The title of the prompt","example":"Updated Project Planning Assistant","minLength":1,"maxLength":255},"content":{"type":"string","description":"The content of the prompt","example":"You are an expert project planning assistant. Provide comprehensive guidance for project management, including risk assessment and timeline optimization."}},"required":["title","content"],"title":"UpdatePromptDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The prompt has been successfully updated","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"title":{"type":"string","description":"The title of the prompt","example":"Project Planning Assistant"},"content":{"type":"string","description":"The content of the prompt","example":"You are a helpful assistant that helps with project planning. Please provide detailed step-by-step guidance for managing projects effectively."},"userId":{"type":"string","description":"The unique identifier of the user who owns this prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the prompt was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the prompt was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"}},"required":["id","title","content","userId","createdAt","updatedAt"],"title":"PromptResponseDto"}}}},"400":{"description":"Invalid prompt data"},"404":{"description":"Prompt not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

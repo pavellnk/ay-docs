@@ -1,0 +1,71 @@
+---
+id: user-controller-update-user-name
+title: "Update user name"
+description: "Update the name of a user. Users can only update their own name."
+sidebar_label: "Update user name"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/RVinmlHcpRsq6e6SYGmKLaLRfJSwyhoaWwxlUhlSMbxGvr3xVDydbNpCqxfbI3mxnNmDr2FEl1BuvXaGsjhoS2VR+ErFEY1KOxSKBEc0lg8OCQnCmWENfVGhL2nJmHXJvqPQYJtkRSnuys5oUO6scaTrWukf/ooNn5UDYKEVpFq0CM5yGdzCYRPAZ3/1ZYbyLfxUROWkHsKKM+6/Yjrvk1tlpaaWBUkFNZ4NJ7jVdvWuogvLh4dB23BFRU2in/5TYuQg108YuG5GeLmvUbHbznzkZfzpM0KvtvD0lLEjdECCfiimrbmwD9sZcSt5dM22vyJZuUryFMJjXrZPyVJ18mj48768nMJXvuY5uEEultvoev6GNda4/qeJ0nCX2ekOqS+RxeKAp1bhnrPYPnjANPlf8MVewlGPwUUukTj9VKf4ZVOLjG7uv4wwp9+XozSSXk5UtnV9SibXF+nWfohS5IEJPSMQw4h6BI6+U6+9mC8zlEnARul63cmir5ClSWhcycZH21lxqXFXwbTuLANZydbv7fL6CoBTWh4IFTZaB7vOGDz41rR0kmwtLp7Bwd/0UoZ/SWSLO5u91MrFlhbs3LC2/9LSPoaIQUhD9g0Dtb+LQ/dyOtIwNt93rLArCs0hw7Xyokh7UmLk2SSjZJ0lF7dp0l+meRJ8jecb5TmmB31keSBjh1yxy0fb55D+jxs2WHvstdW7c48q1qX/bY9qzrEicqS9Htbab1QwVe8CAVXFvZgtKS/YCm8PYitdmJHdpZkbyRd2mAiCVevt+mRjKqFQ3rmMSayJGxRBCIsxbrSNfZFtVn1yEfc+NxerVirYynHMDXoK8ta3ypfVFHTWdLgguPcxQB4X2lQeVaWzwel/23H4050T/aRxT0O9UDHdBOMduLGEorpp7tvxua+QnHmI449JHAjvW86Tgb9UwWPKR+wtc43yhx1M9yK4Ug6TkpuDwr6I27QYSs8vviLtlbaMAqBoib12M7iyrvdOM8lVNZ5tm+3C+XwgequY/NTQNr0mD8r0mrBCM7mnYQKVYkE+WwL/+IGcrjpjzC65+rszsObf3shdHIXMS0KbP2bvsfj8Wl6f/M7SFgMd3tjSw4iteY9VGvIIf594PB4n0TbFmplVkGtoqjGpPz5Cv3G8gU=
+sidebar_class_name: "patch api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/users/name"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update the name of a user. Users can only update their own name.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"New name information","content":{"application/json":{"schema":{"type":"object","properties":{"name":{"type":"string","description":"New name for the user","example":"John Doe","minLength":1,"maxLength":100}},"required":["name"],"title":"UpdateUserNameDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"User name successfully updated","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"User unique identifier","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"User name","example":"John Doe"},"email":{"type":"string","description":"User email address","example":"john.doe@example.com"},"role":{"type":"string","description":"User role","enum":["admin","user"],"example":"user"},"orgId":{"type":"string","description":"Organization ID the user belongs to","example":"123e4567-e89b-12d3-a456-426614174001","format":"uuid"},"createdAt":{"format":"date-time","type":"string","description":"Date when the user was created","example":"2024-01-15T10:30:00Z"}},"required":["id","name","email","role","orgId","createdAt"],"title":"UserResponseDto"}}}},"400":{"description":"Invalid name value"},"401":{"description":"User not authenticated or not authorized to update this user"},"404":{"description":"User not found"},"500":{"description":"Internal server error occurred while updating user name"}}}
+>
+  
+</StatusCodes>
+
+
+      

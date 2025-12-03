@@ -1,0 +1,71 @@
+---
+id: models-controller-is-embedding-model-enabled
+title: "Check if an embedding model is enabled for this org"
+description: "Check if an embedding model is enabled for this org"
+sidebar_label: "Check if an embedding model is enabled for this org"
+hide_title: true
+hide_table_of_contents: true
+api: eJydU8Fu2zAM/RWBZ2PJBuziW5EFQw4Dhq3DDkEwMDITqZUll6KDZob+faCdJm3TXnaybD0+Pr5HD5A6YhSf4qqBGr6lhkJepCicQiD+4/Oy3VLT+Lgf75YRt4EaqKBDxpaEOEO93lTAlLsUM2WoB/g0n+ujoWzZd0oPNfzsraWcd30IR2Md2XtqDD3Rm1b5TRaUPkMFNkWhKEqDXRe8HVXO7rJyDZCtoxb1JMeOoIa0vSMrKox1JvGTkvcGuBRuUwqEEapXcn87EkdsxJFJvMfo/44SjMNsMF4pp7M19IhtFwhq4Z5KUW8ees/adf2uoE0F4kWr4E3Aj5O/XyRBKcr6+S2TV1GIIwaTiQ/EhpgTg8IF9xoVjGqz9ntZudBEjN+9NZvPT+OZXVJLfFZPoIKWxCVdnT2N5qM4qGE2NZmdeWYXdyZhp63xcZfGLE6j3xz76LNZJCZz8311FcqtI/MKY54jKlDuCfvxw/y0R2h1j9SELmVpcdygiC3999gvVJ1XSehRZl1AH6FU0HPQu8mSs+8VnLvo+ZK+S1kUNwxbzPSLQyn6+aEnPk5mHZC9wvWtVOAIG2Ko1wPc01HNs5Y6TeGAoVc9Vz9O2TxL7OvyFkr5BwBDZrE=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check if an embedding model is enabled for this org"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/embedding/enabled"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if an embedding model is enabled for this org
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully checked embedding model status","content":{"application/json":{"schema":{"type":"object","properties":{"isEmbeddingModelEnabled":{"type":"boolean","description":"Whether the organization has an embedding model enabled","example":true}},"required":["isEmbeddingModelEnabled"],"title":"EmbeddingModelEnabledResponseDto"}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

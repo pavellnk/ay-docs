@@ -1,0 +1,27 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Erste Schritte",
+    "description": "The label for the Getting Started category"
+  },
+  "sidebar.docsSidebar.category.Core Concepts": {
+    "message": "Kernkonzepte",
+    "description": "The label for the Core Concepts category"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API-Referenz",
+    "description": "The label for the API Reference category"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Anleitungen",
+    "description": "The label for the Guides category"
+  },
+  "sidebar.docsSidebar.category.Contributing": {
+    "message": "Mitwirken",
+    "description": "The label for the Contributing category"
+  },
+  "sidebar.docsSidebar.link.Getting Started": {
+    "message": "Erste Schritte",
+    "description": "The label for Getting Started link"
+  }
+}
+

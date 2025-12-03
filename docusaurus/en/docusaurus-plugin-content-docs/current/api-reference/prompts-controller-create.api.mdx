@@ -1,0 +1,71 @@
+---
+id: prompts-controller-create
+title: "Create a new prompt"
+description: "Create a new prompt"
+sidebar_label: "Create a new prompt"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVlFv4zYM/isEn+3WTpPe5res20OBAQtu3cMWFANjMbFusuRKctIgyH8faDuN215vB1wxDAuCOJYp8iO/T6QP6Br2FLWztwoLXHhXNzHcOBu9M4b9n6VniowJNuSp5sg+YLG8T9DzQ8sh/uDUHotDd6s9KyyibznB0tnINsojahqjyy7I5afgrKyFsuKa5F/cN4wFutUnLqPE8QIpag7dUx0Nj8xC9NpuMEHFofS6EadY4F3F0JmCW0OsGJouEUyQH6luxIXkJiFgYchabTcwD0GHSFbMam1/ZruJFRZ5gjU9nu4ms9nxWTb/DGQw/gKU310L5BkIKjbNujVAJywQK4rdcoCdjpVs72A3A+wLWBim0PndasWgOJI2rCBEbtLVPpUrbFqtyJYMa+ehJksbSXlwFoDXay6j3rLZX+DxmIz4Ww5FP2d9n5x4wJtODr1MfowOj8d+c2icDT1lkyyXy+u69IWAigKsmC2Etiw5hHVrzB56nSl8N+Vo9XVstVY/tAxasY16rdl/gbd8csXT2fWHlL/7fpXmE3WV0nR2nU4n19f5NP8wzbIME1w7X1PEAttWKzwm/5KK//86TbAN7G+/lVlxArvKgdvZALHS4T3JHpQ8/0oWFEUGsgqirhl2FdsRG7CjMDoaZ3CTbHKV5pM0y+/yrMjke5Fl2R9jQOI5Fa9d4Rr1vqgMhQiD12+B9qL3aHH2sgE98T6u7jinUYfqe9PHoSOde9Q0y163pVu7JaPVKS9FkaRYs8/bRvaWDAT2W/bA3jvf4Y+0kaGIvZcgaJ5v7bsmEFjenaVWc6ycTN3Gha5/kQwcvDy5SbCPNAxcaYAfz0P3p1PBD+PU355wT63hP3iqtV27cSLzfWt1gBvnGeaL288q9IUNjC0SlLL1tvlFNmRPpYhfCJOC19SNE0s1v8nQs6hPxybyY7xsDGnbHSxv5FlP3jMNVEJrscTDYUWBf/PmeJTlh5b9vqd0S17TSlJe3h8TrJgUeyyWB/yL94Kq5yy9k8BibloB8GosHpPTjnlZcgf9bdv7kfIWv/x6hwmuhpe42inZ42mHSfdbICbougJ0Q7VbO6Ahu2lpI7a9T/n8DWAMio0=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new prompt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/prompts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new prompt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"title":{"type":"string","description":"The title of the prompt","example":"Project Planning Assistant","minLength":1,"maxLength":255},"content":{"type":"string","description":"The content of the prompt","example":"You are a helpful assistant that helps with project planning. Please provide detailed step-by-step guidance for managing projects effectively."}},"required":["title","content"],"title":"CreatePromptDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The prompt has been successfully created","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"title":{"type":"string","description":"The title of the prompt","example":"Project Planning Assistant"},"content":{"type":"string","description":"The content of the prompt","example":"You are a helpful assistant that helps with project planning. Please provide detailed step-by-step guidance for managing projects effectively."},"userId":{"type":"string","description":"The unique identifier of the user who owns this prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the prompt was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the prompt was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"}},"required":["id","title","content","userId","createdAt","updatedAt"],"title":"PromptResponseDto"}}}},"400":{"description":"Invalid prompt data"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

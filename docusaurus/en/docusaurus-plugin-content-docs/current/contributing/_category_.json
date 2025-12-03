@@ -1,0 +1,10 @@
+{
+  "label": "Contributing",
+  "position": 5,
+  "description": "How to contribute to Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/contributing"
+  }
+}
+

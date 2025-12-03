@@ -1,0 +1,71 @@
+---
+id: agents-controller-get-agent-sources
+title: "Get all sources for an agent"
+description: "Get all sources for an agent"
+sidebar_label: "Get all sources for an agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMtu2zAQ/BViTy0g148oTqtbkBSBb0HanAyjoKWVxVQilSUZxBD078VSsiDHbptDfJFEL2dmZx8NmBpJOmX0KoMErneonb0x2pEpS6RfO3Th7IfxlKKFCGpJskKHZCFZN6BlhZCAyiACwmevCDNIHHmMQGlIoJaugAgytCmpmpkggZ8FisfH1a0wuXAFCskcEIFNC6wkJA3khirpIAHvA7bb18xjHSm9g7bdMJ2tjbZoOX4xm/HjmOYBnSdthSxLYbsMRG7oiDI12vFb0oCs61KlwY3pk2WEZqSoVyCJ5B4iUA4rOzo32ydMGbAm9tSpTpfKRjG9+nNueK2ePQqVoXYqV0gHazrdQlqrdrrqNOOrrOqSEeeLC4wvl1cT/PptO5kvsouJjC+Xk3ixXM7j+VU8m80geuNmG0GHuvoYcR+iqGuk96jhyH8IuCfDlRC3JvXsV6gnM3TI72HgCGY4g56rMhxoX0GyPnx6KmHTtuMRWHczMRjdZ9jL2ETglAuIo/l66Dv61hlo+RdBPItP+zpcEdo4kRuvg32X5/p/pR2SlqWwSC9IAokMAcM6ueP5hTAFluUc37xDdzI1Ug9DU6ErDC+MHYaW5xlPYNqhTRuVtVM7bIyOnOk2vBNyE4pwyH7vtbLixhCK6/vV2XK8iRHjiAgYu4udf5n1Ay1THmhOtDbWVTKMcr+q/pPaEf3QLA5f3bQupQqdxOVOmj7twcQIklHJg6mFsY4jmmYrLT5S2bZ8/OyR9p0fL5KU3LIV6wYyZfk9gySXpcUTMcOugk8PfaN9Fn/bpWeVH5aY5hX2IkvPXxDBb9x3W7zdtBEUKDOkIKn74zpNsXajKyerkhfy0BV3339C2/4Bun0inA==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all sources for an agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/agents/{id}/sources"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all sources for an agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the agent","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns all sources for the agent","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the source assignment","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"sourceId":{"type":"string","description":"The unique identifier of the source","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the source","example":"Project Documentation"},"type":{"type":"string","description":"The type of source","example":"file","enum":["file","url"]}},"required":["id","sourceId","name","type"],"title":"AgentSourceResponseDto"}}}}},"404":{"description":"Agent not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,10 @@
+{
+  "label": "API Reference",
+  "position": 3,
+  "description": "Complete API documentation for Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/api"
+  }
+}
+

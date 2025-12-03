@@ -1,0 +1,71 @@
+---
+id: authentication-controller-logout
+title: "User logout"
+description: "Log out the current user by clearing authentication cookies."
+sidebar_label: "User logout"
+hide_title: true
+hide_table_of_contents: true
+api: eJylkkFv2zAMhf+KwLOQZDv6FnSXAgNarO3JCAZGYWO1sqRSVNDA8H8fGLtZmu42X2QIT+TH9zjAjopjn8WnCA38THuTqhjpyLjKTFFMLcRmezQuELKPe4NVOoriHeor41J69VQWYCFl4tPl7Q4aWH/S3aQonEIg/h3SPlUBCxkZexLiAk27scBUcoqFCjQDfF+t9PgCqHylOkelPNewMOt/4hhkmpBpp2guRaEoWhFzDrN6+VK07ADFddSj/skxEzSQti/kToysU4mfoObGF8JtSoEwgr0ivfvw4gPWFEGpBSzQO/Y5EDTClcZR536rnmkHTXvusLEgXlQFD9PVr9mdH5Jg1M+C4F6tu7Ja3/YkXdIUciqT1dJBA0sNb3kOoBAfzu77+JxOg81t18cafTE3icms72+/TPjYkbnSmEuFBa09ab8tVnMI6DQEhVeyHk/2R+y145Ou2hnuU7fhb4L/u6VzcELvsswBfYTRQuWgTSabWtDXYGFm2Vjo1MamhWHYYqEnDuOo12+V+DjZd0D2uFXn2s1ooSPcEUPTDvBKR7XTOco61wFDVYAvezhe5nZ/9/AI4/gH9EVGoA==
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User logout"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/logout"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Log out the current user by clearing authentication cookies.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Logout successful. Authentication cookies are cleared.","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status","example":true}},"required":["success"],"title":"SuccessResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: mcp-integrations-controller-disable
+title: "Disable MCP integration"
+description: "Disable MCP integration"
+sidebar_label: "Disable MCP integration"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vm1v4jgQ/ivWfNpKoQRKu3v5xlFOrW5bKgo66SpUuc5AvE3s1C9tOZT/frKTgoF26Wl1n1DMzDzPjGfGzwpkiYoaLsVlCglcsfJSGFzUR3oghVEyz1Hdp1zThxwhgpIqWqBBpSG5W4GgBUICPIUIFD5ZrjCFxCiLEXABCZTUZBCBZhkWFJIVzKUqqIEErPVeZlm6CNooLhZQVTMXSJdSaNTOvhvH7idFzRQvHTFIIKBJGm4p0ZYx1Hpu83wJETApDArjnGlZ5px58/YP7SKsAkYNA/nwA5lxKSpXFsNrfJ4GNg3LaIfOVPAni4SnKAyfc1REzonJkPANT4gAX2lR5i5Op3uCvdOzry389ttDq9NNT1q0d3rW6nXPzjq9ztdeHMdQRU15D8Ff0wIPId4omVrmCzZBbUhQQQdUAxwCmixLD7QDImwByR2UClOcc4HuWpnVRhYwCzkEBlUEOreLw5A3a58QlThn8kWKfEnmUpHyXSt9tFWCyfB24oFRPaOaqvww+sBnQWoPMh1/DzDrDH+ClxlT6qTdLpatOsAxk0W7YKUjgcI3bUDhQcocqdjj8FeGJkO1e7uEa/IWJEB1o1dFINWCCv7PerYPJToK7InJqCHyRWhiMq5/pYk7LlVqTXaFJpOf4NG3JnNDVA8rKbwbsbpOsmm069F9fzq5gAh+H/bHw/H9ZPTn8BoiGExvJ6Or+4th/3w4hghG3myrB7c8GnIXSFNU15+ataYjnBvJvB/xQxpiuCSkaqrpQDKqB65DheE01//hztnGi1CFhEkx5wurMCVfBLqexNdSatSEMmNpHjocvdMWTAqBfgvcGmqs/kS+aw+ivcsHi6a5mgbAX1fKdfiJSkkFEVjxKOSL2L6WjWEVQU612eAOvd9Bot+pNsRjkAK1pgskfE42CZM55TuzAn/4I2IkUUhZ1sx5QoKkDS9QWrNPa5Ahe9x60FJqsOXs9161vT3KC9SGFuVbMV3okCvzwUOq3bh72urEre63SaeXnMRJHB/Hcfy3I8YUUoNp3/wynZcMxd6ieaGaNBAfUnJ8Qkq2TP9vSr5mDc6HvLpbpapCkXJXq5Zmej2dzVre26B7QxyWPcx3FoHhxhPZ1lPjRtWcGwlV5bj04t7PpY2QhsylFamnbujCiS4oWNkKXx0HuR3jvJZE5GpwszOnRbOHoZTaax0nzxJo78Zsr3hatTeyr54MBz9zwm4u/UA2efaXVnBNBlIh6d9c7l9mhmTHhoQWEbjYtW3nOG60G2WueVzijmtBvWpr9ObHCW4hr3eGwVfTLnPK/Tq29dNf5/5OPSNIeLPAfPqzCDJXruQOVqsHqnGq8qpyx08W1bIuyjNV3Fs7WfymSSGZ01zjHq21NoUv46Yhj8hmKLbpNodUOFX7THPrviCCR1zW0ruauTfGP0Yevf6jzxiWJnDZU8FOa68b4mbk1FH1L3KnIM0=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Disable MCP integration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/mcp-integrations/{id}/disable"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Disable MCP integration
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Integration disabled successfully","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier of the integration","example":"123e4567-e89b-12d3-a456-426614174000"},"name":{"type":"string","description":"Name of the integration","example":"Production Test Integration"},"type":{"type":"string","description":"Type of integration","enum":["predefined","custom"],"example":"predefined"},"slug":{"type":"string","description":"Predefined integration slug (only for predefined integrations)","example":"TEST"},"serverUrl":{"type":"string","description":"Custom server URL (only for custom integrations)","example":"https://my-server.com/mcp"},"enabled":{"type":"boolean","description":"Whether the integration is enabled","example":true},"organizationId":{"type":"string","description":"Organization that owns this integration","example":"123e4567-e89b-12d3-a456-426614174001"},"authMethod":{"type":"string","description":"Authentication method used","enum":["NO_AUTH","BEARER_TOKEN","CUSTOM_HEADER","OAUTH"],"example":"BEARER_TOKEN"},"authHeaderName":{"type":"string","description":"Custom auth header name","example":"Authorization"},"hasCredentials":{"type":"boolean","description":"Whether credentials are configured (never exposes actual credentials)","example":true},"connectionStatus":{"type":"string","description":"Connection status of the integration","enum":["connected","disconnected","error","unknown"],"example":"connected"},"lastConnectionError":{"type":"string","description":"Last error message if connection failed","example":"Failed to reach server: Connection timeout"},"lastConnectionCheck":{"format":"date-time","type":"string","description":"Timestamp of the last connection check","example":"2025-10-28T14:30:00.000Z"},"createdAt":{"format":"date-time","type":"string","description":"Timestamp when the integration was created","example":"2025-10-28T10:00:00.000Z"},"updatedAt":{"format":"date-time","type":"string","description":"Timestamp when the integration was last updated","example":"2025-10-28T12:30:00.000Z"}},"required":["id","name","type","enabled","organizationId","hasCredentials","createdAt","updatedAt"],"title":"McpIntegrationResponseDto"}}}},"404":{"description":"Integration not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,23 @@
+{
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for the Getting Started category"
+  },
+  "sidebar.docsSidebar.category.Core Concepts": {
+    "message": "Core Concepts",
+    "description": "The label for the Core Concepts category"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for the API Reference category"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for the Guides category"
+  },
+  "sidebar.docsSidebar.category.Contributing": {
+    "message": "Contributing",
+    "description": "The label for the Contributing category"
+  }
+}
+

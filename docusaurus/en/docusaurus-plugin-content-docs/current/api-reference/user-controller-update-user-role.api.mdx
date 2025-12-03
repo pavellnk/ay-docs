@@ -1,0 +1,71 @@
+---
+id: user-controller-update-user-role
+title: "Update user role"
+description: "Update the role of a user. You cannot update your own role."
+sidebar_label: "Update user role"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVstu4zYU/RXirlpAtiXHybRa1U0K1F20gyBZtIZR0OK1xVQiFT7icQX9e3FJeSwnntSDNhsH5H0cnnMfakGgLYxsnNQKcnhsBHfIXInM6AqZ3jDOvEUzZr9rzwqulHbMR6u99obpnQqmY0hAN2g4RVoIimXR3GrljK4qNH9GJzq81xVCAg03vEaHxkK+bEHxGiEHKSABg89eGhSQO+MxAUnYGu5KSF4DtmjY4o45fUAVcG+0gQRsUWLNIW9ho03NHeTgfUiAn3jdVJQvm17h7Prmwwi/+349yqbiasRn1zej2fTmJptlH2ZpmkICbt+QtXVGqi103SqCROt+1GJPKV5jPsX5K+4iMqkiFjpOoNDKoXLkz5umkkW4mDxZcmoHD+jz6/UTFo7IM0S2k2hDbmL0aNWj/CKGjTZBYhKWyFC+hnwJXNSSQIXj1ZCkeNN1Q2WWMesqASddsHo8UfjOaei66GMbrWyEOk1T+jmjYoBmfVGgtRtfVfteUfH/8STFv7MUsHglnz0yKVA5uZGRpq+tmdOi65K+xC8CEEyHOX/RpWJ3GikO1lxWFwYKtowLYdDak4hPulRjofGH/mhc6JqiX1ZMnyW7qIDCSZeANtvFBRr8ZrZcyb+DyKG7+2Jla6y02lrm9NcKkp0TpDBIBTZ3JzOCim7kZBDgfZx3NHB2Jaojwh23rA97AnGaTmejNBtl1w9Zml+leZr+8aajwmw6SB9E7uU4MDeEPOw86rm+y459NzvXagv1wispYre98MqHipql2Re6kuY9966kRigoM6PhYfZSbQdD97AFYqzZO7E22qvA/fV5dA6N4hWzaF6oeo3Rhumi8MagYLtSVhhzUn7/uQbpuY5vaZOEVJbYqdGVWsTNUZRh47gScpiQn520UnSTnt2YjtxXCdBUuT8O958OGh7m7GEc0l7a6FDNvQ7zvVfSslttkM0/Lt7Uy0OJ7JUNG1okQCiibTZO+8HHC6pPemKjrat5GHn9uuwXth9040nK9jg6/+Ny7zvB4Sc3aSoeCfAmzKFI7DK0OQ2ZPG7xfj+U2jq6bds1t/hoqq6j42ePZh8Zf+FG8jVRuGxBSEv/C8g3vLKvN+nwQd/c973zLXv3O+As9P6Qqz3RHhohB0jgL9zHz5Bu1SVQIhdoAq54cRuzjx7I/ej4Zit1ycFjXhTYuHdth8X6cf5w+zMksO6/K2otyMnwHVHKdxGlDnTE5U9nLVRcbT3fhskegtLfP3lGUTM=
+sidebar_class_name: "patch api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user role"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/users/{id}/role"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update the role of a user. You cannot update your own role.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"User ID to update role for","schema":{"format":"uuid","example":"123e4567-e89b-12d3-a456-426614174000","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"New role information","content":{"application/json":{"schema":{"type":"object","properties":{"role":{"type":"string","description":"New role for the user","enum":["admin","user"],"example":"admin"}},"required":["role"],"title":"UpdateUserRoleDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"User role successfully updated","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"User unique identifier","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"User name","example":"John Doe"},"email":{"type":"string","description":"User email address","example":"john.doe@example.com"},"role":{"type":"string","description":"User role","enum":["admin","user"],"example":"user"},"orgId":{"type":"string","description":"Organization ID the user belongs to","example":"123e4567-e89b-12d3-a456-426614174001","format":"uuid"},"createdAt":{"format":"date-time","type":"string","description":"Date when the user was created","example":"2024-01-15T10:30:00Z"}},"required":["id","name","email","role","orgId","createdAt"],"title":"UserResponseDto"}}}},"400":{"description":"Invalid role value"},"401":{"description":"User not authenticated or trying to update own role"},"404":{"description":"User not found"},"500":{"description":"Internal server error occurred while updating user role"}}}
+>
+  
+</StatusCodes>
+
+
+      

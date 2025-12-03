@@ -1,0 +1,71 @@
+---
+id: usage-controller-get-model-distribution
+title: "Get usage distribution by model"
+description: "Returns usage statistics grouped by individual models with percentage distribution. Dates are optional - if not provided, shows all usage."
+sidebar_label: "Get usage distribution by model"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVsFu2zgQ/RWCp11AdmTHSde6BU1b5NDdok0vaxiLsTi22FKkSo6SGIb+vRhKsRXHcZMcigUCBFE4M28eH9/MRioMudcVaWdlJj8j1d4GUQdYoQgEpAPpPIiVd3WFSizWQlulb7SqwYjSKTRB3GoqRIU+R0scp3Qgrxc1Jx2KSyAMAjwKF8uAEQOhl8I6EpV3N1qhSkQo3G0QYExbeygT6Sr0wBFXSmbyK39+6yx5Zwz6/1ZIH7n8Za+YTGQFHkok9EFms420UKLMZCDwxEBkIj3+qLVHJbMlmICJ1Nz5jxr9WiZ7fHzhOKGAUGgrrr78I5bOl0AykSEvsASZbSTeQVkZLjNOx5NBOhqko+s0zeLPME3Tf2UiaV21QLy2K9k0yRYbWvUKZO+sejmu09H1+DQ7m2Zn0+F0Oj2Oq4S7SHB4IbKPcKfLuhS2LhfohVvey4Sc8FFfQ3GJS6gNxW+jdCjee2cJrRI5WKEw1wpF4W753wVYZVDAauVxFeUQxYOoUA0P9ztKt321IB72xWiu1Au7eq8NoWf9x3hxdfkE16PxKU7Ozt8M8K/pYjAaq9MBTM7OB5Px+floMnozSdP0AO9zhhMqZwMGTjhOU/61R20s3T7O/iNjXr3GG1Qi1HmOISxrY9ZMTx6JJc4FVWV0Hik8+RY44abXQQfILb5hzjqqPL8/0i2c9gqfQvQAy841dm2C98CcasIyPLMav/rNHk+PtHZ/F03SBv0d7/h5YVEPTSKVDpWB9UtCu5Btis7H/KF4tHUpsxnbmQUtEwmWCu8qnctElswcGHY7Y6AEFtXawtL5nB0B1rXVQc4Po9hWbRJJ7jvaPrWd8vcjrx2BEe1pNg1BhQ6tpjkNPwkM9OxE9+cPpMpdoOem4bN7KcQfAc1yULhAqOIn4axZ/xnp3s6aXxf4tJtLbikolosviE2hZwGznjHspPRQHb2L3jLe4+wBsHkiSVO0hEdz6pKcbA6WD0fjPncO0cVzBoIVTzp5oUptRRySnKJEKhyPzRXG5wVUyEyexMZPyntbD+hv2kk5Z/NbukhnV/0iak+8dR7FxaerxzdXoNg7I/onEsm527OjYdp5EeQsCkZeuUAlRBfqnPkD0iFzu/fcfQSbnbn9vxaXTpCEd3RSGdCWNVt7w5Dbm5jJVoJJ79aL+F5mcrNZQMCv3jQNf27HEe8ySgdYmN64epKNI2vLQWzfcb23JN2Aqfmc5MH5/MJPbiVHyu72n1cW/c0Lx5FW+ivTK5s5uGccK7k1rV3BOf/hNVfkp90kskCI02m26cIu8hwr6kU9Wg6avot8eHctm+YnIfgvCQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get usage distribution by model"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/usage/models"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns usage statistics grouped by individual models with percentage distribution. Dates are optional - if not provided, shows all usage.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"startDate","required":false,"in":"query","description":"Start date in ISO format","schema":{"example":"2024-01-01T00:00:00.000Z","type":"string"}},{"name":"endDate","required":false,"in":"query","description":"End date in ISO format","schema":{"example":"2024-01-31T23:59:59.999Z","type":"string"}},{"name":"maxModels","required":false,"in":"query","description":"Maximum number of models to return. Defaults to 10. Frontend can decide how to handle aggregation if needed.","schema":{"example":10,"type":"number"}},{"name":"modelId","required":false,"in":"query","description":"Filter by model ID","schema":{"example":"123e4567-e89b-12d3-a456-426614174000","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Model usage distribution retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"models":{"description":"Model distribution statistics","type":"array","items":{"type":"object","properties":{"modelId":{"type":"string","description":"Model ID"},"modelName":{"type":"string","description":"Model name"},"displayName":{"type":"string","description":"Model display name"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"Model provider"},"tokens":{"type":"number","description":"Total tokens for this model"},"requests":{"type":"number","description":"Total requests for this model"},"cost":{"type":"number","description":"Total cost for this model (self-hosted mode only)"},"percentage":{"type":"number","description":"Percentage of total usage"}},"required":["modelId","modelName","displayName","provider","tokens","requests","percentage"],"title":"ModelDistributionDto"}}},"required":["models"],"title":"ModelDistributionResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: threads-controller-update-model
+title: "Update thread model"
+description: "Update thread model"
+sidebar_label: "Update thread model"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1vGjEQ/SvWnFppKR8hpN1bSiqVQ6UoCieEqmE9sE699sb2JkGr/e/V2AshCYdwAeyZeW/evHELtiaHQVmzkJDDfekIpZ9bE5zVmtzfppYY6I+VpCGDGh1WFMh5yFctGKwIclASMnD02ChHEvLgGspAGcihxlBCBpJ84VTNMBGExHK5uBF2K0JJIkRQEaxIYJCBL0qqEPIWttZVGCCHpokwYV8zpA9OmR103Tohkw8/rdxzxnsihTWBTOArrGutitju8MEzmfYEqi9tNw9UBG7WsThBkefbiiVgkdp3HM61p+ShuapXjl6wqjWnjScXNL2cXQ3o+4/NYDyRFwOcXs4G08lsNp6Or6aj0Qi67lTR1RF9nUFQIdZZRrHSxOJ8boKFrkuZvrbGJ+KT0Yi/PpLsdY+lRYlebIiM8E1RkPfbRut9PxAJXQbTc2UW5gm1OtSQGDCFTs8hRjRjg9jaxsSal+drBnIGtfDknsgJcs66KEjAHfsOEnHPYrxNTZK8aQwyqCiUViY3FmV0cSghh2FfZ9gq2Q0P0QmVcdYZsEnuXu316zDEEzt8cp68EFsb3dPP73rfGOXF3DoS17eLsz56FyNOIzJgnil2/G0EyelYsNNZrdr6UGH0eL+n5+V5g3o0d6CXMKw1KsPcG6f5Lgn3OoAM8riUqdQ6g9L6wAFtu0FPS6e7jo8fG3L7pOgTOoUbFmDVglSef0vIt6g9feByXF34ctcvw1fxiefjbA/9IZo9S4e64X+QwT/apzesW3cZlISSXGSXLuaJw+Ce018TPzwl/BIdnXZ7fT//DRls+jeJBYIcHD7zS4nPCdnGRuOSxrMWNJpdgzuOTUX58x/nEuRY
+sidebar_class_name: "patch api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update thread model"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/threads/{id}/model"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update thread model
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread to update","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"modelId":{"type":"string","description":"The id of the model","example":"123e4567-e89b-12d3-a456-426614174000"}},"required":["modelId"],"title":"UpdateThreadModelDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The thread model has been successfully updated"},"400":{"description":"Invalid model data"},"404":{"description":"Thread not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,10 @@
+{
+  "label": "Guides",
+  "position": 4,
+  "description": "Step-by-step guides for common use cases",
+  "link": {
+    "type": "generated-index",
+    "slug": "/guides"
+  }
+}
+

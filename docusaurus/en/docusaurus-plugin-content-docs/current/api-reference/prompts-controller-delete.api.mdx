@@ -1,0 +1,71 @@
+---
+id: prompts-controller-delete
+title: "Delete a prompt"
+description: "Delete a prompt"
+sidebar_label: "Delete a prompt"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNk0Fv2zAMhf+K8E4bYKzZ0F10K5ocAuxQDM2pCAbFZmphsuRSdDHD0H8fGHtb1uTQk23pgd/jIz0h9cROfIrbBhYPnLpe8n2KwikE4h8NBRJChd6x60iIM+zThOg6goVvUIHpZfBMDazwQBV8hEXvpEWFhnLNvlcCLB5bMrvddm3S0UhLpj/xjCTzl5PrljoHO+GYuHMCi2E4YWTsFZmFfXxGKXsl5z7FTFn1X1a3+rgkLpTWZXMgiiYPdU05H4cQxgXcoFS4vVZgjsTEJOaYhngSfl2tLoXbKMTRBZOJX4kNMSdGKRXEPWtomH1k7N/Gsj55MG5xigodSZt0Imf5SwuLm6XIzeSbonGdYFp+r8EfkxoTL0GjuhuH6LO5T0zm7mF7dRxvNOZcUUFrz9rPn1aoUKcorhbYSRvrU5bORUUu+3DZyX/E6c8QhX7JTR+cj5rnwEHv5hb/5VTB+kbTalMWvZimg8u041CKHr8MxOPc+atj7w7a9NOExmd9b2CPLmS68KBNUNTN+vB9Wd2P5h2redX7cujiqHG5MOgXKvykcf4/yr6czXO9+bZ53KCU30ihLso=
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a prompt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/prompts/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a prompt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the prompt to delete","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The prompt has been successfully deleted"},"404":{"description":"Prompt not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

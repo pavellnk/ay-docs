@@ -1,0 +1,71 @@
+---
+id: usage-controller-get-user-usage
+title: "Get usage statistics by user"
+description: "Returns paginated user usage statistics with search, sorting, and filtering capabilities. Includes activity status and optional model breakdown per user. Dates are optional - if not provided, shows all usage."
+sidebar_label: "Get usage statistics by user"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdWNtu20YQ/ZXFvtQBaJl26gfrzYnTwEBzQWKjQA2hGJEjc+PlLrM7dCII/PdilhdR1MWS2r4UMGCb3Jk5nDlz24VM0SdOFaSskWP5Bal0xosCHpUBwlSUHp0oPTyi8ASkPKnEix+KMuERXJJFwltHyjxGAkwqZkoTOmUeRQIFTJVWpNCPxK1JdJmiF5CQelY0D+pKH4RssA9a5DZFLaYO4Sm1P4wognF0I3EDxMIOl4dPhZoJY0kUzj6rFNNI+Mz+8AK0riGPZCRtgQ5Y4jaVY3nPj99aQ85qje6vR6R7jy48lpEswEGOhM7L8cNCGshRjqUncMQAZCQdfi+Vw1SOZ6A9RlKx376X6OYyGnjzK8uJFAiFMuL26ycxsy4HkpH0SYY5yPFC4k/IC81mLuKLX0/j89P4/C6Ox+FnFMfxnzKSNC9qIOxZWVVRhw1NegSydyY9HNfr87uL1+PLq/Hl1ejq6mo3Lq1yRQei+ljmU3TCzkLMfYh+wcw7OT89j+P41Ujc4AxKTV6QFZfxaDPiy7hDZoLKFWR2NvP4T6GRFf5JFey4NlmUNav4tsHbia5OqkOJFoQEocvZcJ2DDdLpXLBqYZ3AHJTeEuRvNjOj1OLOoHKmv5kfCO43hToNDrOOOlCrriL7hMYP/GXKXI4fZP2uMYqe+M/Eeo6gBk/XTT2RkWTdHxnp5KWP+ORSdIc6meFbFhQn4BM0KVc56wQfq/8bEJRfbP4m8EmjfzdWVVfND1wW37RV8UDcf2RIGToG1KgTKRIojWlTb+vyvqy6TGqEJGtLbz9QrsQttOZX3bdMrdUIRlbVhNH6whqPns9fxDH/WsV4v7HLOCSn8BlT4cskQe9npdbzXi9ZZp7IkSAFgp39ZBSoYwgNMQYoCq2SIH/2zTOQRe/Dmi+x02+YMNkKx62Eu1nADwR7fscypcA54AApwty/bIPdz11rMWDIMMLB6u2NrHopsJ9QoFkj9i5Uh/3k6kpSRW1yLqWakjaUurMEuknzwC/KlA/8Yi1dZu+ppz2/rikUhj218NlVDeLEo56dZtZTkxzCGj1/xZpXas0GLzUtdMzMwFNSOa6Z/R08Leef0H9PTKl1Pcd0b17JSPJjmLZpVUVS+WC8H9g2x7YmfIb1VykvEmu8StFhWpsJUc9Xy8oamz8MprFVbx/L6mB1H1rX5mteB6H9iF2LtcxOlS80zA8RbUQ6Fc146TbJtwXdFmhAyUiCoczZQnF9z5UnB9xxrdaQA9fNuYGZdQmTA+alUZ4bwCYUndWDsizkV+kxXQYruO6wLPvS5lcOKYayv6JovyR7u5JedSXekV8FugQN8Rz+ourP3dl2IvuFuxMndSi+3EN7PfKh41yfSKvc6IU52jhy9PBxy1YUxqbVznxDVlZD200V79Xmfr3dbGww2HTJv5azPSjdHlOj4GWm7Y7rqf15vXMyI7X+NAubz+4Urof7F8P0AX6qvMyF6YbnUCK6uZ7zZzmzV1E7mr+o+ONAYTON9/XFIW0I9L7dYAgSnkHVJbin9fwyHoa3XXQa7L2ALH0cIjIZSjZO74VpUzS/NMNTwy1WQvDI+6m8TnNlRL27TiKZI2WWl9zHsN4UQJkcy7OQEWdh7uYChO65Xm8nPDXObPBPY/Q6VCTx1joU159v1z2VoRicEf0TkWTd9dnzUdxMW5BwSAMjraccAh2bAfc90vrcN523HWbF/GI5u/0fLyoakhL+pLNCgzJhMHOBwHUsuZbUaVNHcxLJLJTiB7lYTMHjvdNVxY/rTYATOVWeSbzcFLa6dMdtxUZoTzgf3I08gy75nOQNZn/DWy8jdphdXnscafSou4YdgNoy8C/B2ft+YQek7qLjSEwH3irsIkl7qXEkksOuEHYBaS8wjnXJ0XcAL4BqLySOxPWf7Pg7IG+7l1jCn/A/TtU7zMOkimSGEIboh0Wj5DpJsOjzc20fr/pd7f27O1lVfwM3e9Y8
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get usage statistics by user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/usage/users"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns paginated user usage statistics with search, sorting, and filtering capabilities. Includes activity status and optional model breakdown per user. Dates are optional - if not provided, shows all usage.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"startDate","required":false,"in":"query","description":"Start date in ISO format","schema":{"example":"2024-01-01T00:00:00.000Z","type":"string"}},{"name":"endDate","required":false,"in":"query","description":"End date in ISO format","schema":{"example":"2024-01-31T23:59:59.999Z","type":"string"}},{"name":"limit","required":false,"in":"query","description":"Number of users per page (1-1000). Defaults to 50.","schema":{"example":50,"type":"number"}},{"name":"offset","required":false,"in":"query","description":"Number of users to skip for pagination. Defaults to 0.","schema":{"example":0,"type":"number"}},{"name":"search","required":false,"in":"query","description":"Search term to filter users by name or email","schema":{"example":"john.doe","type":"string"}},{"name":"sortBy","required":false,"in":"query","description":"Field to sort users by. Defaults to tokens.","schema":{"enum":["tokens","requests","cost","lastActivity","userName"],"type":"string"}},{"name":"sortOrder","required":false,"in":"query","description":"Sort order (ascending or descending). Defaults to desc.","schema":{"enum":["asc","desc"],"type":"string"}},{"name":"includeModelBreakdown","required":false,"in":"query","description":"Whether to include detailed model usage breakdown for each user. Defaults to true.","schema":{"example":true,"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"User usage statistics retrieved successfully. Includes pagination metadata and optional model breakdown.","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"description":"User usage statistics","type":"array","items":{"type":"object","properties":{"userId":{"type":"string","description":"User ID"},"userName":{"type":"string","description":"User name"},"userEmail":{"type":"string","description":"User email"},"tokens":{"type":"number","description":"Total tokens for this user"},"requests":{"type":"number","description":"Total requests for this user"},"cost":{"type":"number","description":"Total cost for this user (self-hosted mode only)"},"lastActivity":{"type":"string","format":"date-time","description":"Last activity date (null if no activity)","nullable":true},"isActive":{"type":"boolean","description":"Whether the user is considered active"},"modelBreakdown":{"description":"Model breakdown for this user","type":"array","items":{"type":"object","properties":{"modelId":{"type":"string","description":"Model ID"},"modelName":{"type":"string","description":"Model name"},"displayName":{"type":"string","description":"Model display name"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"Model provider"},"tokens":{"type":"number","description":"Tokens used for this model"},"requests":{"type":"number","description":"Requests made to this model"},"cost":{"type":"number","description":"Cost for this model (self-hosted mode only)"},"percentage":{"type":"number","description":"Percentage of user's total usage"}},"required":["modelId","modelName","displayName","provider","tokens","requests","percentage"],"title":"ModelBreakdownDto"}}},"required":["userId","userName","userEmail","tokens","requests","lastActivity","isActive","modelBreakdown"],"title":"UserUsageDto"}},"pagination":{"description":"Pagination metadata","allOf":[{"type":"object","properties":{"limit":{"type":"number","description":"Maximum number of items per page","example":50},"offset":{"type":"number","description":"Number of items to skip","example":0},"total":{"type":"number","description":"Total number of items available","example":150}},"required":["limit","offset"],"title":"PaginationDto"}]}},"required":["data","pagination"],"title":"UserUsageResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

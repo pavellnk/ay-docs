@@ -1,0 +1,71 @@
+---
+id: mcp-integrations-controller-validate
+title: "Validate MCP integration connection"
+description: "Validate MCP integration connection"
+sidebar_label: "Validate MCP integration connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMFu2zAM/RWBpw3QlqzrLr4V6Q49FCu6bjsEwaDITKxOllSJDhoY+veBspc4SQ87xZEovsfHR/bgA0ZFxru7Giq41+HOEW6Ho7TwjqK3FuPvnbKmVoQgIaioWiSMCaplD061CBWYGiREfOlMxBoqih1KMA4qCIoakJB0g62CqoeNj60iqKDryivaB86QKBq3hZxXnCgF7xImjr+az/mnxqSjCcwMKvg5EDLeiYipswQStHeEjjhYhWCNLvez58Qv+gmDEdGvn1HzwxBZBzIDXql1Erb23qJyIM8o/GqQGoyCGhTmKJvYHamlTmvEGrlMfFVtsDhokyVoFdTaWPMP9pzUKditSdrvMGItpg/FJvq2MLhfPIiEcYdxitUDeW8TVF+KqL6LmtE+l5rbQAmqq5wlYIw+TliMzThn8ZXDRIspqS0Ks5nWulHGnhYKC+8c6nJLpkXfETDY0SbLUewzNVYSyFBJcezz4+iJW/KQM+e5nl9fGmNiYOE8iY3vXF1gSW3ZstDq8GHSrwL3prkGUaet1YeCQEKL1Hgem+BTcREbvYLZef5Zb+o8m0zQ0CbmsuIZ2fgi/Fjwzb5zJomFjyhuHu4uWvDUoDiLEdMICZx7iP30cT6OhdI8FqwCk21VGYhxdP+v2hMWB58QvtIsWGUcZAldtHw3CPGG0BKq0uyDFisJDYtXLaHv1yrhj2hz5uOXDuN+UGinolFrFmfZQ20Sf9dQbZRNeMHrsAPg3eNos/fiuGRO+Y6Hyu0HUh3/Awl/cD+stLzKEhpUNcaCPlzcaI2BJk8utg3vsIM9Hr59f4Kc/wKZDuLE
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Validate MCP integration connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/mcp-integrations/{id}/validate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Validate MCP integration connection
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Validation result","content":{"application/json":{"schema":{"type":"object","properties":{"valid":{"type":"boolean","description":"Whether the integration validation succeeded","example":true},"capabilities":{"type":"object","description":"Discovered capabilities from the MCP server","example":{"tools":5,"resources":3,"prompts":2}},"error":{"type":"string","description":"Error message if validation failed","example":"Connection timeout"}},"required":["valid","capabilities"],"title":"ValidationResponseDto"}}}},"404":{"description":"Integration not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

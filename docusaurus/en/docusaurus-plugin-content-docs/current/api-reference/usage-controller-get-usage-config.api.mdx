@@ -1,0 +1,71 @@
+---
+id: usage-controller-get-usage-config
+title: "Get usage dashboard configuration"
+description: "Returns configuration settings for the usage dashboard, including deployment mode and cost display settings. This endpoint helps the frontend determine which features to show based on the deployment type."
+sidebar_label: "Get usage dashboard configuration"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVMFuGzcQ/ZXBnLey20MPuhlWkPpSBImNHgQjoMjZXaZccsMZKhGE/fdiuFK8lpxDr9FFAsWZee/NezyiI7bZj+JTxDV+JCk5MtgUW9+VbPQcmER87BjalEF6gsKmI3CG+10y2TXgow3F+diBozGkw0BRYEiOwEQHNrGA8zwGc/jRbAWPvWeg6Mbko0BPYeTavc0pCkUHjoTy4CPBt97bHloyUjIxSALu0zfYGSYHKdayxWQ5jLTCBtNIM4UHh2t8UtT3KUpOIVD+3JGcj1rfYYOjyWbQmYzr7XODmXhMkYlxfcQ/bm/167Vetf5CrUySPe3JARdribktIRxWcNb2UiEf25SHufbnamGDtsoiisKMY/C21tx8YYVyRLY9DUZ/KX1cY9p9ISvKK6sQ4mcinj9RaP9KLOQWt3cpBTIRmwuK//QkPeVLiT0DU2h/62ufFWzOu+LzmsDsjQ9m54OXg+Kn72YYA+FacqGpQV3hfWJ5eBHgf+CpMi214z6V4GBHZ/HIgZ+t8fSwgsdcqBp4AbuB1gSej21IxS0Y8luQHbWmBLkvOVO0hwVcluxjd4V2MxeAPVWA1ZUXtW0dqiSsCbaESoKrA074l/Px6dMGJ/UAy4asH0z4EIydN3qCEMuwo3wF4e96DKkFNxfCWCs1RYU1WxRhllGtNmPam1CIlwj+nCZNxNfis/pm+9pHb2/zWrC3GDw3KF5mli95/HgK30YSTvppUEynycQ7N/gI9a4WDyR90oB3VN1upMc13tRH6saew82U9z+Srb6pyp3m3h1K9Az3KRPcfXi40vCxJ7i4A8sbDWrv+e7vq9tTWI3VsCryMbEMpto7mkEnvie5fEZfvyOXGI4v+f/VnumTf4W+y80YjI/q9JKDkp63ucXKZdZV9/ncoEZY/zketf9TDtOkx18L5cO85b3J3ux0wdvnqcGejKOM6+0R/6WDbt1aGtUy1e24vn5Wp6W93r97xGn6DweblK8=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get usage dashboard configuration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/usage/config"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns configuration settings for the usage dashboard, including deployment mode and cost display settings. This endpoint helps the frontend determine which features to show based on the deployment type.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Usage configuration retrieved successfully. Returns deployment mode information and cost display settings.","content":{"application/json":{"schema":{"type":"object","properties":{"isSelfHosted":{"type":"boolean","description":"Whether the deployment is self-hosted. Determines feature availability.","example":true},"showCostInformation":{"type":"boolean","description":"Whether cost information should be displayed in the UI. True for self-hosted, false for cloud deployments.","example":true},"defaultCurrency":{"type":"string","description":"Default currency code used for cost calculations and display","example":"USD"},"costDecimalPlaces":{"type":"number","description":"Number of decimal places to use when formatting cost values","example":6}},"required":["isSelfHosted","showCostInformation","defaultCurrency","costDecimalPlaces"],"title":"UsageConfigResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

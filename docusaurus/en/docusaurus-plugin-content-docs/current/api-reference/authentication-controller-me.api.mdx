@@ -1,0 +1,71 @@
+---
+id: authentication-controller-me
+title: "Get current user information"
+description: "Get the current authenticated user's email and role. If access token is expired but refresh token is valid, automatically refreshes tokens and sets new cookies."
+sidebar_label: "Get current user information"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVU1v2zAM/SsCL7t4aTpsF59WtEXRARuGoT0FwaDYTKxWllySShsE/u8DZadNkx562GU7+Yt8fHyPordQI1fkOnExQAlXKEYaNFUiwiDGJmkwiKusYG0SI31gg6113thQG4oeJ+Z6aWxVIbOReI/BODb41DnC2iySGMIlITcvH9fWu7pQ7NhaxfZ+s4vCEYQzPqOwCfhoqhjvHfIECogdklW61zWUcPZC0MVwHoNQ9B7pd4tQQGfJtihIDOVsXgAhdzEwMpRb+DSd6uW1ALeMZFxYRmozoiEUcrjG2nDKTS6T95vc9Ej0EQmf6dfFPl9jCbUJ5V3FIBhES9qu8yPjkzvWulvgqsHW6p1sOoQS4uIOK9EmSFsWN7DO4u+FsZALKyje6mM0qq4JmaEAfLJt5zVLnfw6Pk6q2EJfgJr5TuAcWgCG1EI5A1u3LkCRUWF+WEexg23fi51D9zG+xSaYi4jQK0l8SDpZWnaQYiQ+1pgXIE5y3nf8Ndp9IRH6XtM/T0+PPf8RDwf9owlxGNOdycuYQv33XGyR2a7eIcklUSSzC9+X5fXkm6V1HusjjXaZe7pkyGNpvrx1HA6KVDEs3SoN58+gAv3HmvQFiF3p6jgA1swWpYm6gVaYW7HSQAknOkcneYAZaf28eHSj5MbGemebFByb80hozn5eH7V406A5iDH7EQUo9hB7OpmOJthKTVDeXWRpbZZ/OHp5s++2ejpYcoflty+W/gt/hHFaBJ/kpPPWBd04ifKWHHyZgdIGdU29ayKLvtxuF5bxlnzf6+uHhLQZ/FpbcnahVs3mfQEN2hoJytkW7nGj/lUVdur72vqkxY8Gv9+fkavLG+j7P2OVml8=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get current user information"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/auth/me"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the current authenticated user's email and role. If access token is expired but refresh token is valid, automatically refreshes tokens and sets new cookies.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"User information retrieved successfully. If tokens were refreshed, new cookies are set.","content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","description":"User email address","example":"user@example.com"},"role":{"type":"string","description":"User role","enum":["admin","user"],"example":"user"},"name":{"type":"string","description":"User name","example":"John Doe"}},"required":["email","role","name"],"title":"MeResponseDto"}}}},"401":{"description":"Not authenticated - no valid tokens found","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}},"500":{"description":"Authentication configuration error","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

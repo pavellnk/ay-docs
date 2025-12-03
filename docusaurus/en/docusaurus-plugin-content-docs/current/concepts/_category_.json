@@ -1,0 +1,10 @@
+{
+  "label": "Core Concepts",
+  "position": 2,
+  "description": "Understand the fundamental concepts of Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/concepts"
+  }
+}
+

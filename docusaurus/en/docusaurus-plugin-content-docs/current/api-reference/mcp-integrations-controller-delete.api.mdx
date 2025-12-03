@@ -1,0 +1,71 @@
+---
+id: mcp-integrations-controller-delete
+title: "Delete MCP integration"
+description: "Delete MCP integration"
+sidebar_label: "Delete MCP integration"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFkkFr3DAQhf+KeacG1G5SctItbPaw0EAo6SksRbHGa1FZcqRRqDH672XiLXW2KT3JGj/NvPlmZsSRkmEXw95C464d94HpuITyNgZO0XtK3y15YoLCaJIZiCll6McZwQwEDWehkOi5uEQWmlMhBRegMRruoZDbngYDPaOLaTAMjVJeX/E0SobMyYUjaj1IojzGkCmL/vPltRyWcpvcKL6gsXLZLNZsk0vbUs5d8X5CVbj+38MQueliCRa1KrA5SksY2vGjW0HAQZ3luH0t2Nxt75uVEAoDcR+F44oW99DYnCfdzM5WwULpZUF5EF5dFMfs2AuSm6kEl5ttTNTc3O9x7uOhp+ZM06wVCpJ70V59uoRCGwOblqFn6XiMmQcTpORpjP/s7E3h+ffMmH7yZvTGBeFdkpd/S8vvcFTQzgrNPmYWxTw/mUzfkq9Vws+F0rSQeDHJmSeB8DjDuizfFrozPtNfZqQpCrJRH76eNvCi+bNYb02egiZMgsf4Ijco/KBpWeN6qKtB3u6+7B52qPUXORQVDw==
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete MCP integration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/mcp-integrations/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete MCP integration
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"Integration deleted successfully"},"404":{"description":"Integration not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

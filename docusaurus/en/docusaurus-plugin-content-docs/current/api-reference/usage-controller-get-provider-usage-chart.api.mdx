@@ -1,0 +1,71 @@
+---
+id: usage-controller-get-provider-usage-chart
+title: "Get provider usage time series aligned by date (chart-ready)"
+description: "Returns rows aligned by date with tokens per provider. Shape: { timeSeries: [{ date, values: { [provider]: tokens } }] }"
+sidebar_label: "Get provider usage time series aligned by date (chart-ready)"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVlFv2zYQ/ivEPSUAHdupm256M5qt8MPQIkn3YhjDWTpbbCWSJemkhqD/XhwlW7KdpPM2YE+GJX7ffby7704VZORTp2xQRkMCdxQ2TnvhzJMXWKi1pkwstyLDQOJJhVwE85W0F5acsM48qozclbjP0VIiKhFUSffkFPlEzKsIk+IRiw0/qMR8B1kkO6Ja1AtRgwRjySHLmGWQwGePa3pvdHCmKMj9tabwqcU2r3J0ASRYdFhSIOchmVegsSRIwAd04RYDgQRH3zbKUQbJCgtPEhRf9NuG3BYk+DSnEiGpIGxtA3VKr6Gu5Z6NdPafce0S8FOyw7r8ropAjiuxIxAXdLW+ksJY0qikQB1yZ6xKLw+U0HcsbcGRm4MgXxFXmoyKWfaPtUW8mN2+oGB8/YYmb2/eDeiXX5eD8XX2ZoCTtzeDyfXNzXgyfjcZjUbP6FuwHG+N9uSZ8Ho04p9DEbEfBo4w66WIu1H42I4gITU6kA6MRWsLlcZuG37xTFCdVs8sv1Aae8xxbwbVhO9a/FTFtHVML3BjpQMLdfrYAq09uoujc8hZVoFK/3M9zHvac8dF4gYWZiVCTqwEhTVKM9nKuBIDJJFnwMKhltBqOrngw6n7xco4EXLl4w1BAhbFx1V04+vC24bspOtNuYzOeDYmh/loSU9nLHDf7mfhp3tULaFUPjgsziL4o8XUEkxR4EG//A35DaSW4LcaV8aldBb+fo/iDGw3Wvnzrh8h4kLpQE5jccnuh6BCtOduvv4Za38bDNQLft/Ngjm0JW7bY3EKfti74848RY5jip5/nsF3w/2u9XxLEpXimsc8TLNSaRGPMkdJITe8NNbUrISQQwLDDb8f7trUD9N2ZXhyj82+WPBcW5nG1Y2ONkXvjSMx/TQ7zWZO4uiM6J+QwNzN2fHVqB07mPLY4StY40OJceC0Q/cDhc5LUfPB+DhewhdpN+kuj+VV3ZD7P1d525CBvoehLVBp7teNi1ZrqjOHeNNmJjT14VTFCi0k5MYHPlRVS/T02RV1zY+b/cOTJVMel0VvP32l7dHej1IhAeAF98L5brO/fvrFJJ+5l59NTCOl92Hwr7X09vArEbtt3wVc8B+nOCL7o5aQE7IqTnoDm6Yp2dBDnSzTuu/JD789QF3/ABhOlZ0=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get provider usage time series aligned by date (chart-ready)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/usage/providers/chart"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns rows aligned by date with tokens per provider. Shape: \{ timeSeries: [\{ date, values: \{ [provider]: tokens \} \}] \}
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"startDate","required":false,"in":"query","schema":{"type":"string"}},{"name":"endDate","required":false,"in":"query","schema":{"type":"string"}},{"name":"provider","required":false,"in":"query","description":"Filter by provider (e.g., openai, anthropic)","schema":{"example":"openai","type":"string"}},{"name":"modelId","required":false,"in":"query","description":"Filter by model ID","schema":{"example":"123e4567-e89b-12d3-a456-426614174000","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Chart-ready provider time series","content":{"application/json":{"schema":{"type":"object","properties":{"timeSeries":{"description":"Aligned time series rows by date with provider token values","type":"array","items":{"type":"object","properties":{"date":{"type":"string","description":"Date of the data point","format":"date-time"},"values":{"description":"Tokens per provider for this date","allOf":[{"type":"object","properties":{"openai":{"type":"number","description":"Tokens for OpenAI"},"anthropic":{"type":"number","description":"Tokens for Anthropic"},"mistral":{"type":"number","description":"Tokens for Mistral"},"ollama":{"type":"number","description":"Tokens for Ollama"},"synaforce":{"type":"number","description":"Tokens for Synaforce"},"ayunis":{"type":"number","description":"Tokens for Ayunis (internal)"}},"title":"ProviderValuesDto"}]}},"required":["date","values"],"title":"ProviderTimeSeriesRowDto"}}},"required":["timeSeries"],"title":"ProviderUsageChartResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

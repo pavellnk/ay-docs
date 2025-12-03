@@ -1,0 +1,71 @@
+---
+id: models-controller-manage-org-default-model
+title: "Set or update the organization default model"
+description: "Sets the specified permitted model as the organization default. If a default already exists, it will be updated to the new model."
+sidebar_label: "Set or update the organization default model"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVk1v2zgQ/SvEnLYAHdupm+7qliZ7MLAfQZJiD0FQjKWxxZYiWXLkRDX03xek5G9nNyh6qA+2Rc48zryZedQKCgq5V46VNZDBHXEQXJIIjnI1V1QIR75SzFSIyhakBXYG1i/QqG8YHUVBc6w1n4npXOD6SaD2hEUj6FkFDlIoFk9KazEjUbsCIyTbBGboqUM/AwnWkU+w0wIy+DMuhytr2FutyX+q0OCC/vaL6+6YZAASHHqsiMkHyB4eJXj6WlPgD7ZoIFulR+WpgIx9TRJya5gMxy10Tqs8HTn8HCIPKwh5SRXGf9w4ggzs7DPlHM/xMUBWFOLuhp0URox44xHYK7MAeUDxfUliei3sPGV+yC5bEYgjyacIBgn0jJXTEX98/pYm7y7eD+jX32aD8XnxdoCTdxeDyfnFxXgyfj8ZjUbQtnIn9YfjeB8lsOIEeEd8QOs1W2jbDiM4a0KX9PloFH8OWqfOcwphXmvdpBys35b5hYbpkoYfVg31Sv5V8QL/0EowWNHrYKLlGmjj7rxdqoL8KQgydRWrYB0ZVCABDZfeOpWDhEoF9hjZsFpjhSAhNAbn1ucUTZvaqBDrdRzI+syjYAoVnMbmr1en1DucTq1zfzktjWZR44JOBxm99iDFL6ifsAli7fcmHqLCpc9LtaTdWs6s1YTmKOR/SuKS/A6mCgLX/q2EHM0de8Lqu8ByNCJ07imyW8JgTUz6e9F8QjgaS1VA33g7DbRfvp7+PYJ289uPb2esb9Yt/kdPcxrt236gtyM+OTXVU7NErQrRq6lw2GiLidrJaHJsf3OgZ8aymNvaFCllxkVUZ0h7qZcr4tJGnXd1GmfkEjIYdgZD6xfDrfQF8suNvEdpuN1K/O9rWTwlya+USgnKzG0qbU/dZZo5cWU9icub6cmJObARuxYSYsCd7fhs1Asd5lHoIh/OBq4wSVynOlGDt8L5/7q5F85qK6M/xUXeDwjTMw+dRmUixbXXqUip0JtOkGB9J0hdsR8llDZwtFitZhjoo9dtG5e/1uSbrgWW6BXOYqEeHlsJJWGS3YcVfKEGMrjq2Bjcd3OzRF3HeI4umFauPS7znBz/p+1uz958vAcJs/4NI6YCGXh8Apm+M0hvM9E53U5pbbVVyQw6yPj5F4HgS5M=
+sidebar_class_name: "put api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Set or update the organization default model"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/models/org/default"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Sets the specified permitted model as the organization default. If a default already exists, it will be updated to the new model.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"permittedModelId":{"type":"string","description":"The ID of the permitted model to set as organization default","example":"123e4567-e89b-12d3-a456-426614174000"}},"required":["permittedModelId"],"title":"SetOrgDefaultModelDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully set or updated the organization default model","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The id of the permitted model"},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"type":{"type":"string","enum":["language"],"description":"The type of the model (always language)"},"isArchived":{"type":"boolean","description":"Whether the model is archived"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"}},"required":["id","name","provider","displayName","type","isArchived","canStream","isReasoning"],"title":"PermittedLanguageModelResponseDto"}}}},"400":{"description":"Invalid request payload"},"404":{"description":"Permitted model not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

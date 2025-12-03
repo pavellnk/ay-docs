@@ -1,0 +1,71 @@
+---
+id: invites-controller-delete-invite
+title: "Delete an invite"
+description: "Delete an invitation (only allowed by the user who created it)"
+sidebar_label: "Delete an invite"
+hide_title: true
+hide_table_of_contents: true
+api: eJytk8Fu2zAMhl+F4KkFhCXbuotvRZNDgB2GoTkVwaBYTC1MkVyKSucZfveBtrEWaVDssJNtmuT36yfVo6Ncs2/Fp4gVriiQENgIPp68WA3DVYqhAxtCeiYH+w6kISiZGJ6bBDWTFXLg5RoNppZ4rNo4rHCjTSjfpSicQiD+4UbAFEeDrWV7JCHOWD30GO2RsELv0CDTU/FMDivhQga96mutNGjORN83BNvtZgXpMEobpRNIgomGBnPd0NFi1eMh8dEKVljKiJGuVWQW9vERh2Gn5NymmClr/qfljT7eEmdKYzPsiSLkUteU86GE0M1gh4PBm+Xntw220RZpEvvf5F6EgjQ+z42n0gvsyTuISeCQShwZX5bLS4lCHG2ATHwiBmJOjMNgUOyj+o0TKePO4JGkSTqyv5aNVle4mJMWvXeDOjk20/KdzuSQFCxegrp425XoM9wlJrj9trk4qbMceJ1hUHtPuR8/LNFgnaLYWrDqVXibshxtVOS8KmcLS+fIfuxAUf7Hcs+7IvRLFm2wPqr3hYNiJrtePDVYeafONimL/uj7vc205TAMGn4qxN3k4smyt3s18KFH57O+O6wONmR65zhX3+cbcg3/cAMuap+DNnZqvQ1Fv9DgT+qmazjshle7sVp/Xd+vcRj+AJXwcQ0=
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete an invite"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/invites/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete an invitation (only allowed by the user who created it)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the invite to delete","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The invite has been successfully deleted"},"403":{"description":"Unauthorized to delete this invite"},"404":{"description":"Invite not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

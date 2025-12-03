@@ -1,0 +1,71 @@
+---
+id: agents-controller-find-one
+title: "Get an agent by ID"
+description: "Get an agent by ID"
+sidebar_label: "Get an agent by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV21v4kYQ/iur+dRKJjGE5Fp/Q0kV8aG9KJd8aKMILfYY9mrvbnbHEIT836tZG868pEeVVCchgdnxzDPPvO4ajEUnSRk9ziCB0Qw1+WujyZmiQDfJlc4+a4QIrHSyRELnIXlag5YlQgIqgwgcvlTKYQYJuQojUBoSsJLmEEGGPnXKsgVI4GGO4vFxfCNMLmiOQrI9QUY4JKdwwYZ8OsdSQrKG3LhSEiRQVcEOrSzb9OSUnkFdP7Npb4326Fl+EMf8tWvyHqly2nfMLRXNw6O3mKpcYSbGNxBBajShJlYhrS1UGng5/+pZz7qDq8Vhpl8xJabGMYukGhQq68i0WI/xUGn1UqFQGWpiFG6HFIgAX2VpC9bSH1zg8PLqUw9/+XXa6w+yi54cXl71hoOrq/6w/2kYxzFEe3zVURukU8Cw5Nv2rytPpkQnvlTWGkdi5L3yJDWxFaU9uSplbf40a903RG7cG2b/NJWQDoUUcyxsXhUi3QDxLRC5AXImRsVSrryYorCmUIRC6kxYZ3L0XhktizMGW3l04/dGiJWI5dwIswyZpfwHBi11KAmzEZ0GMpOtq6RKFMs56m6qSy9afTvYBvHgotcf9OL+Qz9OYv6cxXH8VxcPK+6x0kCbzT4UVCE9iVbp+5CVJsPisOwZRTgSqdG5mlVNl2uz7VjAmso9NWxt/5tZ6g2bFrBQGTpuCxa1VAxNFsXnPHTL/7ljNBz8uI5xaL/hpe4Sc4rSjfTbir+xmylvC7n642TE7QvfQX5798DI6+5Ye2rmXCCn49IuhucISFHQ8TtrvW9H0w0ZqJ/rCMiYwh/P1HAUmtlMY8YDcSdHW9+kc3IFESjC0n9/EDWnpzDDEhtGGMoOIUoTOo008ShdyjMddVUyKXMiywPbVC7FyUuFLqA7kF/i1CvCyWbARuBRZxMspWJTTYOapLJAnUk3wUUjlJoMJ/iKaRWgRlCmdtLC458OG8vto3WmtATP+6EL7neC82DMbmzqjQtvBKc9/OjwvLvqG1wtrPKjxk+j9d0jchuaH9WTjgC4c4YjIW5MWjFfYSKwhf9eKUe056rATnG0j5UrDlMydJMt0dvGsp+pYRv/EsR2E/ZfmtPOMrZdd7pbRXeYb8bnpjl9q4R9GHsA6giG8fCwXoKs0IZEbiodwnd5bCsfhyYhC+HRLdAJdM64UIokZ3zDgFBcAcfum7dIQup2lZiumtW9RJobnt4zDIXGd48Ezhsd52uV1aHpsClW/sw85SaEfOPkqtLKi2vjUIzuxkeDvycjuhIRsO5Gtn8Wt9cJmfLCxG5Z46mU4SLRrg5HHdkxuk1Iwlc6t4VUIVs5pZJ16+SWqAgSlTFdc+OJ/1+vp9Ljoyvqmv9u2nPwfSGdklN2+2nNI4x/Z5DksvB4AGF7K4Kf7tuc+1mcco87in3TKjU3yoUsKn6CCP7GVXObDJNyjjKsDE/r9mCUpmip88rBBY0vg9ssuP3tAer6HzSM+XA=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get an agent by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/agents/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get an agent by ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the agent to retrieve","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the agent with the specified ID","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the agent","example":"Customer Support Assistant"},"instructions":{"type":"string","description":"The instructions for the agent","example":"You are a helpful customer support assistant. Always be polite and professional."},"userId":{"type":"string","description":"The unique identifier of the user who owns this agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the agent was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the agent was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"model":{"description":"The model configuration for this agent","example":{"id":"123e4567-e89b-12d3-a456-426614174000","name":"gpt-4","provider":"openai"},"allOf":[{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the model","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the model","example":"gpt-4"},"provider":{"type":"string","description":"The provider of the model","example":"openai"},"displayName":{"type":"string","description":"The display name of the model","example":"GPT-4"}},"required":["id","name","provider","displayName"],"title":"ModelResponseDto"}]},"tools":{"description":"The tools assigned to this agent","type":"array","items":{"type":"object","properties":{"type":{"type":"string","description":"The type of the tool","example":"internet_search","enum":["http","source_query","internet_search","website_content","send_email","create_calendar_event","code_execution","mcp_tool","mcp_resource","mcp_prompt"]}},"required":["type"],"title":"ToolResponseDto"}},"sources":{"description":"The sources assigned to this agent","type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the source assignment","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"sourceId":{"type":"string","description":"The unique identifier of the source","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the source","example":"Project Documentation"},"type":{"type":"string","description":"The type of source","example":"file","enum":["file","url"]}},"required":["id","sourceId","name","type"],"title":"AgentSourceResponseDto"}}},"required":["id","name","instructions","userId","createdAt","updatedAt","model","tools","sources"],"title":"AgentResponseDto"}}}},"404":{"description":"Agent not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

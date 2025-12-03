@@ -1,0 +1,71 @@
+---
+id: models-controller-get-all-permitted-providers
+title: "Get all permitted providers"
+description: "Get all permitted providers"
+sidebar_label: "Get all permitted providers"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFVE1v2zAM/SsGz8LSDdglt6DNugBbWyzNYQiCgrWZWJ0sqRSd1Qj83wcqaeq2QedLHIHi++CjdxAiMYoNflbBGH6Gilw6D144OEd8tyGZOHdD3FgRqm44bG1FnMBARMaGRP+MlysDTCkGnyjBeAdfzs70p6JUso3aH8Ywb8uSUlq3znUFk7ClLVUFOlfEZ4QiDiDK4IW8aCeM0dkyMx09JG23g1TW1KC+SRcJxoDM2IEBK9SkwXm4f6BSlDOrXrF7ks9Qg8okbP0GDJBvGxgv1R+PFgygl5pDtCUYaGwSRgcGgnPYIBhIncd14JK0tGu9TbAyb/Tf1jQQ2qjXR7kK+YRNdJnvHrQ3UNkUHXZX2NAplu/7Hy4UHhsqwrqQmj5Cuo7kJzNFqkMSqmb+IzMupmBgugADizkYmE9/fLv7fj2/nV6AgcnvxdVsflq1C/vRFX9rYsqknukUCpz0yHKRiLe2pPSK42IOfa/5emwtU6VEBlqGDg1UrAyIlXz/XXp/HZJ6IQF6fQx8PZXXmRdijy7TIi6IOXDmIrjR1EN29sSkL0k+iHVDUgddtw3lUKLUMIbRvtnoWDk63tZ8ZQqHVbN+HfKcDgonOXDFeWAqJjezk8F4U1MMKwxo733t509nh83DUjdP5caQpMEcDZ+T+B+Br9CPcRJ6klF0aL3mrWWXdzCLPzppYNjnxYDVfrRaudvdY6IFu77X48eWuNvbskW2eK+OLFeaaMK83Msd/KFObSpLiur4Fl2bvxdvPyr9ajCdy+kt9P0/hQ/H+A==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all permitted providers"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/providers/permitted"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all permitted providers
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved all permitted providers","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The permitted model provider","example":"openai"},"displayName":{"type":"string","description":"The display name of the model provider","example":"OpenAI"},"hostedIn":{"type":"string","enum":["DE","EU","US","SELF_HOSTED","AYUNIS"],"description":"The location where the provider hosts their services","example":"US"}},"required":["provider","displayName","hostedIn"],"title":"PermittedProviderResponseDto"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

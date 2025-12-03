@@ -1,0 +1,10 @@
+{
+  "label": "Mitwirken",
+  "position": 5,
+  "description": "Wie Sie zu Ayunis Core beitragen können",
+  "link": {
+    "type": "generated-index",
+    "slug": "/contributing"
+  }
+}
+

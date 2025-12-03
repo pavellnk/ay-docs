@@ -1,0 +1,71 @@
+---
+id: authentication-controller-register
+title: "User registration"
+description: "Register a new user account with email, password, and organization name. Automatically logs in the user and sets authentication cookies."
+sidebar_label: "User registration"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVsFy2zgM/RUMzlwn6fZSndab5pCdaZNJ05Mn04ElRGIjkSpJxXE9+vcdkFItW9kmhx4664tlGngAHx4A7bBgnzvdBm0NZnjDpfaBHRAY3kDn5THPbWcCbHSogBvStYKWvN9YVyggU4B1JRn9nQQEDDW8gGUXbENB51TXW6ht6UEbCBUPmKYAz8EDdaFiI3bRObf2QbNfoELbsouHlwVmuDywO7cmOFvX7L64IWNU2JKjhgM7j9nqTqHjbx378Lcttpjt4k/tuMAsuI7V0c0/S1oJLIUFbe6ta+IzKsytCWyCAFHb1kMiJ1+9eO/Q5xU3JE9h2zJmaNdfOQ+SlZObBM1e/o38Tcx8cNqUeJzNhZgBFYVj7+Heugl1qRyokJ+oaWtBkT/+Gn4ucttgL2ykEr0c7HqwfDnOiHn25k8JYV35kRp+OcLVsUAOUD9sYWogyJLB66Bj3WaQ/9jKwHvLgtWQe+CgTbnMc24DmXwKu7a2ZjIz3A+jlxAxuk1CiIb6Xk1UtRqKO6F+T9HkSs9ndKcw6BCTH5vwfbDY9ymIb63xSUJvTs/k67nGHZTruzxn7++7egGRHx0b7bAhSy6kJaUTn29CIMfSpItfp/4hsVfQfzV2/3gZ8IFC518qwRhhQuendHQzcLhn9e3p6ZzIS/NItS5gGB6QZgBYB/E85cTOWed/HS8Ne0/lK9R+IYFhNJ8q/nBAwj3pmgs8pmf0nNATIZ8j592cnCimuAdCpX1aBkC1Yyq2wE/ah/8zKb3CQKUslyNg8Ww4VFY2VWt9vAuFCjM8kd46mSwpz+7xx4YSSm72W+piTPzHnphP9ulgP5jHk3E8m6jTgbqfjf8xGmNbKZT1F7kfKFluO6M9nFvHsLy+nFXhtmI4soGphUK5d7I9W5wOOqFcdCLUCm8NRYWYlOhsJR/H3O2l9ju9uQxqDfwUTtqadNpoLq79JIsVijeKDAdh3CmsRDjZCne7NXn+7Oq+l+NvHbttkssjOU1rqcbqrldYMRXsMFvt8IG3mOF5YuOPW0lAzOtOEpk1Ya9Gj1T3n9pOtX199ekWFa6HN6rGFuLjaCNXoQ1mGF/cxDu2cDzbYU2m7GIrY8KUz79xvrNy
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User registration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/register"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Register a new user account with email, password, and organization name. Automatically logs in the user and sets authentication cookies.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"User registration information","content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","description":"Email address for the user account","example":"user@example.com"},"password":{"type":"string","description":"Password for the user account","example":"password123"},"orgName":{"type":"string","description":"Organization name","example":"My Organization"},"userName":{"type":"string","description":"User name","example":"John Doe"},"marketingAcceptance":{"type":"boolean","description":"Marketing acceptance","example":true}},"required":["email","password","orgName","userName","marketingAcceptance"],"title":"RegisterDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Registration successful. User is automatically logged in and authentication cookies are set.","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status","example":true}},"required":["success"],"title":"SuccessResponseDto"}}}},"400":{"description":"Invalid request format or validation errors","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}},"409":{"description":"User with this email already exists","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: models-controller-get-user-specific-default-model
+title: "Get the user-specific default model"
+description: "Returns the user's personal default model only. Returns null if no user-specific default is set."
+sidebar_label: "Get the user-specific default model"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VMFqGzEQ/RUxl7awjdOSk28hKSHQhpCk9GBMGWtnvUq1kjLSul3M/nsZ7dq1YwdCDj3ZLDNP7828eWsoKWo2IRnvYAp3lFp2UaWaVBuJ30UViKN3aFVJFbY2qcaXZJV3tjtRm3rXWqtMpZzPbR9jIG0qo7dNJqpI6QQK8IEY5bnrEqbwTcDihXeJvbXEP5eUvkfi+xHgcujPZVBAQMaGEnGE6WxeAFMM3kWKMF3D59NT+dlXdN9qTTFWrbWdYkpsaEXlVuAh02Z8SnuXyCVBxBCs0Zn05DEK7BqirqlB+Ze6QDAFv3gknYQji8RkBlKm3KmJiY1bQvGM40NNypTKV5lWIG5MSlSOVPoCHDb0Ohip3ABt2wP7lSmJj0GQaxuYzmQtDg0UgC7V7IPRUEBjYmKUaXhrsUEoIHYOK8+apLRrnYkwP0Zk8+YBmdLEYLG7ebWkseG4tKH9ZVkW3bLFJR0nKV17kOo92t/YRbXp+yCPmHjOujYr2t3lwntL6A4o/6gp1cQ7mCYq3PT3BWh094kJmzeBaXQqDu2Z2R1h9E5EvxWNMwL0vZzTU2tYZM7EuKPxdgy0v75x/HsD2tW3z29eQDLJCsHbjcW/jmPO9303HvNl8tD3wufs9Ozwom9eyphBUuVbV2Y1CZcSE5C/Z5s2lGovsbOkfKmYapjCZCiYCOpkBBOnE6+2QWNc5fOERwXn2frqwjOp89vro8Z9VqN2KwoQ7KH208npmDeoJW+Ee/AxNZiTZjh+uKL0itTaY7H+F2L/I9lH9yX6kybBonHi0JatEBlGvd1FAQKW+Q7jnhdQ+5ikZL1eYKTvbPtePj+1xN2whBWywYXMfzbvC6gJc6jN1vCLOlmK1hRkdSu0rVA5CO5+1wRXXx6g7/8CaqpyGg==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the user-specific default model"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/user/default"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the user's personal default model only. Returns null if no user-specific default is set.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved the user-specific default model","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The id of the permitted model"},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"type":{"type":"string","enum":["language"],"description":"The type of the model (always language)"},"isArchived":{"type":"boolean","description":"Whether the model is archived"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"}},"required":["id","name","provider","displayName","type","isArchived","canStream","isReasoning"],"title":"PermittedLanguageModelResponseDto"}}}},"404":{"description":"No user-specific default model found"}}}
+>
+  
+</StatusCodes>
+
+
+      

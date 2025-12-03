@@ -1,0 +1,10 @@
+{
+  "label": "Kernkonzepte",
+  "position": 2,
+  "description": "Verstehen Sie die grundlegenden Konzepte von Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/concepts"
+  }
+}
+

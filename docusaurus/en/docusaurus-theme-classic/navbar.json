@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "Ayunis Core",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ayunis Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.API Reference": {
+    "message": "API Reference",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
+

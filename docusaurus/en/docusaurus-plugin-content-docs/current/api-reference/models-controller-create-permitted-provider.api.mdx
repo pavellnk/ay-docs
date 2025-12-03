@@ -1,0 +1,71 @@
+---
+id: models-controller-create-permitted-provider
+title: "Create a permitted provider (Admin only)"
+description: "Create a permitted provider (Admin only)"
+sidebar_label: "Create a permitted provider (Admin only)"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VVFvEzEM/iuRn0AKdCB4ubeyFVEJ2LSuD6iqJu/OWwO5JHNy246q/x051/ZaWhBIiD60qc+x/X3+7FuCD8SYjHfjCgr45Cuy8dS7xN5a4uuSCRNdENcmJaou2D+Yihg0BGSsKRFHKGZzDUz3DcX0zlctFMv81zBVUCRuSEPpXSKX5BGGYE2Zkw6+Ru/EFssF1Sin1AaCAvzNVyqT5GEpMRmK8jRsCug9Y2Lj7kBDRbFkEyQuFHC1IFULHLW5o5JXISMBDeSaGoqZ4HdoQAO6tGAfTAkaahMTowUN3lqsETTE1uGt55LEtW2ciTDXQE9YB5vr7eKsVnoH+qyvd64hmZRdT49zepY8rFZdgBi8ix3i1yev5Gcf3KQpS4rxtrG2VV2PKoVrdHIOfaP+A/P/hszD/vV49jsJx5jXUJkYLLafsaY/08f6gnJYk/K3Kh1oZi/TeSA3HEumhY+JqrH7HRlnI9AwmoKG6QQ0TEYf319/OJ9cjc5Aw/DL9PN4chy19V2L1OOCmHJRWwlL4igmwyoSP5iS4l6N08mvNbjP0A6KHXEeyPJyLcZenm9OTg4VOXYPaE0vPGVcaJLy3FvQMmHV9l2FHOyIvKcOm7TwbL53Tm+PZ0zEDm3mgVgRs+cMPuGdLCXIrTwirW4Aj86LejasauOUd7Z9LuKltPCyGYOPeSYwLaCAQRd6sLkWBz0oDV1B670oc3bZ78bRplO7E7WjYeNufVbVuh/DPB7q1DOp4cX4qIx/8lG7HhqklM731cuT9T7AUvaBcCW4asxCdnlu/oadvVK2k5DoKQ2CReMEUMM2g83EbXuit+jzeUvevFOleC6XNxhpyna1EvN9Q9x2lD4gG7wRemZzGUbCzOJsCd+oFQTdxntxJfWIu22kroPtt9KbG8OypJB+6zvfEcPF+eQKNNys33WCCQpgfASdvwuQbZd5ybsz25Zg0d01eCe+XUz5/AAHYpzz
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a permitted provider (Admin only)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/models/providers/permitted"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a permitted provider (Admin only)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"provider":{"type":"string","description":"The model provider to permit","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"example":"openai"}},"required":["provider"],"title":"CreatePermittedProviderDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Successfully created a permitted provider","content":{"application/json":{"schema":{"type":"object","properties":{"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The permitted model provider","example":"openai"},"displayName":{"type":"string","description":"The display name of the model provider","example":"OpenAI"},"hostedIn":{"type":"string","enum":["DE","EU","US","SELF_HOSTED","AYUNIS"],"description":"The location where the provider hosts their services","example":"US"}},"required":["provider","displayName","hostedIn"],"title":"PermittedProviderResponseDto"}}}},"400":{"description":"Invalid provider input or provider already permitted"},"401":{"description":"Unauthorized"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

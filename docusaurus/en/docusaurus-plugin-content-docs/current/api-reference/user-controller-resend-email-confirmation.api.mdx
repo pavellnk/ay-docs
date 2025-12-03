@@ -1,0 +1,71 @@
+---
+id: user-controller-resend-email-confirmation
+title: "Resend email confirmation"
+description: "Resend a confirmation email to the specified email address. Silently succeeds even if email is already verified or user does not exist for security reasons."
+sidebar_label: "Resend email confirmation"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE1v2zAM/SsETxugJdnQXXxal/XQ04p+nIJgUCwmVidLLiWnNQz/94GyuyRNTzstF8c0RT6+96geDcWSbZNs8FjgLUXyBjSUwW8t11riQLW2DlKAVBHEhkq7tWSmsDaGKcYZ3FlHPrkOYluWRCYC7cmD3U6JNoJ2TNp0sCceSwSGNhKDCRTBhwT0YmOCbWCIVLZsUwdMOgYfZ6gwNMQZ0rXBAh8i8TL4xME54l+csV9Jr+URelTYaNY1JeKIxWqtkOmppZi+B9Nh0edXy2SwSNySekPJ1fGUQsLY55ShFFBhGXwin6Skbhpny/xt/hilTo+xrKjW8i91DWGBYfNIZRJ8LIMlS1G+ZraO0mJi63f477joRdeNk1LC9bfpdVaGGhVug+RiMbUdBnXEx2qKrhUmm3KJ2/dZ/pECDsN4OjbBx3GWL4sLeZwiX557K2NP8EF0f7VRpb1xZD7ioPBisTivc+332tlXH06DDAq/vp+ciL12EIn3xEDMgSGUZctMBp4r6whkNOt3cOAi6Z2YJnstCg81pSqI+5oQs3Y6VVjgXKiN81GDT+Wp/8aWk/nEDrcHA169ivNX+HOVBoXWb0P2xCTDZdd6G2EZmODy5vrMHfcVwZscOM5QKIjG3M+zxeReXYp7ZW6ZrtbZt17XB+Enst8MeNK7PyzC/36fTBuW6CXNG6etF6pbzts3CrvKakTMvj6Tdq2wEhsUK+z7jY70wG4YJPzUEnej4HvNVm9EtdV6UFiRNsRYrHr8Td24DsLWp3sBI+muFVBnV8hw7L6bn3f3qHAzXWF1MHKG9bMg1c9YYL4u5XRexBzr0Wm/a/VOcsea8vsDImAgdw==
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Resend email confirmation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/users/resend-confirmation"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Resend a confirmation email to the specified email address. Silently succeeds even if email is already verified or user does not exist for security reasons.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"Email address to resend confirmation to","content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","description":"Email address to resend confirmation to","example":"user@example.com","format":"email"}},"required":["email"],"title":"ResendEmailConfirmationDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"Confirmation email resent (or silently handled)"},"400":{"description":"Invalid email format"},"500":{"description":"Internal server error occurred while sending email"}}}
+>
+  
+</StatusCodes>
+
+
+      

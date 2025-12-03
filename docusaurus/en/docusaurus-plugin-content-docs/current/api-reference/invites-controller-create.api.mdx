@@ -1,0 +1,71 @@
+---
+id: invites-controller-create
+title: "Create a new invite"
+description: "Send an invitation to a user to join an organization with a specific role"
+sidebar_label: "Create a new invite"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVclu2zAQ/RViznK8xHFanZqmORgo0MBJToZRjKWxxZQiFZKy4xr692JIOd66HaKLJPJxlvfeSFvIyWVWVl4aDSk8kM4FaiH1SnrkReGNQFE7svz0bKTmfWOXqOXPiFhLXwgUrqJMLmQmrFEECZiKbACMc0hhzBHJ3RrtrVGK7PfMEnoGVmixJE/WQTqdJWDppSbnP5t8A+k2vEpLOaTe1pRAZrQn7XkLq0rJLCTpPjvuYAsuK6hEfvKbiiAFM3+mzHMeyyV5SY53qUSpDmDOW6mXkJwwcscwgXluyTlhFsIXJCqyLlITiOIm6BXLSnEg5upT+3qRmRKaBAIl/8w1MYoC387JZQjPyWKKPGjAiXRdQjoFzEupIQnpYHZaADRNcsDctG23rWSWgJc+gG+DClGdL95A08STrjLaRaYGvT7fjmt9fKtMFOjEnEgLV2cZObeoldqIKG8O7yZYbf9DrqfJ151IsbpEWPK11ZSLdUFaaONF7aReisCIyIxeyGUdnXqkY+F95dJu90DKbozZ7Q8uaXg1uu7Qh4/zTn+QX3ZweDXqDAejUX/Yvx72ej1IQNdK4ZyDsXNPFeF+/iDEpKV/L8iw1zvXYKxXqGS+0yFHj2y2q99jPVmNSjiyK7KCrDXRJR6XPHgQoziuqSRfGJ7ayrggBPoCUujuIAnEKO3AspKT/dDe7Sh8G7LzmdiNRGvWBKRemCBvS8fNptbSiVtjSdzcj8+EZv+dYMQhIgGuL2L7F73WhpixDblr7qzEYECN5V4AgULTej/XR1m3ey+/66ey9bSnV9+tFErNjLR+j9wfyVOwKukUtts5Onqyqml4+aUmu4mKrNDK6LzprEmgIMzJQjrdwg/acK+xjc4jJ2a4qrmAs/Fskt2Jmyyjyv8Ve2ic+28Pj5DAvP2GlybnMxbXrDyuIYXwh+DTYbjD2hYU6mWNS8bGmHz9AoiYS1E=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new invite"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/invites"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send an invitation to a user to join an organization with a specific role
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","description":"Email address of the person to invite","example":"user@example.com"},"role":{"type":"string","description":"Role to assign to the invited user","enum":["admin","user"],"example":"user"}},"required":["email","role"],"title":"CreateInviteDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The invite has been successfully created","content":{"application/json":{"schema":{"type":"object","properties":{"url":{"type":"string","description":"URL of the invite, returned when not using email configuration","example":"https://example.com/invite/123e4567-e89b-12d3-a456-426614174000","nullable":true}},"required":["url"],"title":"CreateInviteResponseDto"}}}},"400":{"description":"Invalid invite data"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

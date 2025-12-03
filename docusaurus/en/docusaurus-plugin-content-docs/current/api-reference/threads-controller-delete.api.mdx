@@ -1,0 +1,71 @@
+---
+id: threads-controller-delete
+title: "Delete a thread"
+description: "Delete a thread"
+sidebar_label: "Delete a thread"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNk0Fv2zAMhf+KwNMGCEs2dBfdiiaHADsMQ3MqgkGx6FqYLLkUVcww9N8H2t6WNTnsZFt+5sf3SE+QBiTLPsWDAwOPHaF1+SFFphQC0neHARlBw2DJ9shIGczTBNH2CAa8Aw2EL8UTOjBMBTX4CAYGyx1ocJgb8oMQ5vqojsfDTqVWcYeKZ57ipP5wctNhb8FM0CbqLYOBUmYMj4MgM5OPz1DrSch5SDFjFv2n7Z1crokrpbNZnRGjyqVpMOe2hDCuYAdVw93tAvPHMbFqU4mz8PN2ey08REaKNqiM9IqkkCgR1KqB7bOEBksfGU5vY9nNPSi7dgoaeuQuyUQu8ucODGzWIpvJuypxzTApf5Lg2ySNsecgUd2PJfqsHhKhuv96uDmONxp1qdAgtRftxw9b0NCkyLZhMJMYG1Lm3kZBrvtw7eQf4vR7iIw/eTME66PkWSjIu8Xi35w0GO8krS5llhfTdLYZjxRqleOXgjQuzl8teXsW008TOJ/l3oFpbch41YOYwCib9e7burrv1X+s5s3e10MbR4nLhiJPoOEHjsv/UU/1Yp67/Zf94x5q/QUdKi0m
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a thread"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/threads/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a thread
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread to delete","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The thread has been successfully deleted"},"404":{"description":"Thread not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

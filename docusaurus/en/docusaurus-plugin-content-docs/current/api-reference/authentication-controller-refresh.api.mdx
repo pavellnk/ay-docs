@@ -1,0 +1,71 @@
+---
+id: authentication-controller-refresh
+title: "Refresh authentication tokens"
+description: "Refresh expired access tokens using the refresh token stored in cookies. Returns new authentication cookies."
+sidebar_label: "Refresh authentication tokens"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVMFu2zAM/RWBZ6NJh+3iW9DtkMtatN0pCAbFYWI1tuSSVNbA0L8PdJzUcbrbsMNONqQn8vE9ki2skQtyjbjgIYdH3BByafCtcYRrY4sCmY2EHXo2kZ3fGinRUI/rLgxLULDzpghh55BvzCNKJM/G4y9jo5ToxRVWs5wxkEFokLrD+RpymF3g7oIXClWF9LPPBhk0lmyNgsSQL5YZEHITPCND3sKn6VQ/lxU9dwxPfDl2BW1idWO+/5GasYSGUZRiEbygFw1sm6bqkZMX1ugtcFFibfVPDg1CDmH1goUoVdLqxB259YkHwFUIFVoP2Yjw/UmTE1nDYiUyZIBvtm4qhFwoYkpa/mtUnyBfnDMsMxAnioKn49FjL9JXCZCSvvs8vb1Wau73tnJrE+hs/4XNf0+MGpntFgdAFnJ+e6XFN6JA5gQfCDDqFbOxrsI1jDU5vRxo0oW8VuTLR70zG3eH37ht7N1BDfQfa5IyYCwiOTlAvmih74VunnT4kgawWx3EUWYNXaOUQYe6CdwVa6WEHCY6cJP3eWak/XmYnd+Erv6e1uwQvWNzFwjN7GF+pcRziWaEMUNEBhr7iL29mfZe2UK90vKUWm07l7ytcbD+RmvhuP7G+dt36//13uw7RPBNJk1lnYeUQaRKSR2VXoC+huxkm3pSqhX5Atp2ZRl/UJWSHr9GpMPRgb0lZ1cq/mKZMijRrpE693d4UEeKAhu1c2+rqAyuOj4NvX+4f3qGlH4DxQdEtw==
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Refresh authentication tokens"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/refresh"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Refresh expired access tokens using the refresh token stored in cookies. Returns new authentication cookies.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Token refresh successful. New authentication cookies are set.","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status","example":true}},"required":["success"],"title":"SuccessResponseDto"}}}},"401":{"description":"Invalid or expired refresh token","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}},"500":{"description":"Authentication configuration error","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

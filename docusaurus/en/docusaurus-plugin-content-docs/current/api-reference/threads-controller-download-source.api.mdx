@@ -1,0 +1,71 @@
+---
+id: threads-controller-download-source
+title: "Download a data source as CSV"
+description: "Download a data source as CSV"
+sidebar_label: "Download a data source as CSV"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMtu2zAQ/BViTy1A1GmRk26GUxS+FXGcS2AUa3FtEZVJhVy5FQT+e7GSLMuJg6KPkyiRy5mdmVULvqKAbL1bGsjgoQiEJi684+DLksI343+40qNZ+TrkBBoqDHggphAhe2rB4YEgA2tAQ6Dn2gYykHGoSYN1kEGFXIAGQzEPthKkDofUer28U36nuCDFHS5oiHlBB4SshZ0PB2TIoK67y7mpBChysG4PKekRO3bUlv/GoL9EsVenjv+IzUawY+VdpCjnP93cyOMS8564Di5O8TAqVIvVo9rZUtTNvWNyLLVMP3mWx6Osz0QugfWZ2NY6DA2klJKG22vwvYXKRuU8D7AGGQcu0NXdvq7rQ6F8OJGW8p2vnREbgHEvUYDewwibl1LfDYIqnMJJ64vVI2g4EBde0rcn7gLGBWQwG+6btdakWV8TZ+3J7DSb+kTh2AdyI57vfKeU5VKkmje1s1EtfCA1/7q8moQXZ9T0hAa5uz/78cPNYBLmYpL0X/nIB3QCOQTydw1f4I+Wdn5XJVonTtShlL1ejLO4GrIuf4Me8j6J/yjJRkPhI0tl224x0jqUKcnn55pC0wt1xGBxKxo9tWBslLWBbIdlpFckx2DCu/thyN6rN8f4akvDR3SNaIplLW+g4Ts1/R9EZvq/8Lg6zH/BaZQ2bZKGgtBQ6NTqt+d5ThVPCseRlf/BGOsvnx8gpV/njNTl
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Download a data source as CSV"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/threads/{id}/sources/{sourceId}/download"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Download a data source as CSV
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread","schema":{"format":"uuid","type":"string"}},{"name":"sourceId","required":true,"in":"path","description":"The UUID of the source to download","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the source as a CSV file","content":{"text/csv":{"schema":{"type":"string","format":"binary"}}}},"400":{"description":"Source is not a CSV data source"},"404":{"description":"Thread or source not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: subscriptions-controller-has-active-subscription
+title: "Check if the current organization has an active subscription"
+description: "Check if the current organization has an active subscription"
+sidebar_label: "Check if the current organization has an active subscription"
+hide_title: true
+hide_table_of_contents: true
+api: eJylU8Fu2zAM/RWBZ2HJCuziW5ENQ25D12GHIBgYhYnUypJK0UEzw/8+0M7WpOkOw04WJPLx8b3nHnIhRgk5LbfQwNduUx2Hohd1kZNwjpH4h8d66yQc6LwALBRkbEmIKzSrtQWmWnKqVKHp4WY+18+WXjp0gnNU666L8WicJ/dIW1PPUE0VlK6CBZeTUBLFwFJicCPP2UNVoB6q89SinuRYCBrImwdyoqxYt5Iw0Xib+0vbJudIqNtcMv3uSTyxEU8m8x5T+DkSMB6rwWRwBL3gDhboGdsSCRrhjoZBJXnqAtMWmtVfqKwtSBDtgevXu5OiHyXDMCjgh7dkXSYhThhNJT4QG2LODFouuFdz4Jxn1ZmXAAu1woTduK7rmCnJP6zdkvisCdrT6ACKhwZmF0NnUytYmEieMhPSLo92/Nbg2KVQzSIzmdsvyytf7j2ZVzXmvMKCYk+179/NT0FCp0FSQUqu0uKYgIQt/f/uF/T+xEroWWYlYkgwWOg46tuky2szLJyUWVvwuYpW9P0GK33jOAx6/dQRHye9DsgBNyrVaj1Y8IRbYmhWPTzSccyQo6ImHDB2yuTq5xnWZ4Z9/nQPw/ALhd1wCQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check if the current organization has an active subscription"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/subscriptions/active"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if the current organization has an active subscription
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully checked subscription status","content":{"application/json":{"schema":{"type":"object","properties":{"hasActiveSubscription":{"type":"boolean","description":"Whether the organization has an active subscription","example":true}},"required":["hasActiveSubscription"],"title":"ActiveSubscriptionResponseDto"}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

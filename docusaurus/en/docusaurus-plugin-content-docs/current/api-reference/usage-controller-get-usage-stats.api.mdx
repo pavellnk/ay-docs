@@ -1,0 +1,71 @@
+---
+id: usage-controller-get-usage-stats
+title: "Get overall usage statistics"
+description: "Returns aggregated usage statistics including total tokens, requests, active users, and cost information (self-hosted only). Dates are optional - if not provided, shows all usage."
+sidebar_label: "Get overall usage statistics"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v2zgQ/SsDnlpAdhQ73iK+BUlRBNjdLvJx2SBY0OLYYkuRCmfkVDD034uRFEex28YtelnAgCGJ5LyZee8NN8ogZdGWbINXc3WFXEVPoFeriCvNaKAivUIg1myJbUZgfeYqY/0KOLB2wOEzekog4kOFxJSAztiuESrCKE/eQBaIwfpliIWWUPCG0C1HeSAJEbyr347hQjMS6IgQWjzawQjsEnxgKGNYW4MmAcrDI4F2rkM2VokKJcb22Euj5upWXp8HzzE4h/G/FXL76po1k0pUqaMukDGSmt9tlNcFqrki1pEFgUqUZGIjGjVfakeYKCu1eagw1irZqdi17AOjGcF6uLz+CF2SY7hcDlAXFTEs2poYeLScA3oj4QQ/ZTkWWs03Cr/oonSCZ5JOTkbp8Sg9vknTefsbp2n6r0oU12WHOFq/Uk2TbJPoz/zJFN578ysJbCv2WgrT45vJdD47nc9Ox6enp99K4V4QUxk8IckhkzSVv5c4b3eZGJGjxTUaoCrLkGhZOVeP4VzYtrToTE8n7+qetmgkyyH5DJYu1AV6JkkkC57Rs0TXZels1hLr6BMJhM0gzz6FsPiEGQutotCQbZdAK42bVhmDxb4qFhj3GnAz0BFkwVNVoAGdxUBPTMdIrZCKYNCJBoFzBCoxs0uLBkqMNhiVPJf/eDJL0zRtkg7LVa/OQ9F0HyEs4eyfy622odAGD4k+PZltQ0s7Dg3bG0VWxdi1SgJ1x4/ho/RRr7V1euHwlUZuoUxm43ezJlHtmT6rB1B6/u1COe9XQhYMihz2/OtXsajb6wvVJKpzyFtqTei1yvy9bUXHg8c8dH3YdkX02Ndq4L3AeUTKgzPwxmlimKZgdE1vh4hOJk9tOhDNLj0qbx8q/C60A7jyx7sWQvlXy+193f9piSWSnFO00m5P9+zqzo5aUYB4ICUQokHhzqLuBsQw0p1alTw6EZk7XRkcTUcUvEfRr3yZjmcjruIiqPutR+kYtXimZSxonztN0wzd9u6F8ne197LxL+o+rIAEt9zxZTu5rnp/vOAgQSUs65XMMHVmCuuhXSp7C+Q8yCRctYmVmnM1V0dtNY6on4KEcd2NwHsZDsvQptZHPasrbwnOQ0SR/z4HcoSdNTBckSg5u1t7PE57W9WZ2IAALwNxoVtD7SfXB2QIa4zbuT7w+d3wm2eT/p9eWHoKMX7ho9Jp68UTqugkt65dd+qJvF3D7hOVtzZ6pzabhSa8ja5p5HU30+UmYyyJFz3P/O9W7XdcWr6Zw2esd+5Sa+0qWafkmnI4wt9xJ/kBwueL0jO+e3mIVgCKKppE5agNxra23bazLMOSB7v2rgjNUH8f3t+opvkK6OfzfQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get overall usage statistics"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/usage/stats"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns aggregated usage statistics including total tokens, requests, active users, and cost information (self-hosted only). Dates are optional - if not provided, shows all usage.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"startDate","required":false,"in":"query","description":"Start date in ISO format. If provided, must be used with endDate.","schema":{"example":"2024-01-01T00:00:00.000Z","type":"string"}},{"name":"endDate","required":false,"in":"query","description":"End date in ISO format. If provided, must be used with startDate.","schema":{"example":"2024-01-31T23:59:59.999Z","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Usage statistics retrieved successfully. Cost fields are only included in self-hosted deployments.","content":{"application/json":{"schema":{"type":"object","properties":{"totalTokens":{"type":"number","description":"Total tokens consumed across all users and models in the specified period","example":1250000},"totalRequests":{"type":"number","description":"Total number of API requests made in the specified period","example":3450},"totalCost":{"type":"number","description":"Total cost incurred in the period. Only available in self-hosted deployments.","example":25.75},"currency":{"type":"string","description":"Currency code for cost information. Only available in self-hosted deployments.","example":"USD"},"activeUsers":{"type":"number","description":"Number of users who made requests within the active user threshold (last 30 days)","example":42},"totalUsers":{"type":"number","description":"Total number of unique users who made requests in the specified period","example":67},"topModels":{"description":"List of the most frequently used model names, ordered by usage","example":["gpt-4","claude-3-sonnet","gpt-3.5-turbo"],"type":"array","items":{"type":"string"}}},"required":["totalTokens","totalRequests","activeUsers","totalUsers","topModels"],"title":"UsageStatsResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

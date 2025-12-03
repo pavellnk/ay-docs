@@ -1,0 +1,71 @@
+---
+id: models-controller-get-all-model-provider-infos-with-permitted-status
+title: "Get all model provider infos with permitted status (Admin only)"
+description: "Returns all available model providers with information about whether each is permitted for the organization"
+sidebar_label: "Get all model provider infos with permitted status (Admin only)"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VMGOEzkQ/RWrTiB5yLCCS24RE9hIuzAiM0JoNEKV7kra4LabcnWgifrfUTk9TZLJrtjL5hK3ZftVvXrv7aCkVLBrxMUAU3hP0nJIBr03uEXnceXJ1LEkbxqOW1cSJ/PNSWVcWEeuUS8aXMVWzLeKpCI2hEVlXDINce1EqDTryEYqMpE3GNyPfAksxIY4rxclTOFvRUmvYhCO3hN/2pDMvM/b1wP2Iqxj+uCkun54eykobQILDTLWJMQJpnf3FphSE0OiBNMd/HF5qX/HzS7boqCU1q33nWESdrSlMvd+3HHudWj7V1PpAbmIQSiIAmDTeFfkniafk6LsIBUV1agr6RqCKSAzdmDBCdXpYD+uPlMh2gorM+L2tT9UcXAyCbuwAQsU2hqmd8pkQAcWMEjFsXEFWKhdEkavRHuPNYKF1AVcRy5Ij3ZtcAnu7QktN9XpxI0rKYhbO2LF/I5143PBe9TeQulS47F7izWdK/MxwHDBBKzJxHVWxzHoEdK7hsJsoUhVTELlIvwbG1dzsDC/BQu3S7CwnP/1+tOf75Y38yuwMPt4+3axPN+2j/vZqZSZclEjBwqcdMuxScRbV1A6qvFqrvW5NErzoMRVjJ4wPKLiw2AZqdQvI92/4Z0RV7ilvle9f20dK+odHHB4OJkD9o4LvbcgTnIXR3Y747T3g62uJEKvPwsvLp8/NtcibNG70mBZu2AkfqGg9Lw8Z8RFEOKAPvOqAcIcGfRpwY3aGbI0slZrkipqXGwoWwWlgilM9gcmY0ZN0PsLNezFyOTFaNg9zJAT6u08qYGAWbaFeRWZzOx6cVa9J2fM4QkL+vb+7PNnl0M+YKH5oC01MUmNWb8h2wXekPzH0DFPZpnWGHz39LTC3a9A+p/zfBC70HeZNB5dnnjLPqdYHtQ4STtqVNf/PKz7vWb15m63wkS37Ptet7+2xN1+hFtkp43pl0YEYY7Lux18oU5HWhTUqFq26NucwKcx3R8q6838Bvr+J3PcghY=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all model provider infos with permitted status (Admin only)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/providers/all-with-permitted-status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns all available model providers with information about whether each is permitted for the organization
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved all model provider infos with permitted status","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The model provider identifier","example":"openai"},"displayName":{"type":"string","description":"The display name of the model provider","example":"OpenAI"},"hostedIn":{"type":"string","enum":["DE","EU","US","SELF_HOSTED","AYUNIS"],"description":"The location where the provider hosts their services","example":"DE"},"isPermitted":{"type":"boolean","description":"Whether this provider is permitted for the organization","example":true}},"required":["provider","displayName","hostedIn","isPermitted"],"title":"ModelProviderWithPermittedStatusResponseDto"}}}}},"401":{"description":"Invalid admin token"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

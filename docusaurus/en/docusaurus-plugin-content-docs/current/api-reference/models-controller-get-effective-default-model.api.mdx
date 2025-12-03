@@ -1,0 +1,71 @@
+---
+id: models-controller-get-effective-default-model
+title: "Get the effective default model for the user"
+description: "Returns the applicable default model with fallback hierarchy: User default → Org default → First available model"
+sidebar_label: "Get the effective default model for the user"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVE1P20AQ/SurObWSVWjFKTcEFCEVivhQDxGqJutxvLDeNbPjUCvytT+gP7G/pBrboQlJq4pLT4ntmbdv9r15S8gpWXa1uBhgAlckDYdkpCSDde2dxZknk1OBjRdTxZy8eXJSmgK9n6F9MKUjRrZlOzG3ifi59uf3H+YzzzeePzpOYnCBzve4PR5kEGtiVApnOUzgXN+moxiEo/fEX+ckJ0VBVtyCjge487GzRsaKhDjBZHqXAVOqY0iUYLKED/v7+rM54nVjLaVUNN63hknY0YLyfmJaHbI5MGRgYxAKomjjtSja3n1SyCUkW1KF+k/ammACcXZPVpQf62ziBkIuX6tJwi7MIXvB76Yk43ITi55STVw5EcpHKl0GASv6NxitXAE9t9ccFy4n3gVBoalgMlU9AjrIAIOUHGtnIYPKJWHs5fIeK4QMUhuwiGxJS9smuAR3u4isztwik7tUe2wv/nmksWH3aEP7n8fyGOYNzmk3Se3agDRv0D9hm8yq760e4tIh29ItaF3LWYyeMGxR/lKSlMRrmC4ZXPV3GVgM18KE1avALAaThvae2RVhikGHfi0a9wjQdbpKj41jHXOqxh2Nt2agTfnG69+4oPX5NvndZSBOvBK8XFn803jN/W5fjYt8LBG6Tvkc7B9sb/NFfBFORWxC3vMXnGsoQP++N2ZFUkZNmDn1u4lSwgT2hoK9EUdtTbx4ThQXithf50j3sPe5OYpM5vDybKdLX9SY9YoMFHuoff9ufwwXtBouSruOSSrsY2XYdDgl+Vs8mSIOKjZpEGWdzvJ3dP2vcB99KPRN9mqPLqhXG/ZKbpDgWSMlP4hwl0EZk+i35XKGiW7Zd52+fmyI20GaBbLTo/Spy6Ak7HNtuoQHalUqa6lWQRfoG+Wwld3duitOT26g634B7Sx7Fg==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the effective default model for the user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/default"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the applicable default model with fallback hierarchy: User default → Org default → First available model
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved the effective default model","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The id of the permitted model"},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"type":{"type":"string","enum":["language"],"description":"The type of the model (always language)"},"isArchived":{"type":"boolean","description":"Whether the model is archived"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"}},"required":["id","name","provider","displayName","type","isArchived","canStream","isReasoning"],"title":"PermittedLanguageModelResponseDto"}}}},"404":{"description":"No default model found"}}}
+>
+  
+</StatusCodes>
+
+
+      

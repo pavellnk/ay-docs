@@ -1,0 +1,71 @@
+---
+id: prompts-controller-find-all
+title: "Get all prompts for the current user"
+description: "Get all prompts for the current user"
+sidebar_label: "Get all prompts for the current user"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcFu20gM/RWCZymRHSft6mZ0iyI3o0gPu0GwoDWUNd3RjMKh7BqG/r0YWckqQdEN0AoCJIw4j4+PnKcTho6F1AZ/a7DEjYS20/gheJXgHMs/tfVm7Rxm2JFQy8oSsbx/yFA4dsFHjliecFkU6WE4VmK7hIclfmbtxUcg56A7I0MdBLRhqHoR9gp9ZMEMq+CVvSYM6jpnq5HT5deYgE4Yq4ZbSm967BhLJBE6YoZWuY2z9bD9ypUmtpIqU3umZ80sJqpYv8PsFdu7hqH39rFnsIa92tqyQKhHumf6mCF/o7ZzCWaxvOLV9c27nN//sc0XS3OV0+r6Jl8tb24Wq8W7VVEUmGEdpCXFEvveGhwyVKtp/1vojKE/obCRkMqFjSPvrd/BOkYblbymRDNN/z/VFPyTZH+FHkgYCBp2Xd07oKdsoA3puBzhYLVJ20di3UTsAjaOKY64e2sYDCtZxwaicpdvj3l6wq63hnzF45S05GmXiprAInBdc6V2z+54kQpMs3P7q51NIHBoAoSDj6CNjb+z2ZUwKZv1G7tgSBnIG1DbMhwa9rNuwIEiTIAvyC2L5VW+WObF4m5RlEW6L4qi+HtOKCHnCXUUrjO/l5WjqDCh/gq1IdnKY2+FDZb36dg+nZf/xvm573N15zU9PJ+xyc8+T071pwYc0pXh9Y/86tYriycHkWXPAiwSZCSltEuuh5OLpRQvt35ifYvNtaxNSEa749GkSBss8fIJNsNz5slhra/D2KGpmvWx9zbChyAM683tD3v1KgbmERkm7HPs4qKYNKUqjUGqsgtRWxoN11PLby/rBY3niVL+ppedI+vHmROXvp1LfqFkE6KmpdNpS5G/iBuGtPzYsxzPQuxJLG2TBvcPQ4YNk2HB8v6E//IxCVNVPB7YPbl+/D28/ocMDzPxP328w2H4DmL1XZM=
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all prompts for the current user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/prompts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all prompts for the current user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns all prompts for the current user","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"title":{"type":"string","description":"The title of the prompt","example":"Project Planning Assistant"},"content":{"type":"string","description":"The content of the prompt","example":"You are a helpful assistant that helps with project planning. Please provide detailed step-by-step guidance for managing projects effectively."},"userId":{"type":"string","description":"The unique identifier of the user who owns this prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the prompt was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the prompt was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"}},"required":["id","title","content","userId","createdAt","updatedAt"],"title":"PromptResponseDto"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: subscriptions-controller-get-current-price
+title: "Get the current price per seat monthly"
+description: "Get the current price per seat monthly"
+sidebar_label: "Get the current price per seat monthly"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVk0+L2zAQxb+KmLPZpMv2EN+WtCw5FEJ3ewqhKMok1laWtKNxWGP03cvYbnD+XHqyEKPHm9977iBEJM02+NUeSnhtdsmQjXKRlsEzBeeQfh+Rlw0Rel6TNQgFRE26RkZKUG62BRCmGHzCBGUHj/O5fPZ4Fuu1jcGUDo1zrSJksnjCvTKDroqjsAme0bO81zE6a3p3s/ckIh0kU2Gt5cRtRCgh7N7RsDgi2YXtYKGXWyO9ouYfwXPl2skj39Q7JCiuLC6nXlREUgk194daNJT1iitUJviDPTZ0tm9aKAA/dR0dQvm4eFgschYoH40l3EO5uWtoWwBblifQc/05QvzGAXIWhaf50y3Jflb5wBMjkAv4eg/7yjOS104lpBOSQqJAINqsjxIepGno4ulS4AV5WPo+nHrcpYAauQrSoiP2eWiuoITZhfzsX8yDm7E81h9Cn84I47ltvE1qGQjV83p1k9NbhepqRk0nChDtYfbLw3xslTbSKtk8hsS17vvkdY3/s+SFkXOfGD95Fp22XnJoyPUV7AFc8y2GJgjnKiSWga7b6YS/yOUs1x8NUjuAOWmyeidMNttcQIV6jwTlpoM/2AooYzAK7JN2jRi5+WXydhLMy/c3yPkvjU5jiQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the current price per seat monthly"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/subscriptions/price"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the current price per seat monthly
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved current price","content":{"application/json":{"schema":{"type":"object","properties":{"pricePerSeatMonthly":{"type":"number","description":"Current price per seat per month in the configured currency","example":29.99}},"required":["pricePerSeatMonthly"],"title":"PriceResponseDto"}}}},"404":{"description":"Price not configured"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

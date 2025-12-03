@@ -1,0 +1,71 @@
+---
+id: threads-controller-remove-agent
+title: "Remove agent from thread"
+description: "Remove agent from thread"
+sidebar_label: "Remove agent from thread"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVU02L2zAQ/StiTi2IJi3bi25hN4dAD2XZnJZQFHsci8qSdzQKNUb/vYztZdNNWOjJtvSY9zUeIfZIll0MuxoMPLWEtk73MTBF75F+EXbxjJsTBgYNvSXbISMlMM8jBNshGHA1aCB8yY6wBsOUUYMLYKC33IKGGlNFrheaiQTVfr97ULFR3KLiiVRxVDPZdGiFUTUUO9CQqhY7C2aEJlJnGQzkPLHy0IuCxOTCCUo5iJDUx5AwCf7b+k4e1wLm+a1N6ogYVMpVhSk12fthkVFP7BcKoWi4uz1vMhAiqybmMAG/r9fXwF1gpGC9SkhnJIVEkaAUDWxPEinMTAkO70N7nKN5i+VVlIYOuY3SXo0eGaeauAUDq2XaanR1Wdmlw5lb2A7SUhNFJzv2EuRmyMEldR8J1ebn7mZ37zDqEqFBZs/Yr1/WoKGKgW3FYEbx2cfEnQ1CuSzPB8b+oR5fu2b8w6veWxck50xe7mbHb/lpMNN+zKYPGtqYWADjeLQJ9+RLkeOXjDTMUZwtOXuUFJ5HqF2S9xpMY33CKy3iSiYb+PS4LP5n9f+LfdPScmjDIHFan+ULNPzGYf7ZyqFctP6w/bF92kIpfwG1iEuk
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove agent from thread"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/threads/{id}/agent"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove agent from thread
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread to remove the agent from","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The agent has been successfully removed from the thread"},"404":{"description":"Thread not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

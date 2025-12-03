@@ -1,0 +1,71 @@
+---
+id: threads-controller-find-all
+title: "Get all threads for the current user"
+description: "Get all threads for the current user"
+sidebar_label: "Get all threads for the current user"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVNFum0AQ/JXTPuPkII7T8mYlVWSpD1XkvNSyqjOsw6XHHdlbolgW/14tOBZOW8W8gI5hZnaYuz2EBsmwDX5RQg7LitCU8TZ4puAc0q+t9eXcOUigMWRqZKQI+WqdAGFsgo8YId9DprXcSowF2Ub4IIcH5JZ8VMY5xQOz2gZSXKEqWiL0rNqIBAkUwTN6Fg7TNM4WvafL5yhEe4hFhbWRJ941CDkYIrODBCxjHUfrYfOMBYtbksnYDvZsOcJEJuufIPng9tHblxaVLdGz3Vqko9fBOySAb6ZunHCk2RVOr2c3E/zydTNJs/JqYqbXs8k0m83SaXoz1VpDlwBbFvxn2kuBqbD9n9ydjUUbow1emU1oWc0Xqg4luigiBaFhLOf8udCtQIWGbY2RTd2c6GQ6m050OtHpMs1yrXOtL7TWP0WlbcpzVb6byGrAnyV0NRLqpFkvrSUsIV/JnxsPOLaxPsYL98iH6j4cWnnHYcFYQydXAtf/6ufCM5I3TkWkVySFRIF6B2yepOVwaK1InX56j3xOrWvkKsjGesK+lIYryOHynTaBQfmwo6zfhj7cw1TzXettVLeBUM1/LP5uTYXqA0aNEQkI94BNL/Rhm5lC/qBM2YTItek3mDc1nj/WiY1jGRjf+LJxxvq+LuTk3TDySZJViCxL+/3GRHwk13Wy/NIi7YYgXg1Zs5EMVusugQpNiQT5ag+/cSfBFAU2EuircW1/HHw8M7r1KPz7b0vouj99NqeG
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all threads for the current user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/threads"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all threads for the current user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns all threads for the current user","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the thread","example":"123e4567-e89b-12d3-a456-426614174000"},"title":{"type":"string","description":"Title of the thread","example":"Discussion about AI models"},"createdAt":{"type":"string","description":"Creation timestamp","example":"2024-01-01T12:00:00.000Z"},"updatedAt":{"type":"string","description":"Last update timestamp","example":"2024-01-01T12:30:00.000Z"}},"required":["id","createdAt","updatedAt"],"title":"GetThreadsResponseDtoItem"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

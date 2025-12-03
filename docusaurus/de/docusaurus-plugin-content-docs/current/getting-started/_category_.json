@@ -1,0 +1,10 @@
+{
+  "label": "Erste Schritte",
+  "position": 1,
+  "description": "Schnellstartanleitung für Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/getting-started"
+  }
+}
+

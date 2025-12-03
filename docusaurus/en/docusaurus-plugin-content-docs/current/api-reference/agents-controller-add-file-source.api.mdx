@@ -1,0 +1,71 @@
+---
+id: agents-controller-add-file-source
+title: "Add a file source to an agent"
+description: "Add a file source to an agent"
+sidebar_label: "Add a file source to an agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFVE1v2zAM/SsCTxugLunQXXTLOgzIacXanoJgYCym1iZLrj6CGYb/+0DJSNomxU62ZfI98vFRI/ieAibj3VqDgtUTuRRvvUvBW0vhF2r93Vi69zk0BBJ6DNhRohBBbUZw2BEoMBokBHrOJpAGlUImCcaBgh5TCxI0xSaYnnlAwUNL4vFx/U34vUgtCWRWkBCbljoENcLehw4TKMi5YKehZ56YgnFPME3bSkcxffV64Iy37I13iVHVCF22yfQY0oJhrzSmwnFim9H97jc1XEcfWJVkKJZajKUXUXMN8lTjzjgMw8UuOVckL3JvPWqYppcybSr0dprqeey9i5Xz8/KaH+8AxjIN0WIUOyInYm4ainGfrR0Eak2aOU/KThJulstzwLU7oDW6gNagm/OgYgnhfBJ7n53muC+XwRIFh1ZECgcKgkLwoXSc8IndAqWYCNu3Qq20Fviqs+QFuqMtOkqtZ3f2PpbxsKcULCreYjR6WtTEuCitSKg1MOuWjbj3ZYAm8SRhNWRnorj1gcTqbn1xcG9ixMsICYxdY68/LaGaDRs2G/fLZXbomHLej/91+Ir/6LREf9Oit2gci56D5X+1+aOYElRZkLl/tmXxlISWxVIbGMcdRnoMdpr4+DlTGKouBwwGdyzJZgRtIr9rUHu0kc5qOu4TfPg5O/ijeG+RLzYwH6LjVTmgzfwFEv7QUK+QaTtJaAk1hVJS/XFbia8eOP2UeGmp+Vo4muXux/0DSNjN90PnNadxcImVp1e14RX8B/UetzA=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add a file source to an agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/agents/{id}/sources/file"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add a file source to an agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the agent","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"multipart/form-data":{"schema":{"type":"object","properties":{"file":{"type":"string","format":"binary","description":"The file to upload"}},"required":["file"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The file source has been successfully added to the agent"},"400":{"description":"Invalid file"},"404":{"description":"Agent not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

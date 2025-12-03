@@ -1,0 +1,71 @@
+---
+id: models-controller-get-org-specific-default-model
+title: "Get the organization default model"
+description: "Returns only the organization's specific default model. Returns null if no org default is set."
+sidebar_label: "Get the organization default model"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VF1v00AQ/CunfQEkqymoT3mrWlRVglK1RTxEEdqeN/aV8527tw6YyP8dre2EpAlQVeIpkT0znv2aFeSULLtaXAwwhRuShkMyMfjWSEkmcoHB/UR9/yqZVJN1C2dNTgtsvJgq5uSPzJoXGu+NW5gQlblBuWQSyRFkEGviXuwyhyl8VHY6i0E4ek/8tSD5xMXt+JXzgd6jIIMaGSsS4gTT2TwDplTHkCjBdAXvjo/1Z7ec28ZaSmnReN8aJmFHS8r3CtutBjKwMQgFUUGsa+9sD5s8JFVdQbIlVaj/pK0JphDvH8iKWmQtUNzgyeVbmCTsQgHZE4t3JRmXm7joXdXElROhfLTSZRCwoufJKHIttKHXHJcuJz4kQaGpYDrToQR0kAEGKTnWzkIGlUvCqN2I3mOFkEFqAy4iW1Jo2wSXYH7IyPqbe2Zyl2qP7dWzSxoJh0sb6H8uy2MoGizosEll7Uia1+i/Y5vMmvdGP+LSKdvSLWl7lvcxesKwZ/lLSVISb2m6ZHDN7zKwGG6FCasXiVkMJg303tkNYYpBi36pGvcK0HV6TY+NYy1zpos7Lt7WAu2Ob2z/ToO269v1N89AnHg1eL1e8Q9jm/vzvhlv+VwidJ36OTk+2T/oq/iXwzWL2IS8L0aw0JCA/nm/pRVJGTVzCuoPFaWEKUwGwCRyMRm1dM+Jl5uUcWER+/6O/k/7xTdnkcmcXl8eXNsnGLONyEC1B+zbo+MxbdBq2qj1OiapsM+Z4fThguTfkbVjYvU7wf5/pI+LJ/RDJrVHF3Q5G/ZqY2jzZg4ZRB4OfWj1PIMyJlHEanWPiT6z7zp9/NgQt8MAlsgO77X3s3mXQUnYx9lsBd+o1YFYS7WObYm+USd7kd1tz//i/R103S9Ju276
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the organization default model"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/org/default"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns only the organization's specific default model. Returns null if no org default is set.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved the organization default model","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The id of the permitted model"},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"type":{"type":"string","enum":["language"],"description":"The type of the model (always language)"},"isArchived":{"type":"boolean","description":"Whether the model is archived"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"}},"required":["id","name","provider","displayName","type","isArchived","canStream","isReasoning"],"title":"PermittedLanguageModelResponseDto"}}}},"404":{"description":"No organization default model found"}}}
+>
+  
+</StatusCodes>
+
+
+      

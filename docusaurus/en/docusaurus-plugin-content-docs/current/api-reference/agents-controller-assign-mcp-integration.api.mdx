@@ -1,0 +1,71 @@
+---
+id: agents-controller-assign-mcp-integration
+title: "Assign MCP integration to agent"
+description: "Assign MCP integration to agent"
+sidebar_label: "Assign MCP integration to agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV11P4zgU/SuWn3allKalw+zkrQJp1Qd20AAPu6iq3OSm8axjG9sBulX+++o6bkjaAt2B1UhIEHJz7vG5vl8bqjQY5riSs4wmdLoC6ey5ks4oIcAsmLV8JS9TPZMOVo0ljahmhpXgwFia3G2oZCXQhDL8epbRiBq4r7iBjCbOVBBRLmlCNXMFjWgGNjVce6SE3hRAbm9nF0TlxBVAPAaNqE0LKBlNNjRXpmSOJrSqOGK7tUZn1hkuV7Suo9Y/f+b4ThaX51ekg0acIo0S/4nZHClYraQFi/bjeIS/9l3vuiuYJUsASWyVpmBtXgmxDgwAPaVKOtQp2VCmteCp/2743SLkpkMxUFLL75CirNpgwB1vCPGsYxNoH5Kmkvy+AsIzkI7nHMxutOCJlVogymh8CpNPZ58H8NuX5WA0zk4HbPLpbDAZn52NJqPPkziOabQjXR2FEB5DBi1f9n9eWadKMOS60loZR6bWcuuYdOiFS+tMlSKaPc5b9wuSK/OC2z9VRZgBwkgBQueVIOmWiA1E2JbICZmKR7bGEBOtBHdAmMyINioHa7mSTJwg2cqCmb03QghCHgtF1KO0xBXcfmDQUgPMQTZ1x5HMWDiq4yWQxwLks5rkkVkS8HrcxvH4dDAaD+LRzShOYvw5ieP4ry4fBB4gqJdNZx9KSjDrSAB9H7NSZSAOVwD/iqRK5nxVhSrQ3LZDAWsy99iwheq40m4waUrAA8/AYFnQIBlHakyIr7mv5f9zxWg0+HkVY99/o0vdFeYY0K31y8DP6mbcasHWfxzNOHzwBvPfr26Qed3tdHfUtyIvTudIfQ7ziDruPMYlon4LXerCKVrP64g6pYQ9fFP9q7YXYWfs3dFwNmYMW9OIcgelfbsRNW+PUQYttooglZ4g2EONBLewwEyKbR5kVaIohXMae7eqTAqL+wqMZ7dn/whLyx0stg02ohZktoCScXTVFKhFygTIjJkFPDRGqcpgAU+QVmFAKlO9CPTwTwON5/CojSq1o/Pd0Pnjd4Jzo1Q/NvX2CC8EJ7z86PC8O+sbXoFW+VHtp0F9d4tsQ/OzatIBAldGYSTIhUor1KsZvOvoBzLlAHrOBXSSIzxWRuxfSV9NWqHbwrJ7U/3icO3N+hf2leLUG8bacac7VXSb+bZ9bovTcybs0tghUEd0Esf7+dLZaLDesqUAH8NJfPq68RKEkiuLuZXxPAeDk4IyKyb5P22cJvFkH8XTI8r0hn2pHMlVJYPzL687Z8IAyzrLAJ7PsRUuYs0C5gXZ8euND241oS6U4AqFM4VW1uc/bkkJHTaIw01Y7ephmepBB8MON72tq/YV0zw0m+Ecg5wrf1+3EVpXkltyrgyQ6dXs4M3dsSFdi4gidmM7OonDLsRSnPZQCuRfMr8Fhbnn7cP3GLSp5eDJDbVg3McTkyPZBF1apSOaPC+9u9Lg2/5KOo9ogfomd3SzWTILt0bUNf676UhesQdmOF5GP421FzPJmbCwx7VdBOkv30Ka/Upe2qkPHmzbEST2gwcmKnyiEf0b1p2VHrfsD+Hy2mb9A/z6+vrZpQDmh7i7TbCZpilo1/l6b2XGTb3NgKuv1ze0rv8FKczFgA==
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Assign MCP integration to agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/agents/{agentId}/mcp-integrations/{integrationId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Assign MCP integration to agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"agentId","required":true,"in":"path","description":"The UUID of the agent","schema":{"format":"uuid","type":"string"}},{"name":"integrationId","required":true,"in":"path","description":"The UUID of the MCP integration to assign","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The MCP integration has been successfully assigned","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the agent","example":"Customer Support Assistant"},"instructions":{"type":"string","description":"The instructions for the agent","example":"You are a helpful customer support assistant. Always be polite and professional."},"userId":{"type":"string","description":"The unique identifier of the user who owns this agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the agent was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the agent was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"model":{"description":"The model configuration for this agent","example":{"id":"123e4567-e89b-12d3-a456-426614174000","name":"gpt-4","provider":"openai"},"allOf":[{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the model","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the model","example":"gpt-4"},"provider":{"type":"string","description":"The provider of the model","example":"openai"},"displayName":{"type":"string","description":"The display name of the model","example":"GPT-4"}},"required":["id","name","provider","displayName"],"title":"ModelResponseDto"}]},"tools":{"description":"The tools assigned to this agent","type":"array","items":{"type":"object","properties":{"type":{"type":"string","description":"The type of the tool","example":"internet_search","enum":["http","source_query","internet_search","website_content","send_email","create_calendar_event","code_execution","mcp_tool","mcp_resource","mcp_prompt"]}},"required":["type"],"title":"ToolResponseDto"}},"sources":{"description":"The sources assigned to this agent","type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the source assignment","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"sourceId":{"type":"string","description":"The unique identifier of the source","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the source","example":"Project Documentation"},"type":{"type":"string","description":"The type of source","example":"file","enum":["file","url"]}},"required":["id","sourceId","name","type"],"title":"AgentSourceResponseDto"}}},"required":["id","name","instructions","userId","createdAt","updatedAt","model","tools","sources"],"title":"AgentResponseDto"}}}},"400":{"description":"Integration disabled"},"403":{"description":"Integration belongs to different organization"},"404":{"description":"Agent or integration not found"},"409":{"description":"Integration already assigned"}}}
+>
+  
+</StatusCodes>
+
+
+      

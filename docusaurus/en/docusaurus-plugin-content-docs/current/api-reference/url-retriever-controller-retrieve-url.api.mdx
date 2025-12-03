@@ -1,0 +1,71 @@
+---
+id: url-retriever-controller-retrieve-url
+title: "Retrieve content from a URL"
+description: "Retrieve content from a URL"
+sidebar_label: "Retrieve content from a URL"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFU01v2zAM/SsGz1qd9ahbl+1QoEALLzkFwaDYTKxOllyKzmoY/u8DZedrHTYfbJmiyMf3ngYILZJhG/xjBRrW5ApksnhEWgbPFJxD+kFzbE0OFLSGTIOMFEFvtgoI3zqM/CVUPegh/VrCCjRThwrK4Bk9y5ZpW2fL1C5/jcFLLJY1NkZW3LcIGsLuFUuWPiTg2GKU3Y7cVVJksv4ACiqMJdlWSgr+4injkJ3wZnPvbE+hAQX4bprWyfmauY06z+fIXRma3BDb0iGMo7oaYpM6bxWw5XS0uJDxlQOM45Qf2+DjBPV+sZDPLbRVfYFTm5jtEH0Wu7LEGPedc/0ZdZUQsDkIv3CKUhQQtzWLv82ZmWxdPIGCBrkOomobYuLTcA0a8kvFvEuCRqTjWU3Rpbgo+u1E2azAv5lTYP0+JJ1mth76ztuYLQNh9vDy+EExoeWPnOw6Q4FAm3I/3y1g8pMpxU9Ck8zWmOQkbxr8Lyk33c92YnznvHXGeplhttrE140C6mSGWijVGxiGnYlihXGU8FuH1E88Hg1ZsxMONttRQY2mQgK9GeAn9qBhOaH7tBIEku46QfLhiozbKyVfnr+vQMFuvmpNqOQMmV+g0lsDKAhpuuTEFBvAGX/ozEFyp5ry/Aauu2MH
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve content from a URL"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/retrievers/url"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve content from a URL
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"url":{"type":"string","description":"URL to retrieve content from","example":"https://example.com/article"}},"required":["url"],"title":"RetrieveUrlDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The content has been successfully retrieved"}}}
+>
+  
+</StatusCodes>
+
+
+      

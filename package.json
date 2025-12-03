@@ -1,0 +1,54 @@
+{
+  "name": "ayunis-docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"docusaurus start --port 5555\"",
+    "dev:de": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"docusaurus start --port 5555 --locale de\"",
+    "build": "TINA_PUBLIC_IS_LOCAL=true tinacms build && docusaurus build",
+    "docusaurus:preview": "docusaurus serve --port 5555",
+    "docusaurus:clean": "docusaurus clear",
+    "docs:generate": "docusaurus gen-api-docs all",
+    "docs:clean": "docusaurus clean-api-docs all",
+    "openapi:fetch": "curl -o openapi/ayunis-api.json http://localhost:3000/api/docs-json",
+    "openapi:update": "npm run openapi:fetch && npm run docs:clean && npm run docs:generate",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "@mdx-js/react": "^3.0.0",
+    "@tinacms/datalayer": "^1.4.3",
+    "clsx": "^2.0.0",
+    "docusaurus-plugin-openapi-docs": "^4.5.1",
+    "docusaurus-theme-openapi-docs": "^4.5.1",
+    "is-hotkey": "^0.2.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tinacms": "^2.4.0",
+    "tinacms-gitprovider-github": "^3.0.3"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "@tinacms/cli": "^1.6.11",
+    "typescript": "~5.6.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

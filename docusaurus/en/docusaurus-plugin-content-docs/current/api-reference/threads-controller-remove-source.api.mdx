@@ -1,0 +1,71 @@
+---
+id: threads-controller-remove-source
+title: "Remove a source from a thread"
+description: "Remove a source from a thread"
+sidebar_label: "Remove a source from a thread"
+hide_title: true
+hide_table_of_contents: true
+api: eJytU01r3DAQ/StiTi2Iblpy0i0ke1jooaTZU1iK1h7HorLkjEZLjdF/L2N7N2myofTjZEsavTfz3tMIsUey7GLY1GDgriW0dbqOgSl6j/SNsIsH/BozVQgaeku2Q0ZKYO5HCLZDMOBq0ED4mB1hDYYpowYXwEBvuQUNNaaKXC88Ewuq7XZzo2KjuEXFEytoSFWLnQUzQhOpswwGcp7AeeiFKDG58ACl6BN3mlrb/FsHM4jiqOZ5/6iXnTCnPoaESeo/XVzK5zXjwtLapPaIQaVcVZhSk70fFuJaNRS756oUDZfnAeVYRTrChsiqiTnUIg+wfRCLYEZJsHspwe3Ep+zx+sRrn7zokNsomajRI8/ecwsGVgvkanR1Wc2302o8+lBEO6TDHJGduNBEaZ8de9HtasjBJXUdCdXVl81Zb17UqOcVGgR7rv344QI0VDGwrRjMKJP3MXFng1AuEfndqL/wj0d/GX/wqvfWBfEgk5ezWYMnWTWYKROLDLI+BXKnoY2JpXwc9zbhlnwpsv2YkYZZnYMlZ/cizP0ItUvyX4NprE/4qjMZFINE8d3tkvX36s3XdHaOZdOGQYS0PssKNHzHYX7I8rT+Sx9n3tRfdHRSs+zKs1DerD+v79ZQyk8S2p2u
+sidebar_class_name: "delete api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove a source from a thread"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/threads/{id}/sources/{sourceId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove a source from a thread
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread","schema":{"format":"uuid","type":"string"}},{"name":"sourceId","required":true,"in":"path","description":"The UUID of the source to remove","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The source has been successfully removed from the thread"},"404":{"description":"Thread or source not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

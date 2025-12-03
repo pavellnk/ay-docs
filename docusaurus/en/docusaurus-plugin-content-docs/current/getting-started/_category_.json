@@ -1,0 +1,10 @@
+{
+  "label": "Getting Started",
+  "position": 1,
+  "description": "Quick start guide for Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/getting-started"
+  }
+}
+

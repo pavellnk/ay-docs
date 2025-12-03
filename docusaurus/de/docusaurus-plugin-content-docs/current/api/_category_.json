@@ -1,0 +1,10 @@
+{
+  "label": "API-Referenz",
+  "position": 3,
+  "description": "Vollständige API-Dokumentation für Ayunis Core",
+  "link": {
+    "type": "generated-index",
+    "slug": "/api"
+  }
+}
+

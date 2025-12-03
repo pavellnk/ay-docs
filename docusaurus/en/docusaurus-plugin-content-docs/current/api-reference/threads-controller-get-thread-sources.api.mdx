@@ -1,0 +1,71 @@
+---
+id: threads-controller-get-thread-sources
+title: "Get all sources for a thread"
+description: "Get all sources for a thread"
+sidebar_label: "Get all sources for a thread"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8Fu4zYQ/RViTi0g1GmxveiWJtuFgUW7SOK9BMaCFkc2txSpDEdJDUP/Xgwp27Kd1smiRS852ZaGb94bzqM5GwgtkmYb/NRACXcrQm3iVfBMwTmkL0vk/PA2dFRhhAJaTbpBRopQ3m/A6wahBGugAMKHzhIaKJk6LMB6KKHVvIICDMaKbCu5UiZUs9n0WoVa8QoVpyRQQKxW2GgoN1AHajRDCV2XwHndSqLIZP0S+n4u+WIbfMQo8T9dXMjHYZ4b5I58VNo5FbMEVQc6zFkFz+hZVuu2dbZKFZl8jQKxGVEaKGgivYYCLGOTUgePv9epGkNEWHzFiqVYJBVmmylaM0IZhBxXZubtQ4fKGvRsa4u045v5Q19AZj59AVrePDW9VryycYBQC3TBL6PiIGh5B88h/aYb3O7WiElac5bFuk1rh3UFoO8aKO+B8U+pktGsYd4XUBFqRvPL+jzmlYQGOqK0h+4iEhTgXCNdtY6MzTjFJb8whQ1esW0wsm5akdy15qUAH3VkleMPMUT33atKN1Rqq662TsQ+4SKJkp+vwxsAtnitqWHe92ML32dP73ptaJRhz8d7NS7quD4jnSOK8wLYshOOv1qH+WC5GZx8nVryzUdvPvpffNSRe0Fn3Xw83sD/0jjCaeSZGbk3y7xZ5pstI4JfZ5lUor26Kj4mNelxedp3R0JuPycA9WR5pVaoDVJU2htF4Umuk9oYK7HafRo1bK1dxOMeHlb/003s6JJ4wia4rvFbGvI+sTgPeC7RSaZr0ZzA+/7fPx52m7ht4P35cHX7WXI/c0bM+0zl3cW704vy4FYfWNWh80Zq8/NzN+qpZySvnYpIj0gKiQKlArBexuSsPEUIqcOlH5BPLuJ6fw1vkFdBxpAlpvNL5oYSJgPcZGNNP4m7MSSnl4RzGTTqkHZlKMLluvM2qqtAqC4/TZ8dP45i1DiiAMHOsT/+cDHMCLoS44nUNkRudJoOhvnnjLaD9LvukTNo0jptPez/fLLufRkLKFPDbKXPC1iFyBKy2Sx0xBm5vpfHDx3SOhfkUZPVC6nF/QaMjfLd7Gx1xGY3/8B3N0Obfq/+dkJ7lvvWJl669lG7Tn5BAX/gOg+HvRwZ2XeJU35xWVXY8mjJyfwlY96uMT68v4O+/wu4Ego+
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all sources for a thread"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/threads/{id}/sources"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all sources for a thread
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the thread","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns all sources for the thread","content":{"application/json":{"schema":{"type":"array","items":{"oneOf":[{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the source"},"threadId":{"type":"string","description":"Thread ID this source belongs to"},"name":{"type":"string","description":"Name of the source"},"type":{"type":"string","description":"Type of source","enum":["text","data"]},"createdBy":{"type":"string","description":"Creator of the source","enum":["user","llm","system"]},"createdAt":{"type":"string","description":"Creation timestamp"},"updatedAt":{"type":"string","description":"Last update timestamp"},"textType":{"type":"string","description":"Type of text","enum":["file","web"]},"fileType":{"type":"string","description":"Type of file","enum":["pdf"]}},"required":["id","threadId","name","type","createdBy","createdAt","updatedAt","textType","fileType"],"title":"FileSourceResponseDto"},{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the source"},"threadId":{"type":"string","description":"Thread ID this source belongs to"},"name":{"type":"string","description":"Name of the source"},"type":{"type":"string","description":"Type of source","enum":["text","data"]},"createdBy":{"type":"string","description":"Creator of the source","enum":["user","llm","system"]},"createdAt":{"type":"string","description":"Creation timestamp"},"updatedAt":{"type":"string","description":"Last update timestamp"},"textType":{"type":"string","description":"Type of text","enum":["file","web"]},"url":{"type":"string","description":"URL of the source"}},"required":["id","threadId","name","type","createdBy","createdAt","updatedAt","textType","url"],"title":"UrlSourceResponseDto"},{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the source"},"threadId":{"type":"string","description":"Thread ID this source belongs to"},"name":{"type":"string","description":"Name of the source"},"type":{"type":"string","description":"Type of source","enum":["text","data"]},"createdBy":{"type":"string","description":"Creator of the source","enum":["user","llm","system"]},"createdAt":{"type":"string","description":"Creation timestamp"},"updatedAt":{"type":"string","description":"Last update timestamp"},"dataType":{"type":"string","description":"Type of data","enum":["csv"]},"data":{"type":"object","description":"CSV data with headers and rows","additionalProperties":false,"properties":{"headers":{"type":"array","items":{"type":"string"},"description":"Column headers"},"rows":{"type":"array","items":{"type":"array","items":{"type":"string"}},"description":"Data rows"}}}},"required":["id","threadId","name","type","createdBy","createdAt","updatedAt","dataType","data"],"title":"CSVDataSourceResponseDto"}]}}}}},"404":{"description":"Thread not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

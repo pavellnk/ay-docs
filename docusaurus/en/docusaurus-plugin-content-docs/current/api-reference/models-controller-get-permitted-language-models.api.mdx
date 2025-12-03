@@ -1,0 +1,71 @@
+---
+id: models-controller-get-permitted-language-models
+title: "Get all permitted language models"
+description: "Get all permitted language models"
+sidebar_label: "Get all permitted language models"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1r20AQ/SvLnFrY1mmhF99CW0KgLSFJ6cGYMl6NrU1Xu8rsyK0w+u9lJNnIjktDfJGRZt68Nx9vB6kmRvEpXhcwh6+poJA/piicQiD+uSG5Ia68CBVfMG4a3NAQBBZqZKxIiDPMF0sLTLlOMVOG+Q7eX1zoo6Ds2NdaAeZw1zhHOa+bEFrDJOxpS4XBEEy9L2PCWMdU+0IuRaEoiod1HbzrGc8esoLuILuSKtR/0tYEc0BmbMGCF6ry5H1aPZATZc6qW/xA1ReTmCzs4wbsCfP7kowvTFobKWlCtucInYWIFT0PRiP3QIf0mtPWF8TnICg2FcwXOquIHixglJJT7R1YqHwWxgAWUghYIVjIbcR1Ykca2jbRZ1ieI7Kv+YRM4XMdsP32bEljwnlpQ/q/Ze3nfZ6kZh1BmlcYfmObD3vyWov4fMmu9FuaznKVUiCMTyj/KElK4gmmzwb3+Z0Fh/FOmLB6EZjDaPKQ3jO7JcwpquiXonGPAF2nR/bYeFaZC13ccfEmC3Q8vrH9Rw2a6jvmt7QgXoISPH/2t+OJf5IEnf4sfDh36NdRiCMGk4m3xIaYE/f8BTdqFzAe95OZX5H81w8qkjKpX22ov2aUEuYwG77PDpmzfeabQ+ZAZ/QrH9epH8ko+bK/FfMxMZnLm+uzm34SY6YRFhR7iH339mI0LnRqXCq9Tlkq7C1rcItniT3icNgfoT8yqwP6qDvWcNBvQyMOvbVwwAULp81YWihTFo3f7VaY6TuHrtPXjw1xO7Roi+xxpd1ZLDsLJWHvUYsd/KJWW+Yc1TqDLYamt95Tf+6Wk3ldfb6HrvsLEl0/yg==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all permitted language models"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/permitted/language-models"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all permitted language models
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved all permitted language models","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The id of the permitted model"},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"type":{"type":"string","enum":["language"],"description":"The type of the model (always language)"},"isArchived":{"type":"boolean","description":"Whether the model is archived"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"}},"required":["id","name","provider","displayName","type","isArchived","canStream","isReasoning"],"title":"PermittedLanguageModelResponseDto"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

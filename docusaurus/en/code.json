@@ -1,0 +1,47 @@
+{
+  "homepage.tagline": {
+    "message": "Documentation for Ayunis Core",
+    "description": "The tagline on the homepage"
+  },
+  "homepage.getStarted": {
+    "message": "Get Started",
+    "description": "The get started button label"
+  },
+  "homepage.learnConcepts": {
+    "message": "Learn Concepts",
+    "description": "The learn concepts button label"
+  },
+  "homepage.title": {
+    "message": "Documentation",
+    "description": "The homepage title"
+  },
+  "homepage.description": {
+    "message": "Official documentation for Ayunis Core",
+    "description": "The homepage meta description"
+  },
+  "homepage.features.easyIntegration.title": {
+    "message": "Easy to Integrate",
+    "description": "Title for the easy integration feature"
+  },
+  "homepage.features.easyIntegration.description": {
+    "message": "Ayunis Core is designed for seamless integration into your existing applications with minimal configuration required.",
+    "description": "Description for the easy integration feature"
+  },
+  "homepage.features.typeSafe.title": {
+    "message": "Type-Safe",
+    "description": "Title for the type-safe feature"
+  },
+  "homepage.features.typeSafe.description": {
+    "message": "Built with TypeScript from the ground up, providing excellent developer experience with full type safety and autocompletion.",
+    "description": "Description for the type-safe feature"
+  },
+  "homepage.features.extensible.title": {
+    "message": "Extensible",
+    "description": "Title for the extensible feature"
+  },
+  "homepage.features.extensible.description": {
+    "message": "A modular architecture that allows you to extend and customize functionality to match your specific requirements.",
+    "description": "Description for the extensible feature"
+  }
+}
+

@@ -1,0 +1,71 @@
+---
+id: invites-controller-get-invite-by-token
+title: "Get a single invite by token"
+description: "Retrieve invite details including organization name by token"
+sidebar_label: "Get a single invite by token"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v2zgQ/SvEnFpAbiTHSVOd6k2KIpdFEaSXBsaCFscWW4lUyFFa19B/L4aiHcn2NocWMGCLmo83jzNvvAWFvnC6IW0N5HCH5DQ+odDmSRMKhSR15YU2RdUqbdbCurU0+qdkB2FkjWK5EWS/oYEEbIMuvLlVkMNtiOGvrSFnqwrdf2uk/vCfzX10aaSTNRI6D/nDFjgi5LAL6PCx1Q4V5ORaTEAzyEZSCckB8hBP2JWgcodeidajgwR8UWItId8C/pB1U3GGbHo+u7h8e/UuhQRo0/CZJ6fNGrpuwZl9Y41Hz27TNOWvI65aZ/wgofiuqRwzFAmEBAprCA1xHNk0lS6CwdlXz8G2A4wRjF1+xYKYIce0ku6haDWwiYAPufhs9GOLQis0pFca3ZgXSMY8IBMxwat3y0k2VecTObu4nMyml5fZLHs7S1NmaGVdLQlyaFutoEsAa6mrl6F8YDMhlXLo/f9czzMYPngfH98UtuZEzvKrl/Lc2QqF9F6vDSpB9mQe09aQP4BUtebmCseLw/yc05Ok1r+c9bp1Dg2J3v6Y5ZiwQaN6d1kU2BCqUHUTOnsEYGfJGNDQjaRQ+559JQknpGs8atpDaOwqvpdoRv0pveC4I9Kn6fR8kk0naXafpXnKny/hhgNAP6e/iSAGPQ3gagxgR9bfRcAc7CKLV3ol4jQuK3x9Gtb0PrvIz/ewhvP9b5Crl9qErXbNMfQepZsXNYpr6xrbSyh03VD/Hnjyd2MXp2LfqINuGd7bCayLBEhTSNgr8U0QqLuodjdkoes48yydHUte7yKMJbGyrQlCcHFKG28NoTOyEh7dEzqBzlkXKiK59qGafjkwoBqptLww1hj0juU9h7NocbYNy6ALRXIwdl/wKljZQH0sZ75pjfbMIIr5p9vjBVGiOLARQ4sEOHZvm71Jo2LLgpuPgTfWUy2DVscl9RFJSOG1WVf77hosw1H67bP+/+mSjb1G+IPOmkpqw7fQuiDGPXfP7CaQ926LBErrid9tt0vp8bOruo6PH1t0m57SJ+k0z0HYxEp7/q0gX8nK42/qeXUXu/S1+N0WPok7Hkqz4QuQVctPkMA33Oz/BnSLLoESpUIXkPXv5mGGB15HW7Ub9tbHD/fQdb8AEV4JYQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a single invite by token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/invites/{token}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve invite details including organization name by token
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"token","required":true,"in":"path","description":"Token of the invited user","schema":{"example":"1234567890","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the invite with organization details","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier of the invite","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"email":{"type":"string","description":"Email address of the invited user","example":"user@example.com"},"role":{"type":"string","description":"Role assigned to the invited user","enum":["admin","user"],"example":"user"},"status":{"type":"string","description":"Current status of the invite","enum":["pending","accepted","expired"],"example":"pending"},"sentDate":{"format":"date-time","type":"string","description":"Date when the invite was sent","example":"2023-12-01T10:00:00Z"},"expiresAt":{"format":"date-time","type":"string","description":"Date when the invite expires","example":"2023-12-08T10:00:00Z"},"acceptedAt":{"format":"date-time","type":"string","description":"Date when the invite was accepted (if applicable)","example":"2023-12-02T15:30:00Z"},"organizationName":{"type":"string","description":"Name of the organization","example":"Acme Corporation"}},"required":["id","email","role","status","sentDate","expiresAt","organizationName"],"title":"InviteDetailResponseDto"}}}},"404":{"description":"Invite not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

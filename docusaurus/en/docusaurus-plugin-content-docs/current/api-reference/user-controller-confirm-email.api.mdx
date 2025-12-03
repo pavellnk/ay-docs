@@ -1,0 +1,71 @@
+---
+id: user-controller-confirm-email
+title: "Confirm user email"
+description: "Confirm a user's email address using a JWT token received via email"
+sidebar_label: "Confirm user email"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMFu2zAM/RWBl13UJB3aAfOty4rBOaxFl24DgmBQbCZWK0suJaf1DP/7QNlpvLaHHeZD7NiPj4/ko1rI0Wekq6CdhQTmzm41lUKJ2iO98wJLpY1QeU7ovai9tjuhxOLHUgR3j1YQZqj3mIu9Vj0YJLgKSTFjmkMCtx5p7mwgZwzSr6xPcTlgK0WqxIDkIVmtJRA+1OjDJ5c3kLTxrybMIQlUo3whN5KIgTFm7GWBhMzZgDYwh6oqo7P4eXrnObAFnxVYKn4KTYWQgNvcYRZYELH8oNHHr5HuCPOBtN3BSyHHhmwdDU0bywIJ+KTKyjAHNoti8yXTV3qR3v5OT7/q1Kf25jybpx/S++rn9/ni42Qyga6To/pXg5a1hKBDJJqPWvk5OOi6PsRXzvpe//vZGd/eapuvswy939bGNAexmEMn4Ww2ex2U2r0yOh/KdDQ8FMoLfKqixhj6Rj52gLAuiK2rbYSdv50hIFllhEfaIwkkciRcltVEmIvHQhs8CGUf9nbjkoPasX1iIs8dKjEUjs1XOR+HqkIBCUzZ1X46cJwc/NrnGwzIDrk5mvDyMLZnL/z7/CRou3UxdJjYRVNb7cXcEYqL6/SVj5YFihcYMUZIYKE99nQyG3yuMvY5N4LLLVU0rFXlyCNxn58X9K+k7XFX/tP+D7sS8ClMK6O05VbUZDhXP4kVxEn0+kezWEsoeGLJCtp2ozzekuk6fv1QIzX9hPaKtNpwP1frTkKBKkeCZNXCPTZ9EVzOyZJlMNzULOfVMdCNjXJ99W0JEjbDuVO6nGNIPYKMvwnEg42j42LFdy0YZXe12jG25+TrD7iX1+Q=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Confirm user email"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/users/confirm-email"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Confirm a user's email address using a JWT token received via email
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"Email confirmation token","content":{"application/json":{"schema":{"type":"object","properties":{"token":{"type":"string","description":"JWT token for email confirmation","example":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."}},"required":["token"],"title":"ConfirmEmailDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"Email successfully confirmed"},"400":{"description":"Invalid token or token has expired"},"404":{"description":"User not found"},"500":{"description":"Internal server error occurred while confirming email"}}}
+>
+  
+</StatusCodes>
+
+
+      

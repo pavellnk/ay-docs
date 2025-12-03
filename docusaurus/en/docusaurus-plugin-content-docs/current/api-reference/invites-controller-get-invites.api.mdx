@@ -1,0 +1,71 @@
+---
+id: invites-controller-get-invites
+title: "Get all invites for current user's organization"
+description: "Retrieve all invites for the organization with calculated status and sent date"
+sidebar_label: "Get all invites for current user's organization"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlVFP20AMx7/KyS/bpHQkpcCWpyE2TbxNCF6G0GRybnNbchd8DtBV/e6TLwHagsYLVaU2F5/9i+/vf1ZgKVbsOnHBQwlnJOzolgw2jXH+1glFMw9spCYTeIHe/UWNNXdOalNhU/UNClkTBaWPBr01kbwYi0KQQeiI04ZTCyWcDhlPghcOTUP8a0EyLkIGHTK2JMQRysurDJhiF3ykCOUKpnmuP894e/bxVVzIoApeyIvmwK5rXJVu7P2OmmgFsaqpRf0ny46gBGTGJWTghNq4sR6uf1MlSsv6cOIGPGc3YqKw8wvIdmgvvLvpyThLXtzcEZswT6gDOmRA99h2jaYopvs0Ozg8mtCnz9eTYmr3Jzg7OJzMpoeHxaw4muV5DhnMA7coUELfOwvrDKhF17yO8k3DDFrLFOM2hjV9JN6C0YUv4+XHKrRaiIPeeq3OWWjIYIxu4ckaCS/W8X0L5SWgbZ2eVFq+2q2vNQeRvV71pGdWEY6ifNblsWBH3g7bsaqoE7LpqTvHZLcBHiKVgbx8VXGXq6fuq9on4lrN/n803WruavIbSOYOY5qaraZP8+n+pJhO8uK8yMtcvz/TCSfAeCxvSTAmfRng0zbAQ7PelkB78JDZvHdzM07pdUMfXsaanhcH5f6IpYqkmz4dXXmp4/gwC6NUH9WzcYSbzbzKQJykCoMjnY3u81UCrPWTwcFLHnTqhdhjYyLxLbEh5sAJSHARE8zocFcZtCR1UCtcUPIQlBpK2HOPHjgkGQ3Q+XlIah/Bjpe9d9GcBCZz/OP0WWPPazI7MWYzIgPNPcQWH/PRFbHSg1TgLkRpMfmhx1Yrfid5Zq7VOF06le/irs9uEa2ebPft3y2jyITuZa9r0HkVZ8/J/YbGbrW+DlF0abW6xkgX3KzXunzTEy+Hdt8iO9WbXq0zqAktMZSXK/hDS21/kqd2EZs+vSN2XyTrzSP+/u0c1ut/vmaCvA==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all invites for current user's organization"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/invites"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve all invites for the organization with calculated status and sent date
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns all invites for the organization","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier of the invite","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"email":{"type":"string","description":"Email address of the invited user","example":"user@example.com"},"role":{"type":"string","description":"Role assigned to the invited user","enum":["admin","user"],"example":"user"},"status":{"type":"string","description":"Current status of the invite","enum":["pending","accepted","expired"],"example":"pending"},"sentDate":{"format":"date-time","type":"string","description":"Date when the invite was sent","example":"2023-12-01T10:00:00Z"},"expiresAt":{"format":"date-time","type":"string","description":"Date when the invite expires","example":"2023-12-08T10:00:00Z"},"acceptedAt":{"format":"date-time","type":"string","description":"Date when the invite was accepted (if applicable)","example":"2023-12-02T15:30:00Z"}},"required":["id","email","role","status","sentDate","expiresAt"],"title":"InviteResponseDto"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

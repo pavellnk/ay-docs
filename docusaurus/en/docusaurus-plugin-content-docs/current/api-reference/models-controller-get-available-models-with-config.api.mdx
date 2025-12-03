@@ -1,0 +1,71 @@
+---
+id: models-controller-get-available-models-with-config
+title: "Get all available models"
+description: "Get all available models"
+sidebar_label: "Get all available models"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1v2zAM/SsCz0LTDdjFt6Itih5aFP1AD0EwMDYTq5Mll6KDGYH/+yDZSZzWG4rMlzgS9fgeRT5vwdfEKMa72wIyuPMF2XDpnbC3lvjnmuRig8bi0lK/+WqkvPRuZdagoUbGioQ4QDZfaGAKtXeBAmRb+H5+Hn8KCjmbOuaADJ6aPKcQVo21rWISNrShQqG1CneJVJUygYbcOyEnEQbr2po8UZ29hYi1hZCXVGF8k7YmyACZsQUNRqgKo3W/fKNcImGOgsX0DFOeKHwfGISNi8qOWT+XpEyh/EpJOdCDTkNNXBkRKu7+A+hM3TfWKjNaUiYo50Xt8c9Ag2tsqg5kwg11GhxW9LWMMfIzefYbUxBPQZBrKsjmsTscGtCATkr2tclBQ2WCMFrQ4K3FCkFDaB2uPOcUQ9vGmQCLKSK7nJ/IFCbUFtv7L0saDkxLy9E9CRNWI6yl95bQfQJ7LUlK4lHxc3Qq9Mc7DSY8EgbvIpFT0TghDMxeAj17b8PJaE0gJQkh0XvYNclJgCYcukyJV0uK+EUPfUUrbKycChz/FD3E4W5MuK6WVBSn1tMEhU7RDmMH3EXzeW8MxzrM95M9MaPD4IwG4Lj9xu1zfP3H13dc+3G5jkUuNIiROLe9vR4M9HFwyyvx0MVHw48pz7x1QuzQqkC8IVbE7DlJFlyHvdyJmbsh+Zu1ViSlj56/pmSMKCVkMOv3Z/sDcbhT1sHhjVv5dG+DpIs07erSM6mLh9vJWf0Qo8YRGiJ2H/vt7HzwfMxj00WFtQ9SYXL73u/+peko9b63hH7LrLZo0gQ2bONer3dfOQ0HxQsNpQ8Sd7fbJQZ6Ydt1cfm9IW77OmyQTe/G80WnoSRMVjrfwi9qY13ynOpY2A3aJn2aPn6/usXoEm6un6Hr/gCB2aDr
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all available models"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/available"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all available models
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved all available models","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"modelId":{"type":"string","description":"The id of the model"},"permittedModelId":{"type":"string","description":"The id of the model. Null if the model is not permitted.","nullable":true},"name":{"type":"string","description":"The name of the model"},"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The provider of the model"},"displayName":{"type":"string","description":"The display name of the model"},"canStream":{"type":"boolean","description":"Whether the model can stream"},"isReasoning":{"type":"boolean","description":"Whether the model can reason"},"canUseTools":{"type":"boolean","description":"Whether the model can use tools"},"isPermitted":{"type":"boolean","description":"Whether the model is permitted to be used"},"isDefault":{"type":"boolean","description":"Whether the model is the default model"},"isEmbedding":{"type":"boolean","description":"Whether the model is an embedding model"}},"required":["modelId","permittedModelId","name","provider","displayName","canStream","isReasoning","canUseTools","isPermitted","isDefault","isEmbedding"],"title":"ModelWithConfigResponseDto"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

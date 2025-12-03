@@ -1,0 +1,71 @@
+---
+id: prompts-controller-find-one
+title: "Get a prompt by ID"
+description: "Get a prompt by ID"
+sidebar_label: "Get a prompt by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcFu40YM/RWCpxaQE9lxsq1uxqZY+FQjSA5tEBS0hrJmK80oM5SzhqF/LygpXntjbAPsAgZkjTh8j4+cN3v0DQcS693SYIar4OtG4kfvJPiq4vBPYZ350zEm2FCgmoVDxOxxj45qxgytwQQDP7c2sMFMQssJWocZNiQlJmg45sE2CoEZ3pcMDw/LW/AFSMnQ9IAgHgJLsLxVpJiXXBNmeyx8qEkww7btgWTXKGiUYN0Gu+5JsWPjXeSo8bM01ccp5h1LG1w8xnuxUvbvseHcFpYNLG8xwdw7YSeag5qmsnkvzeXnqIn2R8RGIn79mXNRcYIKKXagYc1RzEj2nBKts88tgzXsRFmEU1kwQf5CdVNpmunsiufXNx8m/Nvv68l0Zq4mNL++mcxnNzfT+fTDPE1TTL5RrEtQrOj+99DpQ79DYRW8lguripyzbgOLGG0UcqJAR9r9P9QY/B2wv3wLFBgISq6aoq2AXtFASpJ+OQ6dbEZizUjsAlYVU+zzbq1hMCxkKzYQhZvJejfRJ2xaa8jlDIUPUJOjjRY1JovARcG52C1XuwstsI0clj/aWU0CL6UH/9KPpI0/s9l5YBI2i3d2wZAwkDMgtmZ4KdmdHBKKMCY8ITdLZ1eT6WySTu+naZbq7yJN07+PCWnmiWbthWvMz2VVURQYs/4Ite7Yuh4HLxvOy9dxPvT9WN3jmp4OZ2y0z7vRkW7FY9cpyDydv7WlIRicFyh86/r+XZ/zr6UTDo4qiBy2HIBD8KEnL7RRM8ZBmqhUTrd+YgF6VW69G0yuZim9uv2Ge+tSn87wckxyubemUxPuwTT9kxp64fvmjYUudq2zET76wLBYLc+28ZsYOI5IUHMPsdOLdJSbcp0QLazxUWrqPXe8Z85WcgJ6GC3hL3LZVGRdP3yh0m9DlV+lSjCzRgUrfRT9sN+vKfJDqLpOl59bDruh+C0FS2ut+3GPxkb9bzArqIr8hsPBBfGXu3G0foV33Xpn2Y+L5HaqGVWtvmGC//JuuHy7py7Bkslw6PkNHxZ5zr2lvG55c5vp1XkYhE9/3GPX/QcNQrXI
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a prompt by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/prompts/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a prompt by ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","description":"The UUID of the prompt to retrieve","schema":{"format":"uuid","type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the prompt with the specified ID","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"title":{"type":"string","description":"The title of the prompt","example":"Project Planning Assistant"},"content":{"type":"string","description":"The content of the prompt","example":"You are a helpful assistant that helps with project planning. Please provide detailed step-by-step guidance for managing projects effectively."},"userId":{"type":"string","description":"The unique identifier of the user who owns this prompt","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the prompt was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the prompt was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"}},"required":["id","title","content","userId","createdAt","updatedAt"],"title":"PromptResponseDto"}}}},"404":{"description":"Prompt not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

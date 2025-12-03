@@ -1,0 +1,71 @@
+---
+id: mcp-integrations-controller-list-predefined-configs
+title: "List available predefined MCP integration configurations"
+description: "List available predefined MCP integration configurations"
+sidebar_label: "List available predefined MCP integration configurations"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1v2zgQ/SuDObWAus5+nHRzXe/GaBsbWQeLwjACShpZbCiSIUdOXcP/fUFKsSUnQYLdk2V5OO/Ne8MZ79FYcoKl0bMCU/ya25lm2rSv/MRodkYpcrdKel44KqiUmoqJ0aXceEzQCidqYnIe09U6QUfeGu3JY7rH3y4uwkdBPnfShpSY4hfpGUwJYiukEpkisMe8IHvomGBuNJPmkERYq2Qefxl99yHTHn1eUS3CE+8sYYrCObHDBCVT7XvvTfadcg50XSiYZcvPq2bTi/LspN5gckb4Rsv7hiAEgyxIsywlOSiNA65eYo8J0g9RWxUSf5lPxh/nczwkWEhvldhdiZpeR/7UBoMWNR3xXgQxuciMgT8iTD/PqzCnb8GYh0owcCV9HwqsM1tZkB9gTozWlDOwgSM8ZMbcSb0Bv/NMdWAjGq6WkcJrVMYNV0Hh1mioiStTdKUPCQUeuqkxXeHV/HZ8s7zEBD9Ox9fT69vl/PP0ChMcL2a3n6ffMMF5DFj3uQ9iO5KXJApybzPncrlcQBUPnAwSQ/7vZAld42aK3g+0C6UaJ3+21RwSzEMjaZZC/SlJFf7p1ZkcI6CMIeDovpGOXpTov90LJTJSb7gYntyH0knShdpBPHTs0vyM6rOt+juMFzNYmjuKAvCbWmSmbcMQYuAd0w8G48AK7x+MK973uoJj2gRzJUnzrDg+/k25Ix42Az9yeBS0xyMzRpHQT4j8UxFX1MkeiwR5cqRfMLuGDglWpOwb+oqUhVgYG9g0siBofJivfb7fTONgKGMsAR6kUpDFI0VI0GtIggfJFfTmxKDeVWd750Pvp3WCLLm98MMe/cQGD+dp4lQdTrphjb2B0Et9vl2uu03SYUQYFpuwZ7DO7YfBqlifqxi3zLMr5utkMRhseURrTkunHTqY4obi1RBcYYqjc8zRKefoCIQJenLb4zqUujTR8q7I8a7R0sPEOAqmPTF/WRGcxcBQupC7jf31l4tuRYo8rMggkDWeaxFnvo5T7P8I8fwSCa05skrIeF8aFwdFK9IzxoTR8ogYjD8KtU6wMp7Dof0+E55unDocwuv7htyulW8rnIzR6WodL1CYtpiu9nhHuyBnnpMNJm2FauKgO/+XcFj3DP1rusTD4V+ELyEl
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List available predefined MCP integration configurations"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/mcp-integrations/predefined/available"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List available predefined MCP integration configurations
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"List of available predefined integrations","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"slug":{"type":"string","description":"Unique slug identifier for the predefined integration","example":"LOCABOO"},"displayName":{"type":"string","description":"Display name for the integration","example":"Locaboo 4"},"description":{"type":"string","description":"Description of what this integration provides","example":"Connect to Locaboo 4 booking system"},"authType":{"type":"string","description":"Authentication method for this integration","enum":["NO_AUTH","BEARER_TOKEN","API_KEY","OAUTH"],"example":"BEARER_TOKEN"},"authHeaderName":{"type":"string","description":"HTTP header name for authentication (if applicable)","example":"Authorization"},"credentialFields":{"description":"Credential fields required for this integration","type":"array","items":{"type":"object","properties":{"label":{"type":"string","description":"User-friendly label for the credential field","example":"Locaboo 3 API Token"},"type":{"type":"string","description":"Input type (text or password)","enum":["token","clientId","clientSecret"],"example":"token"},"required":{"type":"boolean","description":"Whether this field is required","example":true},"help":{"type":"string","description":"Help text to guide users","example":"Your Locaboo 3 API token will be used to authenticate with Locaboo 4"}},"required":["label","type","required"],"title":"CredentialFieldDto"}}},"required":["slug","displayName","description","authType"],"title":"PredefinedConfigResponseDto"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

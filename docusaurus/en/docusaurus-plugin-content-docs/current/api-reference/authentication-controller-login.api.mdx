@@ -1,0 +1,71 @@
+---
+id: authentication-controller-login
+title: "User login"
+description: "Authenticate user with email and password. Sets authentication cookies on successful login."
+sidebar_label: "User login"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdlUtP20AQx7/Kas7bBGhPPjWlHJAqgXicoqia2JN4wd41u2Mgsvzdq1nbxEl49EAvzSGJ7Xn+5r/jBjIKqTcVG2chgVnNOVk2KTKpOpBXT4ZzRSWaQqHNVIUhPDmfTdQ1cVC4tTfOqtS5e0NBOatCnaYUwqouVOHWxk5Ag6vIR8PzbDeXcfbUWfauKMj/jvagoUKPJTH5AMl8ocHTQ02Bf7hsA0kTL42nDBL2Nem9Tm6l+NRTJimwCGrl/F65oCF1lsmyhMOqKvoH07sgMRoIaU4lyj/eVAQJuOUdpSy1eWmGDQV5GvmMzAJ7Y9ewX9NZhzHLPIU3CqJnLKtCYgj97/3lJHUltEKko/9xqsve8qMsQ8Tjk6/QtnoEdd53Ncq60MCGo98vmdFPdtC2nVuonA0djZOjI/nZLSg6jFQxUbPXtYOeVCCefN50+qQjw6VzBaE9oHYxCHQoVAVGrsMYmYhtn9SQYQTourt11YPZovr2Gp1z+4iFyVQvcZlaifx5CEoKAdf0FxL13nk1mI+VsjeuFZqCsgPNDJ4jEjHkaxyO3+YwOrj/MYRWA+NattteYPEsiXMne7JyIfaCnEMCUznM02FFBvKPL/tReFxtd+TZUPXLfjrcKeOVsrsLNBi7cpFV38JsU1sT1KnzpGaX5wfUbnJSezZqbKFBSu1sjydH/VwxlbkKCumzxDhRiyUNO3xodSdZs9XEP35n9UpheuZpVaCxgqb2cdt3I5mDRAQNXaULDblMLJlD0ywx0K0v2lZuP9TkN92oHtEbXArW+aLVkBNm5CGZN3BPG0jgtOvuy41kF/OilioO1N/qwWOWplTxu7ZjUV1eXN+AhmX/Li1dJj4en0DH7wTi+1q849mJ9xoo0K7reIagiymfP4qH6lQ=
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User login"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Authenticate user with email and password. Sets authentication cookies on successful login.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"User credentials for authentication","content":{"application/json":{"schema":{"type":"object","properties":{"email":{"type":"string","description":"Email address for authentication","example":"user@example.com"},"password":{"type":"string","description":"Password for authentication","example":"password123"}},"required":["email","password"],"title":"LoginDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Login successful. Authentication cookies are set.","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status","example":true}},"required":["success"],"title":"SuccessResponseDto"}}}},"400":{"description":"Invalid request format","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}},"401":{"description":"Invalid credentials","content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"string","description":"Error message","example":"Authentication failed"}},"required":["message"],"title":"ErrorResponseDto"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

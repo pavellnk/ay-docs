@@ -1,0 +1,71 @@
+---
+id: models-controller-get-model-provider-info
+title: "Get model provider information"
+description: "Retrieves detailed information about a specific model provider"
+sidebar_label: "Get model provider information"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMtu2zAQ/BViTy1A1G6RXnQzEjc10DwQx4fCMAJaWtlMKZJZUm4MQf9eLK24cpTm0pNlch8zs7NsoMCQk/ZROwsZ3GEkjTsMosCotMFCaFs6qhQHCLV2dRRKBI+5LnUuKlegEZ7cThdIIMF5pBQ7KyCDK74O585GcsYgPWwwprPbLmNmSwcSvCJVYUQKkC0bsKpCyKBXlvCp1oQFZJFqlKAZrFdxCxJCvsVKQdZA3HvOC5G03UDbrjgxeGcDBr7/Mh7zzynleZ3nGEJZG7MX1PEvXjHrqwAScmcj2sjFlPdG5+li9Bi4YjNE5NaPmEcmSixQ1Ac8R4ID7BLQ1hVkSxbUKg0SlI1bcl7nIKHSIZIyrLcxqlKswt6q0lGOHLqvrQ6wkq+o3m9xwKtAG3Wpk8r4rCpvEuBD11ZCoYM3an+dRjKEOWzQJQgeonCliIOmJ51uPNrJjDttXYhYzOx7alxMQcJ0ARIWc5Awn/749vD9Zn4/vQAJk5+L69n8bdrGHWYkfm+RMIE6asCNAx9pEgFpp3MMJxgXc2jbvgmXfW/2FeqxWEmIOqb8geXvOldeRAdty7XPxmdDa16dzsq6KEpX24LV+vqWl2c2IlllEg0kgUSOEvaoNrxbkCaRrFFh3Dpe0g0mZ/IyZTA6BIxemo6al6+WTZbKcqEV72Dp0qw6lpPkOnHuCMXkdvamOV7FiH6EBK59iP38adytmcp5zZiCdyFWKtmjeyAuMb6/pycAmr9r+//vXGfQiM9x5I3SlmdSk0lrnaQ8ai37ZsmO36uDVziwadYq4IJM2/LxU420P2i8U6TVmuVdNmw0/i4gK5UJ+A69D3edVT+Kf2HtDpXds/DK1PwPJPzCff/pbVe8majSK7VsuutJnqOPvcTBK9j2HXY5vYe2/QM5wTrC
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get model provider information"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/models/provider/{provider}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves detailed information about a specific model provider
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"provider","required":true,"in":"path","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved model provider information","content":{"application/json":{"schema":{"type":"object","properties":{"provider":{"type":"string","enum":["openai","anthropic","mistral","ollama","synaforce","ayunis"],"description":"The model provider identifier","example":"openai"},"displayName":{"type":"string","description":"The display name of the model provider","example":"OpenAI"},"hostedIn":{"type":"string","enum":["DE","EU","US","SELF_HOSTED","AYUNIS"],"description":"The location where the provider hosts their services","example":"US"}},"required":["provider","displayName","hostedIn"],"title":"ModelProviderInfoResponseDto"}}}},"404":{"description":"Model provider not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

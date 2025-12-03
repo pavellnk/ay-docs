@@ -1,0 +1,71 @@
+---
+id: agents-controller-create
+title: "Create a new agent"
+description: "Create a new agent"
+sidebar_label: "Create a new agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVWG1v2zYQ/ivEfZYT2XHSTd+yZBgCbGvQZh82IzBo6Wyxo0iGL3EMw/99OEqK5bfUbbIWDYxAEo/Hh3f33B25BG3Qci+0uikgg8sZKu+utPJWS4l2nFvkHiEBwy2v0KN1kI3uE7D4END5X3SxgGwZX4XFAjJvAyaQa+VReRrixkiRxzVOPzmt6JvLS6w4PfmFQchATz5h7mkdS4i8QEejilfYkXLeCjWDBAp0uRWGdEIGdyUykmR6ynyJjNMuIAF84pWRNPEqOK8rtOxjMEZbzy6dE87zKFYJ9TuqmS8h6ydQ8af2bXB+vkpAKOdtyGktdxyW7gw21fYAqL91YNwi46xEaaZBsryF6RqYvIV5wi7lnC8cmyAzWgqPjKuCGaun6JzQissTWCVQ6QIlufIYnDfXrcUM2kp4jwWLCpjXLDhssAu3B3x/cIbD84t3Pfzp50mvPyjOenx4ftEbDi4u+sP+u2GappDAVNuKe8ggBFEQQK+1JOPPVEWhRkB3gZGQIxA8StJT14TNzri1fAEJCI+V+3ws1aPH2IUkomW0lmsUG9sXyqNV6McOuc1LGlOhgmwEpfcGEnA62BzHDwFtxLgjP8eJEx7HLVMScKiKMVZcSEigJt445xJVwe0YH2uhXBc4xifMQwScQJWbMQFtHi3WKzevxurKeLhvLH+l1VTMvjw+oiXyODnU6eKAXb4uLFZJJ4GMamT3CXjho9K7jZi59hpW21Niotji6poNu2HX0X4VLR0zX6M66nZGK1dHziDt74/TGJCs5ERLVMyFPEfnpkHKBasdWMCb5UJxpNeCEg8BmShQeTEVaA+nxa8l8TdIyz9a4g0O7bG8OughUsLmpWZ6rtxbZ94mIC/9cSAL3mzViwrZvES1tiabc9cJ8DW2QTo46/UHvbR/10+zlH4naZr+08VDinukNJrNFG8KSnLnWaP0dchi7thP+7pGbqbDw6WyZu6xbqupBTPje8M6BTyKAi2lBYOKC4LGpXw/hWz0v2eM2gbfL2Psrl/bZdU1zDFKW+nDitfWLYQzki/+PBpxM+EzyH+7vSPkW3VLFK3PO1vaxNApVX+Q1g9NaYrFqi3sLzZSdZ3Gou6jOjH6zRqpBsqP3UId0aVs+GbVbuGAc5rBt3bPq1lf42pgVW9Vfmqtry6Rz675XjlpD4Bbq8kT7FrngewVK0I87HwxU/ZonwqJHXI0r8HK3ZCM2eTZ0M+JZTtSY6/7MYptBuwLyWmrs27anW5X0S3mbflsk9OaCdswtgCsEhim6S5fbtQjl6JoKn3BPSf7nu8XpTzBJXNoH9EytFbbyEbPZ3R7AVFJhLI5sz4JMM4Uzp9JWKEvNRVwo10kG6erAThtlFDOoWWaaxFq6j+sr0Z+XTcBTWF/8SZis+N9+z61cz9wLGt2zuvrrmM3IW8eMY9bIpYwoaY6EqUNjUVQwrErbZFd3t7spcyWDOtKJEAuqWX7J2lzCOM5tZkUCeTLiquuX/b5fmPR5317fPKnRnIROU5EzJZNWHRjq6R4yUawXE64w7+sXK3oc13OYrA8civ4hDY8IiOUyGNDM1rCv7ggTHVd693RuiQuQ6wH24fIVdLOuMxzNP5F2ftOSN++/3gHCUyaSzwKDsjA8jkk8X8GkIA2zyew+G0JkqtZ4DOSrXXS33+qk9eK
+sidebar_class_name: "post api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/agents"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"type":"string","description":"The name of the agent","example":"Customer Support Assistant","minLength":1,"maxLength":255},"instructions":{"type":"string","description":"The instructions for the agent","example":"You are a helpful customer support assistant. Always be polite and professional."},"modelId":{"type":"string","description":"The ID of the permitted model to use for this agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"toolAssignments":{"description":"The tools to assign to the agent","type":"array","items":{"type":"object","properties":{"type":{"type":"string","description":"The type of tool to assign","example":"internet_search","enum":["http","source_query","internet_search","website_content","send_email","create_calendar_event","code_execution","mcp_tool","mcp_resource","mcp_prompt"]},"toolConfigId":{"type":"string","description":"The ID of the tool configuration to assign","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"}},"required":["type"],"title":"ToolAssignmentDto"}}},"required":["name","instructions","modelId","toolAssignments"],"title":"CreateAgentDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The agent has been successfully created","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the agent","example":"Customer Support Assistant"},"instructions":{"type":"string","description":"The instructions for the agent","example":"You are a helpful customer support assistant. Always be polite and professional."},"userId":{"type":"string","description":"The unique identifier of the user who owns this agent","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"type":"string","description":"The date and time when the agent was created","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"updatedAt":{"type":"string","description":"The date and time when the agent was last updated","example":"2023-12-01T10:00:00.000Z","format":"date-time"},"model":{"description":"The model configuration for this agent","example":{"id":"123e4567-e89b-12d3-a456-426614174000","name":"gpt-4","provider":"openai"},"allOf":[{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the model","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the model","example":"gpt-4"},"provider":{"type":"string","description":"The provider of the model","example":"openai"},"displayName":{"type":"string","description":"The display name of the model","example":"GPT-4"}},"required":["id","name","provider","displayName"],"title":"ModelResponseDto"}]},"tools":{"description":"The tools assigned to this agent","type":"array","items":{"type":"object","properties":{"type":{"type":"string","description":"The type of the tool","example":"internet_search","enum":["http","source_query","internet_search","website_content","send_email","create_calendar_event","code_execution","mcp_tool","mcp_resource","mcp_prompt"]}},"required":["type"],"title":"ToolResponseDto"}},"sources":{"description":"The sources assigned to this agent","type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The unique identifier of the source assignment","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"sourceId":{"type":"string","description":"The unique identifier of the source","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"name":{"type":"string","description":"The name of the source","example":"Project Documentation"},"type":{"type":"string","description":"The type of source","example":"file","enum":["file","url"]}},"required":["id","sourceId","name","type"],"title":"AgentSourceResponseDto"}}},"required":["id","name","instructions","userId","createdAt","updatedAt","model","tools","sources"],"title":"AgentResponseDto"}}}},"400":{"description":"Invalid agent data"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

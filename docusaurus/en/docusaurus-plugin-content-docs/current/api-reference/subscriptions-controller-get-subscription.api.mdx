@@ -1,0 +1,71 @@
+---
+id: subscriptions-controller-get-subscription
+title: "Get subscription details for the current organization"
+description: "Get subscription details for the current organization"
+sidebar_label: "Get subscription details for the current organization"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1V9tu2zgQ/RWCL9sF5EZ2nKTxW5oUWT9sEjTJywbBYiyNLXYpUiFHTlxD39KP2R9bDCUnku3C7hYFDNgiR4dnbofjpbQFOiBlzTiVI3lbTnziVMEL/twaclZrdH/PkNpbMpIFOMiR0Hk5eniMpENfWOPRy9FSDuKYv1J8e4OxkwS9n5ZaL4RDcgrnmArfwhUpEijtZSQTawgNMQwUhVZJIHnwxTPWUvokwxz4Fy0KlCNpJ18wISbm2CVSNROVtmw8OWVmMlojdm/UU4lCpWhITRU6YaeCMuxQk5HEF8gLzUD9wSEOj45PevjhdNLrD9LDHgyPjnvDwfFxf9g/GcZxLCM5tS4HkiNZliqVVSQTh0CYngW3XndTIOyRylFGO5heAKF4ztBs0BPP4EUD36E6iAeHvf6gF/fv+vEo5s9fTKUs0l9JRYMn0ZyxF58ETIJarxitZ/XH4rDCEu/UVDTlM9H4+1Ym/aMuE+tm4z2q5trNwKivoSzF+EKA9zZR7K94VpT9mgIy9np6i0C+xc+U+QTdBr+rsMyl7PkFoTaD1abUjyvuHZXgDTo+YvcJN2wtCnThhF0HDE7fn55WLBQGn0GfLxJe3RXlz7W1SNj8e31pylyOHmRuDWV6ISO5QHB6IR/bIV/trlE4M0lm3c80AWVAwqOboxfgA0EIoGJqnXBtB/xerQBzUJrr9Ycz/fpmk/N3ZAl085ArU3IZzBWh77TCIVcWvlATbPbqZwLSZIkRV+6v+z3sxf0NvydKa2VmYzO1m7fHx3pTKFPTqlMPWl9P5ehh1zWQ2LwAs7iCfI+aO6+NhYHg8RvxsyRHcZlP/mC2nhwi7Ua7re3aOH+Wni9OcvDvN2SszJYe6zTuBrxaVUFHTiCIqKLFHv6x1TY+kBKjFNYT6HOb7hGrm2ArEjZeYzQ8CpRsacjtw6oxbKNcYEk+yTSYoH5zoH2DdH9LvfFFF+xTIHV88uE0llWQgadSOUxZO9oF8prbbmKa8Hbi8+bfYyRJUTioPSl9fKvpz82EdEFWVo/rBBRfk2/zQfuCXl1Jbflf0+o1Wd0qcRvCstn03R78jksdPyr2YxgfbjbsvUcnlBfGkoCSMuvUV0wFWQFhDhSUKS9s6xb9zXeVPSAPN5GvbPfKn9rSpEFsWXbaiAxxtG0WHRtCZ4I0ujk6gc5ZF4qCYMYTrWyf4DkUXYBLpK2T6yuNpHQODXXpRDJHyixP2rNQXwVQJkfyoHtaJGtazWitGkFcJeNsURrlxbl1KM5uxhu1f5ehWLMRbYtIMnZt238fN8M2JCxmVdP/OYQxO0jg//e2w+u1ZQlf6KDQoEJ+Sqd5r47Elrhn1hNvLJcT8HjvdFXx8lOJrCocnzk4xVXNTyymCClLxMNS/oOLINsJFhztOeiSCWz8oageW5m5/HQnq+o/RsF64Q==
+sidebar_class_name: "get api-method"
+info_path: docs/api-reference/ayunis-core-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get subscription details for the current organization"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/subscriptions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get subscription details for the current organization
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved subscription details","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier of the subscription","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"createdAt":{"format":"date-time","type":"string","description":"Date when the subscription was created","example":"2023-12-01T10:00:00Z"},"updatedAt":{"format":"date-time","type":"string","description":"Date when the subscription was last updated","example":"2023-12-01T10:00:00Z"},"cancelledAt":{"type":"object","description":"Date when the subscription was cancelled (if applicable)","example":"2023-12-15T10:00:00Z"},"orgId":{"type":"string","description":"Organization ID associated with the subscription","example":"123e4567-e89b-12d3-a456-426614174000","format":"uuid"},"noOfSeats":{"type":"number","description":"Number of seats in the subscription","example":10},"pricePerSeat":{"type":"number","description":"Price per seat in the subscription","example":29.99},"renewalCycle":{"type":"string","description":"Renewal cycle of the subscription","enum":["monthly","yearly"],"example":"monthly"},"renewalCycleAnchor":{"format":"date-time","type":"string","description":"Date that serves as the anchor for renewal cycles","example":"2023-12-01T10:00:00Z"},"availableSeats":{"type":"number","description":"Number of available seats (total seats minus invites)","example":3},"nextRenewalDate":{"format":"date-time","type":"string","description":"Date of the next renewal","example":"2024-01-01T10:00:00Z"},"billingInfo":{"description":"Billing information","allOf":[{"type":"object","properties":{"companyName":{"type":"string","description":"Company name","example":"Acme GmbH"},"street":{"type":"string","description":"Street","example":"Musterstraße"},"houseNumber":{"type":"string","description":"Number","example":"123a"},"city":{"type":"string","description":"City","example":"Musterstadt"},"postalCode":{"type":"string","description":"Postal code","example":"12345"},"country":{"type":"string","description":"Country","example":"Deutschland"},"vatNumber":{"type":"string","description":"USt-ID","example":"DE1234567890"}},"required":["companyName","street","houseNumber","city","postalCode","country"],"title":"SubscriptionBillingInfoResponseDto"}]}},"required":["id","createdAt","updatedAt","orgId","noOfSeats","pricePerSeat","renewalCycle","renewalCycleAnchor","availableSeats","nextRenewalDate","billingInfo"],"title":"SubscriptionResponseDto"}}}},"403":{"description":"User is not authorized to access this organization's subscription"},"404":{"description":"No subscription found for the organization"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      
