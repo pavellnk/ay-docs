@@ -27,6 +27,7 @@ export default defineConfig({
   build: {
     outputFolder: 'admin',
     publicFolder: 'static',
+    basePath: 'ay-docs', // Must match Docusaurus baseUrl (without slashes)
   },
 
   media: {
