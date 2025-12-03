@@ -3,6 +3,10 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type * as OpenApiPlugin from 'docusaurus-plugin-openapi-docs';
 
+// Site configuration - can be overridden via environment variables
+const siteUrl = process.env.SITE_URL;
+const baseUrl = process.env.BASE_URL;
+
 const config: Config = {
   title: 'Ayunis Core',
   tagline: 'Documentation for Ayunis Core',
@@ -12,11 +16,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://pavellnk.github.io',
-  baseUrl: '/ay-docs/',
+  url: siteUrl,
+  baseUrl: baseUrl,
 
-  organizationName: 'pavellnk',
-  projectName: 'ay-docs',
+  organizationName: process.env.GITHUB_ORG,
+  projectName: process.env.GITHUB_REPO,
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

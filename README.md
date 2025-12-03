@@ -1,21 +1,20 @@
 # Ayunis Core Documentation
 
-Official documentation site for Ayunis Core, built with [Docusaurus](https://docusaurus.io/) and [Decap CMS](https://decapcms.org/).
+Official documentation site for Ayunis Core, built with [Docusaurus](https://docusaurus.io/) and [TinaCMS](https://tina.io/).
 
 ## Features
 
-- **Text-Based Content**: All documentation is stored as Markdown files in the repository
-- **Visual Editing**: Decap CMS provides a user-friendly interface for non-technical contributors
-- **Bitbucket Support**: Native integration with Bitbucket (also supports GitHub, GitLab)
+- **Internationalization**: English and German language support
+- **Visual Editing**: TinaCMS provides a user-friendly interface for content editing
 - **OpenAPI Integration**: Auto-generated API documentation from Swagger/OpenAPI specs
-- **AI-Friendly**: Plain text format makes it easy for AI tools to add and modify content
+- **GitHub Pages**: Automatic deployment via GitHub Actions
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 20+
-- npm, yarn, or pnpm
+- npm
 
 ### Installation
 
@@ -25,10 +24,16 @@ npm install
 
 ### Development
 
-Start the development server:
+Start the development server with TinaCMS:
 
 ```bash
-npm start
+npm run dev
+```
+
+For German locale:
+
+```bash
+npm run dev:de
 ```
 
 Access:
@@ -37,8 +42,6 @@ Access:
 
 ### Build
 
-Build for production:
-
 ```bash
 npm run build
 ```
@@ -46,41 +49,53 @@ npm run build
 ### Preview Production Build
 
 ```bash
-npm run serve
+npm run docusaurus:preview
 ```
 
 ## Project Structure
 
 ```
 ayunis-docs/
-├── docs/                    # Documentation content (Markdown)
-│   ├── getting-started/     # Getting started guides
-│   ├── concepts/            # Core concepts
-│   ├── api/                 # Manual API docs
-│   ├── api-reference/       # Generated OpenAPI docs
-│   ├── guides/              # How-to guides
-│   └── contributing/        # Contribution guidelines
-├── openapi/                 # OpenAPI specification files
-│   └── ayunis-api.json      # Swagger/OpenAPI spec
+├── docusaurus/                  # Documentation content
+│   ├── en/                      # English content
+│   │   └── docusaurus-plugin-content-docs/current/
+│   │       ├── getting-started/
+│   │       ├── concepts/
+│   │       ├── api/
+│   │       ├── api-reference/   # Generated OpenAPI docs
+│   │       ├── guides/
+│   │       └── contributing/
+│   └── de/                      # German translations
+│       └── docusaurus-plugin-content-docs/current/
+├── openapi/                     # OpenAPI specification
+│   └── ayunis-api.json
 ├── src/
-│   ├── components/          # React components
-│   ├── css/                 # Custom styles
-│   └── pages/               # Custom pages
+│   ├── app/                     # App-level styles
+│   ├── pages/                   # Custom pages
+│   └── widgets/                 # Reusable components
 ├── static/
-│   ├── admin/               # Decap CMS admin interface
-│   │   ├── index.html
-│   │   └── config.yml       # CMS configuration
-│   └── img/                 # Static images
-├── docusaurus.config.ts     # Docusaurus configuration
-└── sidebars.ts              # Sidebar configuration
+│   ├── admin/                   # TinaCMS admin (generated)
+│   └── img/                     # Static images
+├── tina/
+│   └── config.ts                # TinaCMS configuration
+├── docusaurus.config.ts         # Docusaurus configuration
+└── .github/workflows/           # CI/CD workflows
 ```
 
 ## Adding Content
 
-### For Developers (via Git)
+### Via TinaCMS (Recommended)
 
-1. Create a new `.md` file in the appropriate `docs/` subdirectory
-2. Add frontmatter with required fields:
+1. Start dev server: `npm run dev`
+2. Go to http://localhost:5555/admin
+3. Select a collection (e.g., "Getting Started")
+4. Create or edit content using the visual editor
+5. Save changes (commits to Git automatically in production)
+
+### Via Git
+
+1. Create a new `.md` file in the appropriate directory
+2. Add frontmatter:
 
 ```markdown
 ---
@@ -96,29 +111,12 @@ Content goes here...
 
 3. Commit and push your changes
 
-### For Non-Technical Users (via Decap CMS)
-
-1. Navigate to `/admin` on your deployed site
-2. Log in with your Bitbucket account
-3. Use the visual editor to create and edit content
-4. Click "Publish" to save changes (creates a Git commit)
-
-### For AI Tools
-
-The documentation content is stored as plain Markdown files, making it easy for AI tools to:
-- Add new documentation pages
-- Update existing content
-- Generate API documentation
-- Create code examples
-
-Simply create or modify `.md` files in the `docs/` directory following the established structure.
-
 ## OpenAPI Documentation
 
-### Update API docs from your backend
+### Update API docs from backend
 
 ```bash
-# Fetch latest spec from your running backend
+# Fetch latest spec (requires backend running on port 3000)
 npm run openapi:fetch
 
 # Regenerate docs
@@ -127,46 +125,47 @@ npm run openapi:update
 
 ### Manual update
 
-1. Place your OpenAPI/Swagger JSON at `openapi/ayunis-api.json`
+1. Place OpenAPI JSON at `openapi/ayunis-api.json`
 2. Run `npm run docs:clean && npm run docs:generate`
-
-## Decap CMS Configuration
-
-### Bitbucket Setup
-
-1. Update `static/admin/config.yml`:
-   ```yaml
-   backend:
-     name: bitbucket
-     repo: your-workspace/ayunis-docs  # Your repo
-     branch: main
-   ```
-
-2. Create an OAuth consumer in Bitbucket:
-   - Go to Workspace settings → OAuth consumers
-   - Add consumer with callback URL: `https://your-site.com/admin/`
-   - Enable: Account Read, Repository Write
-
-### Local Development
-
-For local CMS testing, uncomment in `config.yml`:
-```yaml
-local_backend: true
-```
-
-Then run: `npx decap-server`
 
 ## Deployment
 
-The site can be deployed to any static hosting service:
+### GitHub Pages (Current Setup)
 
-- **Vercel**: Connect your repository for automatic deployments
-- **Netlify**: Use `npm run build` with `build` as the publish directory
-- **Bitbucket Pipelines**: Configure `bitbucket-pipelines.yml`
+Automatic deployment on push to `main` via GitHub Actions.
 
-## Contributing
+**Required GitHub Secrets:**
 
-We welcome contributions! See the [Contributing Guide](docs/contributing/overview.md) for details.
+| Secret | Description |
+|--------|-------------|
+| `SITE_URL` | Site URL (e.g., `https://company.github.io`) |
+| `BASE_URL` | Base path (e.g., `/repo-name/` or `/`) |
+| `TINA_CLIENT_ID` | TinaCMS client ID |
+| `TINA_TOKEN` | TinaCMS read-only token |
+
+### TinaCMS Setup
+
+1. Create project at https://app.tina.io
+2. Connect your GitHub repository
+3. Add your site URL(s)
+4. Create a read-only token
+5. Add credentials to GitHub Secrets
+
+## Environment Variables
+
+See `env.example` for all configurable options.
+
+## Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start dev server with TinaCMS |
+| `npm run dev:de` | Start dev server (German locale) |
+| `npm run build` | Build for production |
+| `npm run docusaurus:preview` | Preview production build |
+| `npm run docs:generate` | Generate OpenAPI docs |
+| `npm run docs:clean` | Clean generated OpenAPI docs |
+| `npm run openapi:update` | Fetch and regenerate OpenAPI docs |
 
 ## License
 

@@ -35,6 +35,10 @@ jobs:
       - name: Build
         run: npm run build
         env:
+          # Site configuration (override via secrets if needed)
+          SITE_URL: ${{ secrets.SITE_URL }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          # TinaCMS credentials
           TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
 

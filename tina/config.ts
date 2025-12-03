@@ -7,6 +7,9 @@ const branch =
   process.env.HEAD ||
   'main';
 
+// Base path for admin (without slashes) - must match Docusaurus baseUrl
+const basePath = (process.env.BASE_URL || '/ay-docs/').replace(/^\/|\/$/g, '');
+
 export default defineConfig({
   // Tina Cloud credentials
   clientId: process.env.TINA_CLIENT_ID,
@@ -16,7 +19,7 @@ export default defineConfig({
   build: {
     outputFolder: 'admin',
     publicFolder: 'static',
-    basePath: 'ay-docs', // Must match Docusaurus baseUrl (without slashes)
+    basePath: basePath || undefined, // undefined if root path
   },
 
   media: {
