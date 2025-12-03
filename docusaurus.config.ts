@@ -12,11 +12,12 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://docs.ayunis.io',
-  baseUrl: '/',
+  url: 'https://pavellnk.github.io',
+  baseUrl: '/ay-docs/',
 
-  organizationName: 'ayunis',
-  projectName: 'ayunis-docs',
+  organizationName: 'pavellnk',
+  projectName: 'ay-docs',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
