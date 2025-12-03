@@ -57,5 +57,5 @@ Wenn Sie die Versionsnummer sehen, sind Sie fertig!
 
 ## Nächste Schritte
 
-Nachdem Sie Ayunis Core installiert haben, fahren Sie mit der [Schnellstart](/de/docs/getting-started/quick-start)-Anleitung fort.
+Nachdem Sie Ayunis Core installiert haben, fahren Sie mit der [Schnellstart](/docs/getting-started/quick-start)-Anleitung fort.
 

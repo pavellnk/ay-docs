@@ -21,15 +21,15 @@ Ayunis Core ist die grundlegende Bibliothek, die das Ayunis-Ökosystem antreibt.
 
 ## Schnelllinks
 
-- [Installation](/de/docs/getting-started/installation) - Richten Sie Ayunis Core in Ihrem Projekt ein
-- [Schnellstart](/de/docs/getting-started/quick-start) - Erstellen Sie Ihre erste Integration in Minuten
-- [Kernkonzepte](/de/docs/concepts) - Verstehen Sie die Grundlagen
+- [Installation](/docs/getting-started/installation) - Richten Sie Ayunis Core in Ihrem Projekt ein
+- [Schnellstart](/docs/getting-started/quick-start) - Erstellen Sie Ihre erste Integration in Minuten
+- [Kernkonzepte](/docs/concepts) - Verstehen Sie die Grundlagen
 
 ## Hilfe bekommen
 
 Wenn Sie Probleme haben oder Fragen:
 
-- Schauen Sie in die [API-Referenz](/de/docs/api) für detaillierte Dokumentation
+- Schauen Sie in die [API-Referenz](/docs/api) für detaillierte Dokumentation
 - Besuchen Sie unsere [GitHub Discussions](https://github.com/ayunis/ayunis-core/discussions) für Community-Support
 - Melden Sie Fehler auf [GitHub Issues](https://github.com/ayunis/ayunis-core/issues)
 

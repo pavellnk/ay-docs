@@ -69,9 +69,9 @@ npx ts-node index.ts
 
 Herzlichen Glückwunsch! Sie haben Ihre erste Ayunis Core Anwendung erstellt. Hier sind einige nächste Schritte:
 
-- Lernen Sie die [Kernkonzepte](/de/docs/concepts), um die Grundlagen zu verstehen
-- Erkunden Sie die [API-Referenz](/de/docs/api) für detaillierte Dokumentation
-- Schauen Sie sich die [Anleitungen](/de/docs/guides) für häufige Anwendungsfälle an
+- Lernen Sie die [Kernkonzepte](/docs/concepts), um die Grundlagen zu verstehen
+- Erkunden Sie die [API-Referenz](/docs/api) für detaillierte Dokumentation
+- Schauen Sie sich die [Anleitungen](/docs/guides) für häufige Anwendungsfälle an
 
 :::tip
 Die Beispiele in dieser Dokumentation verwenden TypeScript für Klarheit und Typsicherheit. Ayunis Core funktioniert genauso gut mit reinem JavaScript.
