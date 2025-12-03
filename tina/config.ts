@@ -1,4 +1,4 @@
-import { defineConfig, LocalAuthProvider } from 'tinacms';
+import { defineConfig } from 'tinacms';
 
 // Git branch - auto-detected from hosting provider or defaults to 'main'
 const branch =
@@ -7,19 +7,10 @@ const branch =
   process.env.HEAD ||
   'main';
 
-const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === 'true';
-
 export default defineConfig({
-  // Tina Cloud credentials (always set, used in production)
-  clientId: process.env.TINA_CLIENT_ID || '',
-  token: process.env.TINA_TOKEN || '',
-
-  // Local development only: override API URL
-  ...(isLocal && {
-    contentApiUrlOverride: 'http://localhost:4001/graphql',
-    authProvider: new LocalAuthProvider(),
-  }),
-
+  // Tina Cloud credentials
+  clientId: process.env.TINA_CLIENT_ID,
+  token: process.env.TINA_TOKEN,
   branch,
 
   build: {
